@@ -1,0 +1,145 @@
+
+// PodborAuto
+// ============================================================
+.grid-tablet-size-2x2
+  .portfolio-tile-podborauto
+    .is-building
+      top: -30%;
+      right: -150%;
+.portfolio-tile-podborauto
+
+  .is-back
+    z-index: 1
+    background-color: #eee9e9
+
+  .is-building
+    z-index: 2
+    background-size: contain
+    background-position: bottom right
+    height: 0
+    padding-bottom: 100%
+    left: unset
+    width: 170%
+    top: -139%
+    right: 0
+    transform-origin: center
+    transform: translate3d(0, 0, 0)
+    transition: transform 10s $prj-ease-easeInOutSine
+
+    @media only screen and (max-width: 399px)
+      width: 590%
+      height: 70%
+      top: -1%
+      padding-bottom: 0
+      right: -5%
+
+  .is-car
+    z-index: 3
+    background-size: contain
+    background-position: bottom center
+    height: 0
+    padding-bottom: 55%
+    width: 37%
+    top: -28%
+    left: 54%
+    transform-origin: bottom center
+    transform: translate3d(0, 0, 0)
+    transition: transform .5s $prj-ease-easeInOutCirc
+
+    /*@media only screen and (max-width: 399px)
+      background-position: right bottom
+      width: 120%
+      height: 30%
+      top: 23%
+      left: -25%
+      padding-bottom: 0
+      transform-origin: bottom right*/
+
+  .is-logo
+    z-index: 4
+    height: 17%;
+    width: 34%;
+    left: 42px;
+    top: 42px;
+    background-size: contain
+    background-position left top
+    transform-origin: top center
+    transform: translate3d(0, 0, 0)
+    transition: transform .5s $prj-ease-easeInOutCirc
+    @media $display-breakpoints.xs-only
+      left: 5%;
+      top: 10%;
+
+
+  &:hover
+    .is-building
+      transform: translate3d(30%, 0, 0)
+    .is-car
+      transform: scale(1.14) translate3d(-3%, 0, 0)
+    .is-logo
+      transform: scale(1.1) translate3d(5%, -3%, 0)
+
+.portfolio-item--tall
+  .portfolio-tile-podborauto
+    .is-logo
+      top: 40px;
+      width: 54%;
+      @media $display-breakpoints.xs-only
+        left: 5%;
+        top: 10%;
+    .is-car
+      width: 70%;
+      top: 44%;
+      left: 20%;
+      @media $display-breakpoints.xs-only
+        width: 37%
+        top: -28%
+        left: 54%
+    .is-building
+      top: 13%
+      width: 600%
+      @media $display-breakpoints.xs-only
+        width: 170%
+        top: -139%
+      @media only screen and (max-width: 399px)
+        width: 590%
+        height: 70%
+        top: -1%
+        padding-bottom: 0
+        right: -5%
+    &:hover
+      .is-logo
+        transform: scale(1.19) translate3d(7%, -3%, 0);
+
+
+.portfolio-item--square
+  .portfolio-tile-podborauto
+    .is-car
+      top: 12%;
+      left: 43%;
+      width: 48%
+      @media $display-breakpoints.xs-only
+        width: 37%
+        top: -28%
+        left: 54%
+    .is-logo
+      width: 45%;
+      left: 12%;
+      @media $display-breakpoints.xs-only
+        left: 5%;
+        top: 10%;
+    .is-building
+      top: -45%
+      width: 300%;
+      @media $display-breakpoints.xs-only
+        width: 170%
+        top: -139%
+      @media only screen and (max-width: 399px)
+        width: 590%
+        height: 70%
+        top: -1%
+        padding-bottom: 0
+        right: -5%
+    &:hover
+      .is-car
+        transform: scale(1.19) translate3d(-9%, 0, 0);

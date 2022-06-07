@@ -1,0 +1,121 @@
+
+// ANDY
+// ============================================================
+xs-kompaniya-andy()
+  .is-logo
+    z-index: 3
+    height: 15%;
+    background-size: contain;
+    transform: translate(-30%, 45%);
+    transition: transform .9s;
+  &:hover
+    .is-logo
+      transform: scale(1.2) translate(-20%, 100%);
+
+  .is-present
+    z-index: 2
+    height: 110%;
+    background-size: contain;
+    transform-origin: top center;
+    transform: translate(10%, 10%);
+    transition: transform 1s;
+  &:hover
+    .is-present
+      transform: scale(1.1) rotate(-18deg) translate(10%, 10%);
+
+.portfolio-tile-kompaniya-andy
+  .is-back
+    z-index: 1
+    height: 200%;
+    width: 200%;
+    left: -100%;
+    top: -100%;
+    background: radial-gradient(circle, rgba(255,245,243,1) 0%, rgba(255,168,149,1) 100%);
+
+  .is-logo
+    z-index: 3
+    height: 15%;
+    background-size: contain;
+    transform: translate(-15%, 45%);
+    transition: transform .8s;
+  &:hover
+    .is-logo
+      transform: scale(.9) translate(-22%, 20%);
+  @media $display-breakpoints.xs-only
+    xs-kompaniya-andy()
+
+  .is-present
+    z-index: 2
+    height: 70%;
+    background-size: contain;
+    transform-origin: top center;
+    transform: translate(30%, 30%);
+    transition: transform 1s;
+  &:hover
+    .is-present
+      transform: scale(1.1) rotate(-18deg) translate(10%, 20%);
+  @media $display-breakpoints.xs-only
+    xs-kompaniya-andy()
+
+.portfolio-item--long
+  .portfolio-tile-kompaniya-andy
+    .is-logo
+      z-index: 3
+      height: 15%;
+      background-size: contain;
+      transform: translate(-30%, 45%);
+      transition: transform .9s;
+    &:hover
+      .is-logo
+        transform: scale(1.2) translate(-20%, 100%);
+
+    .is-present
+      z-index: 2
+      height: 110%;
+      background-size: contain;
+      transform-origin: top center;
+      transform: translate(10%, 10%);
+      transition: transform 1s;
+    &:hover
+      .is-present
+        transform: scale(1.1) rotate(-18deg) translate(10%, 10%);
+    @media $display-breakpoints.xs-only
+      xs-kompaniya-andy()
+
+
+.portfolio-item--tall
+  .portfolio-tile-kompaniya-andy
+    .is-logo
+      z-index: 3
+      height: 7%;
+      background-size: contain;
+      transform: rotate(-45deg) translate(-30%, 45%);
+      transition: transform .9s;
+    &:hover
+      .is-logo
+        transform: scale(1.2) translate(2%, 100%);
+
+    .is-present
+      z-index: 2
+      height: 110%;
+      background-size: contain;
+      transform-origin: top center;
+      transform: translate(10%, 10%);
+      transition: transform 1s;
+    &:hover
+      .is-present
+        transform: scale(1.1) rotate(-18deg) translate(-20%, -5%);
+    @media $display-breakpoints.xs-only
+      xs-kompaniya-andy()
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,26 @@
+.infoBlockSpriteList
+  &__icon
+    height: 100px
+    transition transform .3s ease
+  &__item
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 15px;
+    height: 100%;
+  &__title
+    margin-top: 30px;
+    transition: color 0.3s ease;
+  &__text
+    margin-top: auto;
+    padding-top: 29px;
+    color: #494949;
+    transition: color 0.3s ease;
+  &:hover
+    .infoBlockSpriteList__text
+      color: #3f496a;
+    .infoBlockSpriteList__title
+      color: #e8a15a;
+    .infoBlockSpriteList__icon
+      transform scale(1.1)

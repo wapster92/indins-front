@@ -1,0 +1,69 @@
+.swiper-icons
+  .swiper-slide
+    height: auto
+    padding: 5px 5px 20px
+    box-sizing: border-box
+
+.swipe-item
+  display: block
+  position: relative
+  padding: 15px 0 0
+  box-shadow: none
+  box-sizing: border-box
+  height: 100%
+  @media $display-breakpoints.md-and-up
+    padding: 40px 0
+    transition: box-shadow $base-animation-time $base-animation-timing-function
+    will-change: box-shadow
+
+  a&
+    font-weight: 300
+
+  .swipe-icon
+    position: relative
+    height: 59px
+
+    &>span
+      position: absolute
+      display: block
+      width: 100%
+      height: 100%
+      top: 0
+      left: 0
+      opacity: 0
+      transition: opacity $base-animation-time $base-animation-timing-function
+      background-repeat: no-repeat
+      background-position: center
+      background-size: contain
+
+    .at-rest
+      opacity: 1
+    .on-hover
+      opacity: 0
+
+    .block-only&
+      .at-rest
+        opacity: 0
+      .on-hover
+        opacity: 1
+
+  .swipe-title
+    margin-top: 32px
+    line-height: 1.2
+    padding: 0 35px
+    font-weight: 300
+    color: $font-dark-grey
+    @media $display-breakpoints.md-and-down
+      padding: 0 10px
+
+  a&
+    display: block
+
+    &:hover
+      cursor: pointer
+      @media $display-breakpoints.md-and-up
+        box-shadow: 0 7px 25px rgba($primary, .1)
+      .at-rest
+        opacity: 0
+      .on-hover
+        opacity: 1

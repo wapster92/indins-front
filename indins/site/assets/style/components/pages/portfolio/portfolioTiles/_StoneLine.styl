@@ -1,0 +1,104 @@
+
+// CDS
+// ============================================================
+.portfolio-tile-stoneline
+  background-color #000000
+  .is-logo
+    width: 27%
+    height: 27%
+    background-size: contain
+    top: 11%
+    z-index: 3
+    transition: transform .5s $prj-ease-easeInOutCirc
+    @media screen and (max-width 599px)
+      width: 20%
+      height: 30%
+    @media screen and (max-width 399px)
+      width: 26%
+      height: 32%
+  .is-stone-big
+    width: 90%
+    background-size: contain
+    right: 0
+    bottom: -5%
+    left: auto
+    top: auto
+    z-index: 1
+    transition: transform .5s $prj-ease-easeInOutCirc
+    @media screen and (max-width 599px)
+      right: -10%
+  .is-stone-small
+    background-size: contain
+    width: 50%
+    height: 50%
+    left: 50%
+    transform: translate3d(-45%, 0, 0)
+    z-index: 2;
+    transition: transform .5s $prj-ease-easeInOutCirc
+    @media screen and (max-width 599px)
+      width: 60%
+      height: 60%
+      left: 60%
+
+  &:hover
+    .is-logo
+      transform scale(1.2)
+    .is-stone-small
+      transform: translate3d(-25%, -10%, 0)
+    .is-stone-big
+      transform: translate3d(5%, 5%, 0)
+
+.portfolio-item--square
+  .portfolio-tile-stoneline
+    .is-logo
+      left: 8%;
+      top: 11.5%;
+      @media $display-breakpoints.xs-only
+        left: 1%;
+    .is-stone-small
+      top: -5%
+    .is-stone-big
+      bottom: -20%
+      @media screen and (max-width: 360px)
+        bottom: -5%;
+
+.portfolio-item--long
+  .portfolio-tile-stoneline
+    .is-logo
+      left: -3.3%;
+      top: 11.5%;
+      @media $display-breakpoints.xs-only
+        left: 2%
+        top: 13%
+    .is-stone-small
+      top: 0
+    .is-stone-big
+      bottom: 0
+      right: -64px
+      @media screen and (max-width: 360px)
+        bottom: -5%;
+
+.portfolio-item--tall
+  .portfolio-tile-stoneline
+    .is-logo
+      top: 15px;
+      left: 45px;
+      @media $display-breakpoints.xs-only
+        left: 10px
+        top: 35px
+
+    .is-stone-small
+      top: -15%
+      left: auto
+      right: -63px
+      @media $display-breakpoints.xs-only
+        top: 0;
+        right: -40px
+    .is-stone-big
+      bottom: -36%
+      right: 0;
+      @media $display-breakpoints.xs-only
+        bottom: 0;
+        right: -43px
+      @media screen and (max-width: 360px)
+        bottom: -5%;

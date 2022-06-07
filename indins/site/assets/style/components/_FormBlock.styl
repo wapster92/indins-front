@@ -1,0 +1,55 @@
+.form-block
+  .angular-back
+    &:before
+      opacity 1
+      background-image: url(/img/angular_hd_dark.webp);
+  &__angular-block
+    padding-bottom: 80px
+    @media $display-breakpoints.sm-and-down
+      padding-bottom: 60px
+  &__container
+    padding: 0 24px;
+  &__wrap
+    display: grid;
+    grid-template-columns: 390px 390px
+    grid-column-gap 50px
+    justify-content center
+    margin-top: 54px;
+    @media $display-breakpoints.sm-and-down
+      grid-template-columns minmax(auto, 390px)
+      grid-row-gap 50px
+  &__input
+    height: 64px
+    background-color: $white !important;
+    margin: 0 !important;
+    .i-text-field__control
+      height: 100%;
+      .i-text-field__control__input
+        height: 100%;
+  &__btn
+    height: 64px
+    margin: 0 !important;
+    .btn
+      flex 1
+      display flex
+      align-items center
+      justify-content space-between
+      padding 0 28px 0 41px
+      @media $display-breakpoints.xs-only
+        padding 0 20px 0 20px
+      &__icon
+        position relative
+        width 48px
+        height 34px
+        opacity .6
+        transition opacity 0.3s cubic-bezier(0.25, 0.8, 0.5, 1)
+        background-repeat no-repeat
+        background-size contain
+        background-position center
+        background-image url('/img/arrow_btn.svg')
+        @media $display-breakpoints.xs-only
+          width 44px
+      &__text
+        font-size: 21px
+        font-weight: 400;
+        color: $white;

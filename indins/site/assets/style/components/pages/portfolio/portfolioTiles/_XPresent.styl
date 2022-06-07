@@ -1,0 +1,274 @@
+
+// XPresent
+// ============================================================
+.portfolio-tile-xpresent
+  .is-back
+    z-index: 1
+    background-repeat: no-repeat
+    background-color: floralwhite
+
+  .is-circle
+    border-radius: 50%
+    transform: scale(0)
+    opacity: 0
+    transition: transform .4s $prj-ease-easeInOutCirc, opacity .1s ease
+
+  .is-circle-one
+    z-index: 2
+    width: 47%;
+    height: 0;
+    padding-bottom: 47%;
+    top: 49%;
+    left: 60%;
+    background-color: rgb(237, 28, 36)
+    transition-delay: .1s
+  .is-circle-two
+    z-index: 3
+    width: 40%
+    height: 0
+    padding-bottom: 40%
+    top: 42%;
+    left: -19%;
+    background-color: rgb(41, 183, 234)
+    transition-delay: .2s
+  .is-circle-three
+    z-index: 4
+    width: 35%;
+    height: 0;
+    padding-bottom: 35%;
+    top: 58%;
+    left: 9%;
+    background-color: rgb(72, 183, 73)
+    transition-delay: .3s
+  .is-circle-fore
+    z-index: 5
+    width: 50%
+    height: 0
+    padding-bottom: 50%
+    top: -44%
+    left: 42%
+    background-color: rgb(251, 173, 24)
+    transition-delay: .4s
+    display: none;
+  .is-box
+    background-size: contain
+    width: 38%;
+    height: 72%;
+    top: 6%
+    left: 53%
+    transform-origin: center
+    transform: translate3d(0, 0, 0)
+    transition: transform .6s ease-out, opacity .5s ease, top .5s ease-out, left .5s ease-out
+
+  .is-box-one
+    z-index: 6
+    top: -10%;
+    left: 63%;
+    opacity: 1
+    transition-delay: .2s
+    transform: translate3d(0, 0, 0)
+
+  .is-box-two
+    z-index: 7
+    top: 2%;
+    left: 54%;
+    opacity: 0
+    transition-delay: .1s
+    transform: translate3d(0, 0, 0)
+
+  .is-box-three
+    z-index: 8
+    top: 14%;
+    left: 45%;
+    opacity: 0
+    transition-delay: 0s
+    transform: translate3d(0, 0, 0)
+
+  .is-logo
+    z-index: 9
+    background-size: contain
+    width: 43%
+    height: 16%
+    left: 1%;
+    top: 15%;
+    transform-origin: left top
+    transition: transform .5s $prj-ease-easeInOutCirc
+    @media (max-width 399px)
+      left: 3%;
+
+  &:hover
+    .is-circle
+      opacity: .2
+      transform: scale(1)
+    .is-box
+      transform: translate3d(10%, -5%, 0) scale(0.9)
+    .is-box-one
+      transition-delay: .2s
+    .is-box-two
+      transition-delay: .3s
+      opacity: 1
+    .is-box-three
+      transition-delay: .4s
+      opacity: 1
+
+.portfolio-item--tall
+  .portfolio-tile-xpresent
+    .is-logo
+      width: 68%;
+      height: 15%;
+      left: 13%;
+      top: 4%;
+      @media $display-breakpoints.xs-only
+        width: 43%
+        height: 16%
+        left: 1%;
+        top: 15%;
+      @media (max-width 399px)
+        left: 3%;
+    .is-box
+      width: 78%;
+      height: 67%;
+      @media $display-breakpoints.xs-only
+        width: 38%;
+        height: 72%;
+    .is-box-one
+      top: 12%;
+      left: 34%;
+      @media $display-breakpoints.xs-only
+        top: -10%;
+        left: 63%;
+    .is-box-two
+      top: 17%;
+      left: 16%;
+      @media $display-breakpoints.xs-only
+        top: 2%;
+        left: 54%;
+    .is-box-three
+      top: 28%;
+      left: 6%;
+      @media $display-breakpoints.xs-only
+        top: 14%;
+        left: 45%;
+    .is-circle-one
+      width: 90%;
+      padding-bottom: 90%;
+      top: 59%;
+      left: 38%;
+      @media $display-breakpoints.xs-only
+        width: 47%;
+        padding-bottom: 47%;
+        top: 49%;
+        left: 60%;
+    .is-circle-three
+      width: 70%;
+      height: 0;
+      padding-bottom: 70%;
+      top: 79%;
+      left: -9%;
+      @media $display-breakpoints.xs-only
+        width: 35%;
+        padding-bottom: 35%;
+        top: 58%;
+        left: 9%;
+    .is-circle-two
+      width: 54%;
+      height: 0;
+      padding-bottom: 54%;
+      top: 41%;
+      left: -20%;
+      @media $display-breakpoints.xs-only
+        width: 40%
+        padding-bottom: 40%
+        top: 42%;
+        left: -19%;
+    &:hover
+      .is-box
+        transform: translate3d(10%, -5%, 0) scale(0.8)
+        @media $display-breakpoints.xs-only
+          transform: translate3d(10%, -5%, 0) scale(0.9)
+
+      .is-box-one
+        top: 6%;
+        left: 24%;
+        @media $display-breakpoints.xs-only
+          top: -10%;
+          left: 63%;
+.portfolio-item--square
+  .portfolio-tile-xpresent
+    .is-box
+      width: 52%;
+      height: 72%;
+      @media $display-breakpoints.xs-only
+        width: 38%;
+        height: 72%;
+    .is-logo
+      width: 49%;
+      height: 19%;
+      left: 11%;
+      top: 8%;
+      @media $display-breakpoints.xs-only
+        width: 43%
+        height: 16%
+        left: 1%;
+        top: 15%;
+      @media (max-width 399px)
+        left: 3%;
+    .is-box-one
+      top: 12%;
+      left: 65%;
+      @media $display-breakpoints.xs-only
+        top: -10%;
+        left: 63%;
+    .is-box-two
+      top: 9%;
+      left: 47%;
+      @media $display-breakpoints.xs-only
+        top: 2%;
+        left: 54%;
+    .is-box-three
+      top: 16%;
+      left: 36%;
+      @media $display-breakpoints.xs-only
+        top: 14%;
+        left: 45%;
+    .is-circle-two
+      top: 30%;
+      left: -9%;
+      @media $display-breakpoints.xs-only
+        width: 40%
+        padding-bottom: 40%
+        top: 42%;
+        left: -19%;
+    .is-circle-three
+      width: 70%;
+      height: 0;
+      padding-bottom: 70%;
+      top: 49%;
+      left: -8%;
+      @media $display-breakpoints.xs-only
+        width: 35%;
+        padding-bottom: 35%;
+        top: 58%;
+        left: 9%;
+    .is-circle-one
+      width: 66%;
+      height: 0;
+      padding-bottom: 66%;
+      top: 49%;
+      left: 50%;
+      @media $display-breakpoints.xs-only
+        width: 47%;
+        padding-bottom: 47%;
+        top: 49%;
+        left: 60%;
+    &:hover
+      .is-box
+        transform: translate3d(10%, -5%, 0) scale(0.83);
+        @media $display-breakpoints.xs-only
+          transform: translate3d(10%, -5%, 0) scale(0.9)
+      .is-box-one
+        top: 2%;
+        left: 57%;
+        @media $display-breakpoints.xs-only
+          top: -10%;
+          left: 63%;

@@ -1,0 +1,76 @@
+.i-text-field
+  background-color transparent
+  margin 16px 0 30px 0
+
+  &.i-text-field_no-label
+    margin-top 0
+
+  &.i-text-field_no-error-message
+    margin-bottom 0
+
+  &__control
+    display flex
+    flex-direction column
+    justify-content center
+    align-items center
+    position relative
+    min-height 62px
+    background-color transparent
+
+    &__input
+      border 1px solid $font-blue-dark
+      flex 1 1 auto
+      max-width 100%
+      min-width 0
+      width 100%
+      border-radius unset
+      outline none
+      color $font-dark-grey
+      font-size $base-font-size
+      font-weight 400
+      line-height 1
+      background-color transparent
+      min-height 32px
+      padding 0 40px
+      transition all $base-animation-time $base-animation-timing-function
+      &:focus
+        border none
+        outline none
+        border-bottom 1px solid $font-blue-dark
+        background-color $white
+      &:hover
+        border-color $btn-bg-color-hover
+      &::placeholder
+        font-family $body-font-family
+        font-size $base-font-size
+        font-weight 400
+        color $font-light-grey
+
+    &__error-wrapper
+      position absolute
+      bottom -20px
+      overflow hidden
+      min-height 14px
+      width 100%
+
+    &__label, &__error-message
+      position absolute
+      left 0
+      word-break break-word
+      font-size 12px
+      min-height 12px
+      min-width 1px
+      width 100%
+      padding: 0 12px
+      line-height 1
+
+    &__error-message
+      top -12px
+      color #ff5252
+      caret-color #ff5252
+      transition top $base-animation-time $base-animation-timing-function
+      &_active
+        top 0
+
+    &__label
+      top -16px

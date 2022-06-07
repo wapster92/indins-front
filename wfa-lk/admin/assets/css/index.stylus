@@ -1,0 +1,67 @@
+
+/*logo main menu*/
+
+.app-logo
+  width: 35px !important;
+  margin: 9px 0 22px 7px !important;
+
+.is-expanded
+  width 100% !important
+
+.main-menu-wrap .app-logo img
+   left: 50%;
+   transform: translate(-50%, -50%);
+   height: 35px;
+   width: 75px;
+
+$light-accent = #DADADA
+$light-border = #DADADA
+$box-shadow = #b2b7c3
+$secondary-text = #6d6d6d
+$transparent-bg = rgba(192,192,192, 0.4)
+
+/* breakpoints */
+
+$breakpoints = {
+  xs: 0
+  sm: 600px
+  md: 960px
+  lg: 1264px
+  xl: 1904px
+}
+
+$display-breakpoints = {
+  xs-only: "only screen and (max-width: %s)" % ($breakpoints.sm - 1)
+  sm-only: "only screen and (min-width: %s) and (max-width: %s)" % ($breakpoints.sm ($breakpoints.md  - 1))
+  sm-and-down: "only screen and (max-width: %s)" % ($breakpoints.md - 1)
+  sm-and-up: "only screen and (min-width: %s)" % $breakpoints.sm
+  lg-only: "only screen and (min-width: %s) and (max-width: %s)" % ($breakpoints.lg ($breakpoints.xl - 1))
+  lg-and-down: "only screen and (max-width: (%s - 1))" % $breakpoints.xl
+  lg-and-up: "only screen and (min-width: %s)" % $breakpoints.lg
+}
+
+/* border style */
+
+$b1sl = 1px solid $light-border
+
+html
+  font-size 14px
+
+body
+&::-webkit-scrollbar-track
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+&::-webkit-scrollbar
+  width: 8px;
+  height: 8px;
+&::-webkit-scrollbar-thumb
+  border-radius: 4px;
+  background-color: #c8c8c8;
+
+.content-zone
+  @media $display-breakpoints.sm-and-down
+    overflow auto !important
+    height: auto;
+
+.secondary-text-14px
+  color: $secondary-text;
+  font-size: 14px

@@ -1,0 +1,160 @@
+// Begin Block area
+// ============================================================
+.begin-area
+  margin-top: 38px
+  @media $display-breakpoints.xs-only
+    margin-top: 28px
+
+  &__container
+    padding 0 24px
+    flex-grow 1
+    margin auto
+    width 100%
+    height 100%
+    @media $display-breakpoints.lg-and-up
+      max-width 1188px
+    @media $display-breakpoints.md-only
+      max-width 944px
+
+
+// Begin Block navigation
+// ============================================================
+.begin-nav
+  @media $display-breakpoints.sm-and-up
+    display: flex
+    justify-content: space-evenly
+    align-items: flex-start
+    margin: 0 -20px
+
+  .begin-nav-item
+    position: relative
+    @media $display-breakpoints.sm-and-up
+      width: 11em
+      margin: 20px 20px 20px
+    @media $display-breakpoints.xs-only
+      display: flex
+      flex-wrap: wrap
+      justify-content: flex-start
+      align-items: center
+
+    & + .begin-nav-item
+      @media $display-breakpoints.xs-only
+        margin-top: 30px
+
+    .is-icon
+      position: relative
+      @media $display-breakpoints.xs-only
+        flex: 0 0 auto
+        width: 2.5em
+        height: 2.5em
+
+      &::before,
+      &::after
+        content: ''
+        position: absolute
+        width: 100%
+        height: 100%
+        top: 0
+        left: 0
+        opacity: 0
+        background-repeat: no-repeat
+        background-position: center
+        background-size: contain
+        transition: opacity $img-animation-time $img-animation-ease
+      &::before
+        opacity: 1
+        background-image: url('/img/circle_hover.svg')
+      &::after
+        opacity: 0
+        background-image: url('/img/circle_default.svg')
+
+
+      & > div
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 100%
+        height: 100%
+        @media $display-breakpoints.sm-and-up
+          min-height: 95px
+
+        & > span
+          position: relative
+          top: 0
+          line-height: 0
+          color: $primary
+          @media $display-breakpoints.sm-and-up
+            font-size: 30px
+
+
+    .is-title
+      position: relative
+      @media $display-breakpoints.sm-and-up
+        margin-top: 35px
+        text-align: center
+        color: $primary
+        transition: color $img-animation-time $img-animation-ease
+      @media $display-breakpoints.xs-only
+        flex: 1 1 auto
+        width: calc(100% - 72px)
+        margin-left: 1em
+
+    .is-arrow
+      position: relative
+      display: flex
+      justify-content: center
+      align-items: center
+      margin-top: 25px
+      opacity: 0
+      transform: translate3d(0, -10px, 0)
+      transition: opacity $img-animation-time $img-animation-ease, transform $img-animation-time $img-animation-ease
+      @media $display-breakpoints.xs-only
+        display: none
+
+      span
+        display: block
+        width: 20px
+        height: 10px
+        background-repeat: no-repeat
+        background-position: center
+        background-size: contain
+        background-image: url('/img/arrow_down_second.svg')
+
+    .is-text
+      position: relative
+      @media $display-breakpoints.sm-and-up
+        display: none
+      @media $display-breakpoints.xs-only
+        width: 100%
+        margin-top: 15px
+        padding-left: 3.6em
+      @media only screen and (max-width: 399px)
+        padding-left: 0
+
+    &:hover
+      @media $display-breakpoints.sm-and-up
+        cursor: pointer
+        .is-title
+          color: $font-hover-orange
+
+    &.active
+      @media $display-breakpoints.sm-and-up
+        .is-icon
+          &::before
+            opacity: 0
+          &::after
+            opacity: 1
+        .is-title
+          color: $font-hover-orange
+        .is-arrow
+          opacity: 1
+          transform: translate3d(0, 0, 0)
+
+.begin-text
+  position: relative
+  margin: 0 auto
+  max-width: 49em
+  @media $display-breakpoints.sm-and-up
+    text-align: center
+  @media $display-breakpoints.xs-only
+    display: none

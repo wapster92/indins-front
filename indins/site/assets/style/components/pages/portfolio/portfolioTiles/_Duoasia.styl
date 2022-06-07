@@ -1,0 +1,66 @@
+// Duoasia
+// ============================================================
+
+
+
+.portfolio-tile-duoasia
+  position: relative;
+
+  .is-logo
+    position: absolute
+    z-index: 3
+    background-size: contain
+    width: 80px
+    height: 100px
+    top: 40px
+    left: 40px
+    transform: scale(1) translate(0, 0)
+    transition: transform .6s $prj-ease-easeInOutCubic
+    transition-delay .4s
+    @media screen and (max-width 1203px)
+      left: 25px
+      top 25px
+    @media screen and (max-width: 800px)
+      width: 50px
+      height: 70px
+
+  .is-radial-gradient
+    position: absolute
+    z-index: 2
+    background: radial-gradient(46.18% 46.18% at 50% 45.35%, #000000 31.95%, rgba(0, 0, 0, 0) 100%);
+    opacity: 0.6;
+    width: 437px
+    height: 361px
+    left: -144px
+    top: -90px
+    @media screen and (max-width 1203px)
+      left: -129px
+      top -75px
+    @media screen and (max-width: 800px)
+      width: 250px
+      height: 170px
+      left: -70px
+      top: -50px
+  .is-back
+    position: absolute
+    z-index: 1
+    transform: rotate(0)
+    transition: transform 1s $prj-ease-easeInOutCubic
+    width: calc(100% + 60px);
+    height: calc(100% + 60px);
+    top: -10px;
+    left: -25px;
+
+  &:hover
+    .is-logo
+      transform: scale(1.25) translate(10px, 10px)
+      @media screen and (max-width: 800px)
+        transform: translateX(10px)
+    .is-back
+      transform: scale(1.25) translateY(10px) rotate(-16deg)
+      @media screen and (max-width 1203px)
+        transform: scale(1.25) rotate(-16deg)
+      @media screen and (max-width: 599px)
+        tranform: scale(1.25) rotate(-16deg) translateY(-15px)
+
+

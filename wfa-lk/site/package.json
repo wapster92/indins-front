@@ -1,0 +1,44 @@
+{
+  "name": "core-site",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "NUXT_HOST=0.0.0.0 NUXT_PORT=3001 nuxt",
+    "build": "NODE_ENV=production nuxt build",
+    "start": "pm2 start ecosystem.config.js --env production",
+    "stop": "pm2 stop ecosystem.config.js",
+    "lint": "npm run lint"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.13.1",
+    "cookie-universal-nuxt": "^2.1.4",
+    "core-js": "^3.9.1",
+    "core-xhr": "git+https://dependencies:FjhTYzfemgnfssNKPpEv@dev.indins.ru/core/core-xhr.git#v1.4.18",
+    "dotenv-flow": "^3.2.0",
+    "element-ui": "^2.15.2",
+    "nuxt": "^2.15.3",
+    "socket-bridge-client": "git+https://dependencies-socket-bridge:rw9osztX7sa2qQ_hd3sX@dev.indins.ru/core/socket-bridge-client.git#v1.1.4",
+    "v-click-outside": "^3.1.2",
+    "vee-validate": "^3.4.5",
+    "vue-click-outside": "^1.1.0",
+    "vue-notification": "^1.3.20",
+    "vue-select": "^3.11.2",
+    "vue-slick-carousel": "^1.0.6",
+    "vue-slide-toggle": "^1.1.1",
+    "vue-the-mask": "^0.11.1"
+  },
+  "devDependencies": {
+    "@nuxtjs/style-resources": "^1.0.0",
+    "@nuxtjs/svg-sprite": "^0.5.2",
+    "babel-eslint": "^10.1.0",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "eslint": "^7.23.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-vue": "^7.8.0",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2"
+  }
+}

@@ -1,0 +1,22 @@
+.page-title
+  display flex
+  flex-direction row
+  justify-content center
+  align-items center
+  &__text
+    margin-top: $block-distance.page-title.em
+    padding-left: 4px
+    flex-grow 1
+    width 100%
+    text-align center
+
+    @media $display-breakpoints.lg-and-up
+      max-width 1188px
+    @media $display-breakpoints.md-only
+      max-width 944px
+    @media $display-breakpoints.xs-only
+      margin-top: 42px
+
+  &.max-width-18
+    h1
+      max-width: 18em

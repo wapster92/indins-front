@@ -1,0 +1,38 @@
+.phone-modal-form
+  color $font-dark-grey
+
+  &__description
+    display flex
+    flex-direction column
+    margin-top: 40px;
+    margin-bottom: 30px;
+
+  &__send
+    padding-top: 40px;
+    display flex
+    .i-btn
+      margin: 0;
+    &__btn
+      flex 1
+      align-self stretch
+      display flex
+      align-items center
+      justify-content space-between
+      padding 0 28px 0 41px
+
+      &__icon
+        position relative
+        width 48px
+        height 34px
+        opacity .6
+        transition opacity 0.3s cubic-bezier(0.25, 0.8, 0.5, 1)
+        background-repeat no-repeat
+        background-size contain
+        background-position center
+        background-image url('/img/arrow_btn.svg')
+        @media only screen and (max-width: 399px)
+          width 44px
+
+      &:hover
+        .phone-modal-form__send__btn__icon
+          opacity .8

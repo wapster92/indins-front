@@ -1,0 +1,280 @@
+
+// Messenger
+// ============================================================
+
+.portfolio-tile-messenger
+  .portfolio-bottom
+    text-shadow: 0px 0px 30px #5F9ACF;
+  .is-cube
+    z-index: 2
+
+    &.is-blue-first,
+    &.is-blue-second,
+    &.is-blue-third
+      background-color: #009fe3
+    &.is-light
+      background-color: #def3fd
+    &.is-red
+      background-color: #ed2d23
+
+  .is-back
+    z-index: 1
+
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+
+    background: #9FC7EB
+
+  .is-light
+    z-index: 3
+
+    width: 70%
+    height: 25%
+    top: 10%
+    left: -13%
+
+    transform: skewX(-29deg) translate3d(0, 0, 0)
+    transition: transform 0.8s $prj-ease-easeInOutCubic
+    transition-delay: 0.2s
+
+  .is-blue-first
+    z-index: 4
+
+    width: 36%
+    height: 20%
+    top: -8%
+    left: -29%
+
+    transform: skewX(-29deg) translate3d(0, 0, 0)
+    transition: transform 0.8s $prj-ease-easeInOutCubic
+    transition-delay: 0s
+
+  .is-blue-second
+    z-index: 5
+
+    width: 40%
+    height: 25%
+    top: 10%
+    left: 94%
+
+    transform: skewX(-29deg) translate3d(0, 0, 0)
+    transition: transform 0.8s $prj-ease-easeInOutCubic
+    transition-delay: 0s
+
+  .is-blue-third
+    z-index: 6
+
+    width: 90%
+    height: 40%
+    top: 62%
+    left: 32%
+
+    transform: skewX(-29deg) translate3d(0, 0, 0)
+    transition: transform 0.8s $prj-ease-easeInOutCubic
+    transition-delay: 0.2s
+
+  .is-red
+    z-index: 7
+    width: 7%
+    height: 12%
+    top: 40%
+    left: auto
+    right: 40%
+
+    transform: skewX(-29deg) translate3d(0, 0, 0)
+    transition: transform 0.8s $prj-ease-easeInOutCubic
+    transition-delay: 0s
+
+  .is-phone
+    z-index: 8
+    background-position: right
+    background-size: contain
+    width: 100%
+    height: 60%
+    top: 13%
+    left: auto
+    right: 12%
+
+    transform: translate3d(0, 0, 0)
+    transition: transform 0.8s $prj-ease-easeInOutCubic
+    transition-delay: 0s
+
+  .is-logo-word
+    z-index: 9
+    background-position: left center
+    background-size: contain
+    width: 80%
+    max-width: 150px
+    height: 6.5%
+    top: 20%
+    left: 27%
+
+    opacity: 0
+    transform: translate3d(0, 0, 0)
+    transition: transform 0.6s $prj-ease-easeInOutCubic, opacity .6s
+    transition-delay: 0.1s
+
+  .is-logo
+    z-index: 10
+    background-position: left center
+    background-size: contain
+
+    width: 70%
+    height: 9%
+    top: 18%
+    left: 11%
+
+    transform-origin: center
+    transform: translate3d(0, 0, 0)
+    transition: transform 0.6s $prj-ease-easeInOutCubic
+    transition-delay: 0s
+
+  &:hover
+    .is-back
+      transform: translate3d(0, 0, 0)
+      transition-delay: 0s
+    .is-light
+      transform: skewX(-29deg) translate3d(40%, 14%, 0)
+      transition-delay: 0s
+    .is-blue-first
+      transform: skewX(-29deg) translate3d(32%, 137%, 0)
+      transition-delay: 0.1s
+    .is-blue-second
+      transform: skewX(-29deg) translate3d(-30%, -123%, 0)
+      transition-delay: 0.3s
+    .is-blue-third
+      transform: skewX(-29deg) translate3d(10%, -50%, 0)
+      transition-delay: 0.1s
+    .is-red
+      transform: skewX(-29deg) translate3d(-140%, 14%, 0)
+      transition-delay: 0.2s
+    .is-phone
+      transform: translate3d(0, 17%, 0)
+      transition-delay: 0s
+    .is-logo-word
+      opacity: 1
+      transform: translate3d(0, 135%, 0)
+      transition-delay: 0s, .3s
+    .is-logo
+      transform: translate3d(23%, 0, 0)
+      transition-delay: 0.1s
+
+.portfolio-item--square
+  .portfolio-tile-messenger
+    .is-logo-word
+      left: 17%
+
+.portfolio-item--long
+  .portfolio-tile-messenger
+    &:hover
+      .is-blue-third
+        transform: skewX(-29deg) translate3d(0, 0, 0);
+        @media $display-breakpoints.xs-only
+          transform: skewX(-29deg) translate3d(10%, -50%, 0)
+
+.portfolio-item--tall
+  .portfolio-tile-messenger
+    .is-blue-first
+      left: -18%
+      top: -13%;
+      @media $display-breakpoints.xs-only
+        top: -8%
+        left: -29%
+    .is-phone
+      width: 47%;
+      height: 50%;
+      left: 0;
+      right: 0
+      margin: 0 auto;
+      top: 31%
+      @media $display-breakpoints.xs-only
+        width: 100%
+        height: 60%
+        top: 13%
+        left: auto
+        right: 12%
+    .is-red
+      right: auto;
+      width: 12%;
+      height: 7%;
+      left: 55px
+      top: 27%;
+      @media $display-breakpoints.xs-only
+        width: 7%
+        height: 12%
+        top: 40%
+        left: auto
+        right: 40%
+    .is-light
+      top: 4%;
+      height: 20%
+      width: 500px;
+      left: -75%
+      @media $display-breakpoints.xs-only
+        width: 70%
+        height: 25%
+        top: 10%
+        left: -13%
+    .is-logo
+      top: 10%;
+      width: 29%
+      left: 15%
+      @media $display-breakpoints.xs-only
+        width: 70%
+        top: 18%
+        left: 11%
+    .is-blue-second
+      top: 30%;
+      height: 17%;
+      left: 90%;
+      @media $display-breakpoints.xs-only
+        height: 25%
+        top: 10%
+        left: 94%
+    .is-blue-third
+      top: 73%;
+      left: 18%;
+      @media $display-breakpoints.xs-only
+        top: 62%
+        left: 32%
+    .is-logo-word
+      height: 3%;
+      top: 12%;
+      left: 21%;
+      @media $display-breakpoints.xs-only
+        height: 6.5%
+        top: 20%
+        left: 27%
+    &:hover
+      .is-logo
+        transform: translate3d(23%, -17px, 0);
+        @media $display-breakpoints.xs-only
+          transform: translate3d(23%, 0, 0)
+      .is-phone
+        transform: translate3d(0, 10%, 0);
+        @media $display-breakpoints.xs-only
+          transform: translate3d(0, 17%, 0)
+      .is-blue-first
+        transform: skewX(-29deg) translate3d(0, 0 ,0)
+        @media $display-breakpoints.xs-only
+          transform: skewX(-29deg) translate3d(32%, 137%, 0)
+      .is-light
+        transform: skewX(-29deg) translate3d(10%, 0, 0);
+        @media $display-breakpoints.xs-only
+          transform: skewX(-29deg) translate3d(40%, 14%, 0)
+      .is-blue-second
+        transform: skewX(-29deg) translate3d(-57%, -78%, 0)
+        @media $display-breakpoints.xs-only
+          transform: skewX(-29deg) translate3d(-30%, -123%, 0)
+      .is-red
+        transform: skewX(-29deg) translate3d(28%, 61%, 0);
+        @media $display-breakpoints.xs-only
+          transform: skewX(-29deg) translate3d(-140%, 14%, 0)
+      .is-blue-third
+        transform: skewX(-29deg) translate3d(1%, -37%, 0);
+        @media $display-breakpoints.xs-only
+          transform: skewX(-29deg) translate3d(10%, -50%, 0)
+
+

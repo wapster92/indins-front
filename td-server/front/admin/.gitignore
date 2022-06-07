@@ -1,0 +1,8 @@
+/node_modules/
+/.nuxt
+yarn-error.log
+!.env
+.env.local
+webpack.config.js
+.yalc
+yalc.lock

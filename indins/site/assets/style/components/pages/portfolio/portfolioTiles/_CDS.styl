@@ -1,0 +1,83 @@
+
+// CDS
+// ============================================================
+.portfolio-tile-cds
+  &:after
+    content: ""
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: #001343
+    opacity: 0.15
+    z-index: 1
+
+  .portfolio-bottom
+    text-shadow: none
+
+  .is-building
+    z-index: 1
+    width: 100%
+    left: unset
+    background-position: left bottom
+    transform: translate3d(0, 0, 0)
+    transition: transform .6s $prj-ease-easeInOutCirc
+    transition-delay: .1s
+
+  .is-back
+    z-index: 2
+    background-color: #def3fd
+    height: 102%
+    top: -62%
+    width: 200%
+    left: unset
+    right: 40%
+    box-shadow: 4px 0 10px rgba(0,0,0,0.1)
+    transform: skewX(-29deg) translate3d(0, 0, 0)
+    transition: background-color .6s $prj-ease-easeInOutCirc, transform .6s $prj-ease-easeInOutCirc
+    transition-delay: .2s
+
+  .is-back-hover
+    z-index: 3
+    width: 200%
+    left: unset
+    right: 100%
+    background-color: #def3fd
+    background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.6) 100%)
+    background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,0.6) 100%)
+    background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,0.6) 100%)
+    transform-origin: top right
+    transform: skewX(-29deg) translate3d(0, 0, 0)
+    transition: transform .5s $prj-ease-easeInQuart
+    transition-delay: 0s
+
+  .is-logo
+    z-index: 4
+    width: 27%
+    height: 16%
+    top: 12%
+    left: 11%
+    background-size: contain
+    transform-origin: left center
+    transform: scale(1) translate3d(0, 0, 0)
+    transition: transform .5s $prj-ease-easeInOutCirc
+    transition-delay: .3s
+    @media screen and (max-width 599px)
+      width: 24%
+      left: 14%
+
+  &:hover
+    .is-building
+      transition-delay: .2s
+    .is-back
+      background-color: #ccf1ff
+      transform: skewX(29deg) translate3d(-10%, 60%, 0)
+      transition-delay: .1s
+    .is-back-hover
+      transform: skewX(-29deg) translate3d(44.5%, 0, 0)
+      transition-delay: .1s
+    .is-logo
+      transition-delay: 0s
+    .portfolio-bottom
+      color: #494949

@@ -1,0 +1,204 @@
+
+// Mapryal
+// ============================================================
+.portfolio-tile-mapryal
+
+  .is-back
+    z-index: 1
+    background-color: #62669B
+    transition-delay: 0s
+
+  .is-buildings
+    z-index: 2
+    transform-origin: center
+    background-position: center
+
+    width: 300%;
+    height: 82%;
+    left: 0;
+    top: 0;
+
+    transition: transform 5s $prj-ease-easeInOutSine
+    will-change: transform
+    transition-delay: 0s
+
+  .is-violet
+    z-index: 4
+    background-color: #989AC8
+    border-radius: 50%
+
+    width: 64%;
+    height: 128%;
+    left: 68%;
+    top: -9%;
+
+    transform: scale(1)
+    transition: transform .7s $prj-ease-easeInOutCirc, background-color .7s $prj-ease-easeInOutCirc
+    will-change: transform, background-color
+    transition-delay: 1s
+
+
+  .is-violet-hover
+    z-index: 3
+    background-color: #BDBEDB
+    border-radius: 50%
+
+    width: 50%;
+    height: 104%;
+    left: 68%;
+    top: 8%;
+
+    transform: scale(0)
+    transition: transform 1s $prj-ease-easeInOutCirc
+    will-change: transform
+    transition-delay: 0s
+
+  .is-books
+    z-index: 5
+    background-size: contain
+    transform-origin: center
+    background-position: left center
+
+    width: 35%;
+    height: 59%;
+    left: 54%;
+    top: 12%;
+
+    transform: translate3d(0, 0, 0)
+    transition: transform .7s $prj-ease-easeInOutCirc
+    will-change: transform
+    transition-delay: 0s
+
+  .is-logo
+    z-index: 6
+    background-size: contain
+    transform-origin: center
+    background-position: left center
+
+    width: 13%;
+    height: 26.5%;
+    top: 11%;
+    left: 5%;
+
+    transform: translate3d(0, 0, 0)
+    transition: transform .5s $prj-ease-easeInOutCirc
+    will-change: transform
+    transition-delay: 0s
+
+  &:hover
+    .is-buildings
+      transform: translate3d(-10%, 0%, 0)
+    .is-violet
+      transform: scale(0)
+      transition-delay: 0s
+    .is-violet-hover
+      transform: scale(1)
+      transition-delay: .7s
+    .is-books
+      transform: translate3d(-7%, 0%, 0) scale(1.1);
+    .is-logo
+      transform: translate3d(9%, 5%, 0) scale(1.1);
+
+.portfolio-item--tall
+  .portfolio-tile-mapryal
+    .is-logo
+      width: 26%;
+      height: 13.5%;
+      top: 5%;
+      left: 11%;
+      @media $display-breakpoints.xs-only
+        width: 13%;
+        height: 26.5%;
+        top: 11%;
+        left: 5%;
+    .is-books
+      width: 69%;
+      height: 32%;
+      left: 14%;
+      top: 28%;
+      @media $display-breakpoints.xs-only
+        width: 35%;
+        height: 59%;
+        left: 54%;
+        top: 12%;
+    .is-violet
+      width: 126%;
+      height: 63%;
+      left: 43%;
+      top: 18%;
+      @media $display-breakpoints.xs-only
+        width: 64%;
+        height: 128%;
+        left: 68%;
+        top: -9%;
+    .is-buildings
+      height: 67%;
+      @media $display-breakpoints.xs-only
+        height: 82%;
+    .is-violet-hover
+      width: 102%;
+      height: 51%;
+      left: 37%;
+      top: 28%;
+      @media $display-breakpoints.xs-only
+        width: 50%;
+        height: 104%;
+        left: 68%;
+        top: 8%;
+    &:hover
+      .is-books
+        transform: translate3d(0%, 44%, 0) scale(1.1);
+        @media $display-breakpoints.xs-only
+          transform: translate3d(-7%, 0%, 0) scale(1.1);
+
+.portfolio-item--square
+  .portfolio-tile-mapryal
+    .is-logo
+      width: 22%;
+      height: 24.5%;
+      top: 10%;
+      left: 11%;
+      @media $display-breakpoints.xs-only
+        width: 13%;
+        height: 26.5%;
+        top: 11%;
+        left: 5%;
+    .is-violet
+      width: 130%;
+      height: 130%;
+      left: 65%;
+      top: -22%;
+      @media $display-breakpoints.xs-only
+        width: 64%;
+        height: 128%;
+        left: 68%;
+        top: -9%;
+    .is-violet-hover
+      width: 80%;
+      height: 80%;
+      left: 74%;
+      top: 10%;
+      @media $display-breakpoints.xs-only
+        width: 50%;
+        height: 104%;
+        left: 68%;
+        top: 8%;
+    .is-books
+      width: 49%;
+      height: 41%;
+      left: 43%;
+      top: 23%;
+      @media $display-breakpoints.xs-only
+        width: 35%;
+        height: 59%;
+        left: 54%;
+        top: 12%;
+    &:hover
+      .is-logo
+        transform: translate3d(4%, 0%, 0) scale(1.09);
+        @media $display-breakpoints.xs-only
+          transform: translate3d(9%, 5%, 0) scale(1.1);
+      .is-books
+        transform: translate3d(-2%, -4%, 0) scale(1.15);
+        @media $display-breakpoints.xs-only
+          transform: translate3d(-7%, 0%, 0) scale(1.1);

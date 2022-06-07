@@ -1,0 +1,90 @@
+
+// Detailing
+// ============================================================
+.portfolio-tile-sakipirogova
+
+  .is-back
+    z-index: 1
+
+    width: 120%
+    top: 0
+    left: unset
+    right: -7%
+
+    transform-origin: center
+    transform: translate3d(0, 0, 0)
+    transition: transform 5s $prj-ease-easeInOutQuad
+    transition-delay: 0s
+
+  .is-water
+    z-index: 4
+
+    width: 100%
+    height: 100%
+    top: 31%
+    left: 0
+
+    transform-origin: top center;
+    transform: translate3d(0, 0, 0)
+    transition: transform 4s $prj-ease-easeInOutCubic
+    transition-delay: 0s
+    background-size: contain;
+    @media only screen and (max-width: 399px)
+      width: 100%
+      height: 100%
+      top: 31%
+      left: 0
+
+  .is-glow
+    z-index: 3
+
+    width: 100%
+    height: 93%
+    top: 0
+    left: 0
+    background-position: left top
+    @media only screen and (max-width: 399px)
+      width: 100%
+      height: 93%
+      top: 0
+      left: 0
+
+  .is-logo
+    z-index: 4
+    background-position: left center
+    background-size: contain
+
+    width: 50%
+    height: 12%
+    left: 40px
+    top: 40px
+    transform-origin: center
+    transition: transform 1s $prj-ease-easeInOutCubic
+    transition-delay: 0s
+    @media screen and (max-width 1203px)
+      left: 25px
+      top 25px
+    @media only screen and (max-width: 599px)
+      width: 80%
+      height: 24%
+
+  &:hover
+    .is-back
+      transform: translate3d(10%, 0, 0)
+      @media only screen and (max-width: 399px)
+        transform: translate3d(10%, 0, 0)
+    .is-logo
+      transform: translate3d(0, 30%, 0)
+      @media only screen and (max-width: 399px)
+        transform: translate3d(0, 30%, 0)
+        
+
+
+.portfolio-item--long
+  .portfolio-tile-sakipirogova
+    .is-back
+      width: 110%;
+      right: 0;
+    &:hover
+      .is-back
+        transform: translate3d(9%, 0, 0);

@@ -1,0 +1,147 @@
+//************************************************************
+// Main style config
+//************************************************************
+$body-font-family =  Lato, sans-serif
+$base-font-size = 20px
+$font-size-mobile = 18px
+$base-font-color = #494949
+$base-line-height = 1.35
+$base-body-padding = $base-font-size * $base-line-height
+
+$leading = $base-line-height rem;
+
+$base-transition = .7s cubic-bezier(.25,.1,0,1)
+$fast-transition = .3s cubic-bezier(.25,.1,0,1)
+$modal-transition = .3s cubic-bezier(.25,.8,.5,1)
+
+//****** Colors ******
+$font-dark-grey = #494949
+$font-darken-grey = #757575
+$font-light-grey = #9a9a9a
+$font-blue-dark = #3f496a
+$font-hover-blue = #5793ce
+$font-hover-orange = #e8a15a
+
+$btn-bg-color = #414a69
+$btn-bg-color-hover = #637ea8
+$btn-bg-color-hover-grey = #ebebeb
+$btn-bg-color-action-grey = #ebebeb
+
+$primary = #3f496a
+$primary-light = #455073
+
+$secondary = #637ea8
+$secondary-2 = #425176
+
+$white = #ffffff
+
+$opacity-1 = 1
+$opacity-06 = 0.6
+
+$base-animation-time = 0.3s
+$animation-time05 = 0.5s
+
+$base-animation-timing-function = ease
+$animation-timing-function-cubic01 = cubic-bezier(0.645, 0.045, 0.355, 1)
+$animation-timing-function-cubic02 = cubic-bezier(0.215, 0.61, 0.355, 1)
+
+$img-animation-time = .6s
+$img-animation-ease = $prj-ease-easeOutCubic
+$img-animation-scale = 1.03
+
+//Layers
+//=============================================================
+$base-layer = 0
+$header-layer = 100
+$menu-layer = 150
+$menu-btn-layer = 156
+$modal-layer = 200
+
+// Grid
+// ============================================================
+$content-padding = 16px
+
+$breakpoints = {
+  xs: 0
+  sm: 600px
+  md: 960px
+  lg: 1264px
+  xl: 1904px
+}
+
+$grid-gutter = 8px
+$grid-columns = 12
+$grid-gutters = {
+  xs: ($grid-gutter / 4)
+  sm: ($grid-gutter / 2)
+  md: $grid-gutter
+  lg: ($grid-gutter * 3)
+  xl: ($grid-gutter * 3)
+}
+
+$container-max-widths = {
+  md: $breakpoints.md
+  lg: $breakpoints.lg
+  xl: $breakpoints.lg
+}
+
+// Display
+// ============================================================
+$display-breakpoints = {
+  xs-only: "only screen and (max-width: %s)" % ($breakpoints.sm - 1)
+  sm-only: "only screen and (min-width: %s) and (max-width: %s)" % ($breakpoints.sm ($breakpoints.md  - 1))
+  sm-and-down: "only screen and (max-width: %s)" % ($breakpoints.md - 1)
+  sm-and-up: "only screen and (min-width: %s)" % $breakpoints.sm
+  sm-and-md: "only screen and (min-width: %s) and (max-width: %s)" % ($breakpoints.sm ($breakpoints.lg  - 1))
+  md-only: "only screen and (min-width: %s) and (max-width: %s)" % ($breakpoints.md ($breakpoints.lg  - 1))
+  md-and-down: "only screen and (max-width: %s)" % ($breakpoints.lg - 1)
+  md-and-up: "only screen and (min-width: %s)" % $breakpoints.md
+  lg-only: "only screen and (min-width: %s) and (max-width: %s)" % ($breakpoints.lg ($breakpoints.xl - 1))
+  lg-and-down: "only screen and (max-width: (%s - 1))" % $breakpoints.xl
+  lg-and-up: "only screen and (min-width: %s)" % $breakpoints.lg
+  xl-only: "only screen and (min-width: %s)" % $breakpoints.xl
+}
+
+// Headings
+// ============================================================
+$heading-font-family = $body-font-family
+$heading-color = $primary
+$headings = {
+  h1: { size: 50px, size-md: 50px, size-sm: 40px, size-xs: 35px,
+        weight: 700, line-height: 1.2, letter-spacing: normal, font-family: $heading-font-family, color: $heading-color },  // display-4
+  h2: { size: 35px, size-md: 35px, size-sm: 30px, size-xs: 25px,
+        weight: 700, line-height: 1.2, letter-spacing: normal, font-family: $heading-font-family, color: $heading-color },  // display-3
+  h3: { size: 25px, size-md: 25px, size-sm: 25px, size-xs: 22px,
+        weight: 700, line-height: 1.1, letter-spacing: normal, font-family: $heading-font-family, color: $heading-color },  // display-2
+  h4: { size: 20px, size-md: 20px, size-sm: 20px, size-xs: 20px,
+        weight: 700, line-height: 1.2, letter-spacing: normal, font-family: $heading-font-family, color: $heading-color },  // display-1
+  h5: { size: 18px, size-md: 18px, size-sm: 18px, size-xs: 18px,
+        weight: 700, line-height: 1, letter-spacing: normal, font-family: $heading-font-family, color: $heading-color },  // headline
+  h6: { size: 16px, size-md: 16px, size-sm: 16px, size-xs: 16px,
+        weight: 700, line-height: 1, letter-spacing: normal, font-family: $heading-font-family, color: $heading-color },  // title
+  subheading: { size: 18px, weight: 400 },    // subheading
+  body-3: { size: 22px, weight: 700 },        // body-3
+  body-2: { size: 25px, weight: 400 },        // body-2
+  body-1: { size: 20px, weight: 400 },        // body-1
+  caption: { size: 18px, weight: 400 },       // caption
+  button: { size: 20px, weight: 400 }         // button
+}
+
+
+// Blocks distance const
+// ============================================================
+$block-distance = {
+  'page-title': {
+    px: 51px
+    em: (90/$headings.h1.size)em
+    rem: (51/$base-font-size)rem
+  }
+  'section-title': {
+    px: 58px
+    em: (58/$headings.h2.size)em
+    rem: (58/$base-font-size)rem
+    h1-after: (41/$headings.h2.size)em
+    angular: (58/$headings.h2.size)em
+    realized: 74px
+  }
+}

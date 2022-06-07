@@ -1,0 +1,102 @@
+.portfolio-tile-sanatorium
+  .is-back
+    background-color: #0268C7;
+  .is-back-svg
+    background-size: contain;
+    background-position: left top;
+    height: 162%;
+    width: 77%;
+    left: auto;
+    right: -24%;
+    top: -52%;
+    transition transform .3s ease-out
+  .is-logo
+    background-size: contain;
+    width: 23%;
+    height: 20%;
+    top: 10%;
+    left: 5%;
+    transition transform .3s ease-out
+  .is-body
+    background-size: contain;
+    width: 42%;
+    left: auto;
+    right: 10%;
+    top: 1%;
+    transition transform .3s ease-out
+  &:hover
+    .is-logo
+      transform scale(1.16) translate3d(10%, 0%, 0)
+    .is-back-svg
+      transform: translate3d(10%, 0, 0);
+    .is-body
+      transform: scale(1.04) translate3d(-3%, 2%, 0);
+
+.portfolio-item--square
+  .portfolio-tile-sanatorium
+    .is-logo
+      width: 42%;
+      top: 8%;
+      left: 11%;
+      @media $display-breakpoints.xs-only
+        width: 23%;
+        top: 10%;
+        left: 5%;
+    .is-body
+      width: 44%;
+      right: 6%;
+      top: 3%;
+      @media $display-breakpoints.xs-only
+        width: 42%;
+        right: 10%;
+        top: 1%;
+    .is-back-svg
+      width: 78%;
+      right: -34%;
+      top: 9%;
+      @media $display-breakpoints.xs-only
+        width: 77%;
+        right: -24%;
+        top: -52%;
+    &:hover
+      .is-logo
+        transform: scale(1.1) translate3d(6%, 3%, 0);
+      .is-body
+        transform: scale(1.14) translate3d(6%, 0%, 0);
+      .is-body-svg
+        transform: translate3d(2%, 0, 0);
+.portfolio-item--tall
+  .portfolio-tile-sanatorium
+    .is-logo
+      width: 48%;
+      top: -1%;
+      left: 11%;
+      @media $display-breakpoints.xs-only
+        width: 23%;
+        top: 10%;
+        left: 5%;
+    .is-body
+      width: 89%;
+      right: -10%;
+      top: 8%;
+      @media $display-breakpoints.xs-only
+        width: 42%;
+        right: 10%;
+        top: 1%;
+    .is-back-svg
+      height: 95%;
+      width: 136%;
+      right: -61%;
+      top: 10%;
+      @media $display-breakpoints.xs-only
+        height: 162%;
+        width: 77%;
+        right: -24%;
+        top: -52%;
+    &:hover
+      .is-logo
+        transform: scale(1.14) translate3d(8%, 4%, 0);
+      .is-body
+        transform: scale(1.05) translate3d(-5%, -5%, 0);
+      .is-back-svg
+        transform: translate3d(4%, 16%, 0);

@@ -1,0 +1,63 @@
+.menu-button
+  position: relative
+  display: block
+  opacity: 1
+  transition: opacity $base-animation-time $base-animation-timing-function
+
+  width: 48px
+  height: 48px
+  @media $display-breakpoints.xs-only
+    width: 40px
+    height: 40px
+  @media screen and (max-width: 399px)
+    width: 30px
+    height: 30px
+
+  &:hover
+    cursor: pointer
+
+  & > span
+    position: absolute
+    width: 100%
+    height: 2px
+    top: calc(50% - 1px)
+    left: 50%
+    opacity: 1
+    background-color: currentColor
+    transition: transform $animation-time05 $animation-timing-function-cubic01, opacity $animation-time05 $animation-timing-function-cubic01
+
+    &:nth-child(1)
+      transform: translate3d(-50%, -14px, 0)
+      @media $display-breakpoints.xs-only
+        transform: translate3d(-50%, -12px, 0)
+      @media screen and (max-width: 399px)
+        transform: translate3d(-50%, -9px, 0)
+
+    &:nth-child(2)
+      transform: translate3d(-50%, 0, 0)
+
+    &:nth-child(3)
+      transform: translate3d(-50%, 14px, 0)
+      @media $display-breakpoints.xs-only
+        transform: translate3d(-50%, 12px, 0)
+      @media screen and (max-width: 399px)
+        transform: translate3d(-50%, 9px, 0)
+
+  &_open
+    color $white !important
+    opacity 0.2
+    &:hover
+      opacity 1
+
+    @media $display-breakpoints.sm-and-down
+      opacity 1
+
+    & > span
+      &:nth-child(1)
+        transform: translate3d(-50%, 0, 0) rotate(-45deg)
+
+      &:nth-child(2)
+        opacity: 0
+
+      &:nth-child(3)
+        transform: translate3d(-50%, 0, 0) rotate(45deg)

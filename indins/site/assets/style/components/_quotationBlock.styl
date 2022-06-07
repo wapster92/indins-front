@@ -1,0 +1,133 @@
+.quotation-area
+  position: relative
+  margin-top: 78px
+  @media $display-breakpoints.xs-only
+    margin-top: 50px
+
+  .angular-area &
+    margin-top: 64px
+
+  &__container
+    padding 0 24px
+    flex-grow 1
+    margin auto
+    width 100%
+    height 100%
+    @media $display-breakpoints.lg-and-up
+      max-width 1188px
+    @media $display-breakpoints.md-only
+      max-width 944px
+
+.quotation-block
+  position: relative
+
+  &::before
+    content: ''
+    position: absolute
+    z-index: 0
+    top: 0
+    left: (82/$base-font-size)em
+    width: (133/$base-font-size)em
+    height: (97/$base-font-size)em
+    background-repeat: no-repeat
+    background-size: contain
+    background-position: left top
+    background-image: url('/img/InfoIcons/icon_quotations.png')
+    .angular-area &
+      background-image: url('/img/InfoIcons/icon_quotations_white.png')
+
+    @media only screen and (max-width: 769px)
+      left: 0
+    @media $display-breakpoints.xs-only
+      width: 106px
+      height: 78px
+    @media only screen and (max-width: 399px)
+      width: 53px
+      height: 38px
+
+.quotation-text,
+.quotation-video
+  position: relative
+  font-size: 25px
+  line-height: (30/25)
+  padding-top: (33/25)em
+  padding-left: (178/25)em
+  @media only screen and (max-width: 769px)
+    padding-left: 96px
+  @media $display-breakpoints.xs-only
+    font-size: 20px
+    padding-top: (26/20)em
+    padding-left: (80/20)em
+  @media only screen and (max-width: 399px)
+    padding-top: (11/20)em
+    padding-left: (40/20)em
+
+.quot-signature
+  font-size: 20px
+  color: $primary
+
+.quotation-video
+  display: flex
+  font-size: 20px
+  @media $display-breakpoints.xs-only
+    flex-direction: column
+    align-items: center
+    padding-left: 0
+
+  .back-flex
+    position: relative
+    margin-top: 34px
+    @media only screen and (max-width: 769px)
+      margin-top: 15px
+
+  .quot-v-img
+    flex: 0 0 auto
+    width: 200px
+    height: 200px
+    margin-right: 70px
+    @media only screen and (max-width: 769px)
+      width: 180px
+      height: 180px
+      margin-right: 40px
+    @media $display-breakpoints.xs-only
+      margin-right: 0
+
+    .quot-v-img-block
+      position: relative
+      width: 100%
+
+      &::before
+        content: ''
+        position: absolute
+        z-index: 1
+        width: 100.5%
+        height: 100.5%
+        top: 0
+        left: 0
+        background-repeat: no-repeat
+        background-position center center
+        background-size: cover
+        background-image: inherit
+
+        transform-origin: center center
+        transform: scale(1)
+
+        transition: transform $img-animation-time $img-animation-ease
+        will-change: transform
+      &>img
+        position: relative
+        z-index: 2
+        display: block
+        vertical-align: top
+        height: 100%
+        width: 100%;
+        object-fit cover
+
+
+  .quot-v-text
+    align-self: center
+
+  .quot-v-img
+    & + .quot-v-text
+      @media $display-breakpoints.xs-only
+        margin-top: 30px

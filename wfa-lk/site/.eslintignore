@@ -1,0 +1,6 @@
+nuxt.config.js
+ecosystem.config.js
+/.nuxt
+/node_modules
+/static
+/store

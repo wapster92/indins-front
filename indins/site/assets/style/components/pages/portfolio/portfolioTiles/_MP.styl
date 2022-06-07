@@ -1,0 +1,400 @@
+
+// MP
+// ============================================================
+.portfolio-tile-mp
+  &:hover
+    & .is-logo
+      transform: translateY(30px);
+  & .is-back
+    z-index: 1
+    background: linear-gradient(to bottom, rgba(251, 240, 242, 0.15), rgba(255, 34, 77, 0.27))
+  & .is-part1,.is-part2,.is-part3
+    z-index: 3;
+    left: auto;
+    transition: transform .6s ease;
+  & .is-part1
+    width: 100px;
+    height: 90px;
+    left: 408px;
+    top: 45px;
+    transform: rotate(-30deg)
+  & .is-part2
+    width: 177px;
+    height: 145px;
+    top: 40px;
+    right: 18px;
+    transform: rotate(30deg)
+  & .is-part3
+    width: 120px;
+    height: 109px;
+    right: 169px;
+    top: 195px;
+    transform: rotate(28.69deg)
+  & .is-logo
+    z-index: 2
+    background-size: contain
+    background-position: top
+    width: 87px
+    height: 45px
+    top: 35px
+    left: 42px
+    transition: transform .6s ease
+
+  & .portfolio-bottom
+    z-index: 2
+    text-shadow: none
+    padding: 0 42px
+    color: #373737
+
+  @media only screen and (max-width 483px)
+    .portfolio-bottom
+      padding: 0 10px;
+      bottom: 10px;
+    .is-logo
+      left: 10px;
+      top: 10px;
+  @media only screen and (max-width 483px)
+    .portfolio-bottom
+      padding: 0 5px;
+      .portfolio-type
+        font-size: 11px;
+      .portfolio-description
+        font-size: 13px;
+    .is-logo
+      left: 5px;
+    &:hover
+      .is-logo
+        transform: translateY(10px);
+  @media only screen and (max-width 599px)
+    .is-part1,.is-part2,.is-part3
+      right: auto;
+    .is-part1
+      left: 55%;
+      width: 14%;
+      height: 25%;
+    .is-part2
+      left: 75%;
+      width: 22%;
+      height: 37%;
+    .is-part3
+      left: 60%;
+      top: 55%;
+      width: 18%;
+      height: 33%;
+    &:hover
+      & .is-part1
+        transform: rotate(17.81deg) scale(1.5) translate(135%, -40%)
+      & .is-part2
+        transform: rotate(20.78deg) scale(0.7) translate(-30%, 140%)
+      & .is-part3
+        transform: rotate(-30deg) translate(40%, -120%)
+  @media only screen and (max-width 408px)
+    .is-part1
+      width: 50px;
+      height: 47px;
+    .is-part2
+      width: 74px;
+      height: 72px;
+    .is-part3
+      width: 62px;
+      height: 60px;
+.portfolio-item--long //горизонтальная плашка
+  & .portfolio-tile-mp
+    @media only screen and (min-width 600px) and (max-width 880px)
+      .is-part1
+        left: 55%;
+        width: 14%;
+        height: 25%;
+      .is-part2
+        left: 75%;
+        width: 22%;
+        height: 37%;
+      .is-part3
+        left: 60%;
+        top: 55%;
+        width: 18%;
+        height: 33%;
+      &:hover
+        & .is-part1
+          transform: rotate(17.81deg) scale(1.5) translate(135%, -40%)
+        & .is-part2
+          transform: rotate(20.78deg) scale(0.7) translate(-30%, 140%)
+        & .is-part3
+          transform: rotate(-30deg) translate(40%, -120%)
+      .portfolio-bottom
+        padding: 0 10px;
+        bottom: 10px;
+        .portfolio-type
+          font-size: 11px;
+        .portfolio-description
+          font-size: 13px;
+      .is-logo
+        left: 10px;
+        top: 10px;
+    @media only screen and (min-width 880px) and (max-width 959px)
+      .is-logo
+        left: 25px;
+        top: 30px;
+      .portfolio-bottom
+        padding: 0 25px
+      .is-part1
+        right: 200px;
+        left: auto;
+        top: 35px;
+      .is-part3
+        right: 139px;
+        top: 160px;
+        height: 99px;
+        width: 110px;
+      &:hover
+        & .is-part1
+          transform: rotate(17.81deg) scale(1.5) translate(100px, -25px)
+        & .is-part2
+          transform: rotate(20.78deg) scale(0.7) translate(-70px, 175px)
+        & .is-part3
+          transform: rotate(-30deg) translate(10px, -152px)
+    @media only screen and (min-width 960px) and (max-width 1263px)
+      .is-logo
+        top: 30px;
+      .is-part1
+        right: 200px;
+        left: auto;
+        top: 35px;
+      .is-part3
+        right: 139px;
+        top: 160px;
+      &:hover
+        & .is-part1
+          transform: rotate(17.81deg) scale(1.6) translate(90px, -18px)
+        & .is-part2
+          transform: rotate(20.78deg) scale(0.84) translate(-70px, 155px)
+        & .is-part3
+          transform: rotate(-30deg) translate(10px, -152px)
+    @media only screen and (min-width 1264px)
+      &:hover
+        & .is-part1
+          transform: rotate(17.81deg) scale(1.7) translate(112px, -19px)
+        & .is-part2
+          transform: rotate(20.78deg) scale(0.84) translate(-55px, 232px)
+        & .is-part3
+          transform: rotate(-30deg) translate(6px, -160px)
+
+.portfolio-item--tall //вертикальная
+  & .portfolio-tile-mp
+    @media only screen and (min-width 600px) and (max-width 1263px)
+      .is-part1
+        width: 130px;
+        height: 115px;
+        top: 145px;
+        left: auto;
+      .is-part2
+        width: 210px;
+        height: 170px;
+        top: 128px;
+        right: -75px;
+      .is-part3
+        width: 153px;
+        height: 138px;
+        top: 300px;
+        right: auto;
+        left: 75px;
+      &:hover
+        & .is-part1
+          transform: rotate(17.81deg) scale(1.25) translate(135px, -32px)
+        & .is-part2
+          transform: rotate(20.78deg) scale(0.7) translate(-65px, 265px)
+        & .is-part3
+          transform: rotate(-30deg) scale(0.85) translate(0, -210px)
+    @media only screen and (min-width 600px) and (max-width 880px)
+      .is-part1
+        width: 50%;
+        height: 20%;
+        top: 27.2%;
+      .is-part2
+        width: 80%;
+        height: 30%;
+        top: 23%;
+        right: -29.8%;
+      .is-part3
+        width: 55%;
+        height: 23%;
+        top: 52%;
+        left: 30%;
+      .portfolio-bottom
+        bottom: 5px;
+        padding: 0 5px;
+        .portfolio-type
+          font-size: 11px;
+        .portfolio-description
+          font-size: 14px;
+      .is-logo
+        left: 5px;
+        top: 10px;
+      &:hover
+        .is-logo
+          transform: translateY(10px)
+        & .is-part1
+          transform: rotate(17.81deg) scale(1.25) translate(80%, -40%) !important
+        & .is-part2
+          transform: rotate(20.78deg) scale(0.7) translate(-30%, 140%) !important
+        & .is-part3
+          transform: rotate(-30deg) translate(-25%, -140%) !important
+    @media only screen and (min-width 881px) and (max-width 959px)
+      .portfolio-bottom
+        font-size: 18px;
+        padding: 0 25px;
+      .is-logo
+        left: 25px;
+        top: 30px;
+    @media only screen and (min-width 960px) and (max-width 1263px)
+      .is-logo
+        left: 38px;
+        top: 30px;
+      .portfolio-bottom
+        font-size: 18px;
+        padding: 0 38px;
+    @media only screen and (min-width 1264px)
+      .is-part1
+        width: 145px;
+        height: 130px;
+        top: 184px;
+        left: 3px;
+      .is-part2
+        width: 255px;
+        height: 209px;
+        top: 167px;
+        right: -90px;
+      .is-part3
+        width: 173px;
+        height: 158px;
+        top: 384.8px;
+        right: auto;
+        left: 81px;
+      .is-logo
+        left: 42px;
+        top: 34px;
+      .portfolio-bottom
+        padding: 0 42px;
+        bottom: 32px;
+      &:hover
+        & .is-part1
+          transform: rotate(17.81deg) scale(1.41) translate(159px, -44px)
+        & .is-part2
+          transform: rotate(20.78deg) scale(0.7) translate(-124px, 323px)
+        & .is-part3
+          transform: rotate(-30deg) scale(0.84) translate(25px, -281px)
+
+.portfolio-item--square //квадратная плашка
+  & .portfolio-tile-mp
+    @media only screen and (min-width 600px)
+      .is-part1
+        width: 67.75px;
+        height: 60.74px;
+        left: 179px;
+        top: 50.33px;
+      .is-part2
+        width: 119.14px;
+        height: 97.65px;
+        top: 42px;
+        right: -25px;
+      .is-part3
+        width: 80.83px;
+        height: 73.82px;
+        left: 214.15px;
+        top: 144.5px;
+      &:hover
+        & .portfolio-bottom
+          transform: translateY(-2px);
+    @media only screen and (min-width 600px) and (max-width 900px)
+      .is-part1
+        width: 25%;
+        height: 23%;
+        left: 41.5%;
+      .is-part2
+        width: 42%;
+        height: 34%;
+        right: -9.2%;
+      .is-part3
+        width: 27%;
+        height: 25%;
+        left: 50%;
+        top: 50%;
+      .portfolio-bottom
+        bottom: 5px;
+        padding: 0 5px;
+        .portfolio-type
+          font-size: 11px;
+        .portfolio-description
+          font-size: 14px;
+      .is-logo
+        left: 5px;
+        top: 10px;
+      &:hover
+        .is-logo
+          transform: translateY(10px)
+        & .is-part1
+          transform: rotate(17.81deg) scale(1.25) translate(100%, -40%) !important
+        & .is-part2
+          transform: rotate(20.78deg) scale(0.7) translate(-30%, 140%) !important
+        & .is-part3
+          transform: rotate(-30deg) translate(-5%, -120%) !important
+    @media only screen and (min-width 901px)  and (max-width 959px)
+      .portfolio-bottom
+        font-size: 18px;
+        padding: 0 24px;
+      .is-logo
+        left: 24px;
+        top: 15px;
+    @media only screen and (min-width 901px) and (max-width 1263px)
+      .is-part1
+        width: 67px;
+        height: 60px;
+        left: 110px;
+        top: 40px;
+      .is-part2
+        width: 109px;
+        height: 90px;
+        top: 32px;
+        right: -25px;
+      .is-part3
+        width: 67px;
+        height: 56px;
+        left: 144px;
+        top: 114px;
+      &:hover
+        & .is-part1
+          transform: rotate(17.81deg) scale(1.41) translate(79px, -15px)
+        & .is-part2
+          transform: rotate(20.78deg) scale(0.7) translate(-46px, 120px)
+        & .is-part3
+          transform: rotate(-30deg) scale(0.84) translate(25px, -85px)
+        & .is-logo
+          transform: translateY(10px)
+    @media only screen and (min-width 960px) and (max-width 1263px)
+      .is-part1
+        top: 50px;
+      .is-part2
+        top: 42px;
+      .is-part3
+        top: 124px;
+      .portfolio-bottom
+        font-size: 18px;
+        padding: 0 38px;
+        bottom: 15px;
+      .is-logo
+        left: 38px;
+        top: 10px;
+      &:hover
+        & .is-part2
+          transform: rotate(20.78deg) scale(0.7) translate(-46px, 130px)
+    @media only screen and (min-width 1264px)
+      .portfolio-bottom
+        bottom: 30px;
+        transition: transform .6s ease;
+      &:hover
+        & .is-part1
+          transform: rotate(17.81deg) scale(1.41) translate(77px, -28px)
+        & .is-part2
+          transform: rotate(20.78deg) scale(0.7) translate(-56px, 140px)
+        & .is-part3
+          transform: rotate(-30deg) scale(0.84) translate(25px, -136px)

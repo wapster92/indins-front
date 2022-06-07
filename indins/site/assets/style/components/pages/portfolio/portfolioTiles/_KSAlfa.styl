@@ -1,0 +1,54 @@
+
+// KS Alfa
+// ============================================================
+.portfolio-tile-ksalfa
+
+  .is-back
+    z-index: 1
+    background: #d8f0ff
+    background: -moz-linear-gradient(top, #d8f0ff 0%, #fefefe 100%)
+    background: -webkit-linear-gradient(top, #d8f0ff 0%,#fefefe 100%)
+    background: linear-gradient(to bottom, #d8f0ff 0%,#fefefe 100%)
+
+  .is-buildings
+    z-index: 2
+    background-size: contain
+    background-position: bottom center
+    top: unset
+    width: 100%
+    height: 110%
+    left: 0
+    bottom: -19%
+    transform: translate3d(0, 0, 0)
+    transition: transform .8s $prj-ease-easeInOutCirc
+    transition-delay: 0s
+    @media only screen and (max-width: 399px)
+      bottom: -10%
+
+  .is-logo
+    z-index: 3
+    background-size: contain
+    width: 29%
+    height: 35%
+    top: 12%
+    left: 46%
+    transform: translate3d(0, 0, 0)
+    transition: transform .5s $prj-ease-easeInOutCirc
+    transition-delay: 0s
+    @media only screen and (max-width: 399px)
+      width: 39%
+      height: 35%
+      top: 16%
+      left: 41%
+
+  &:hover
+    .is-buildings
+      transform: translate3d(0, 8%, 0)
+      transition-delay: 0s
+      @media only screen and (max-width: 399px)
+        transform: translate3d(0, 8%, 0)
+    .is-logo
+      transform: translate3d(-30%, 9%, 0)
+      transition-delay: .1s
+      @media only screen and (max-width: 399px)
+        transform: translate3d(-30%, 9%, 0)

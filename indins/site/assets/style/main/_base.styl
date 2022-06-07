@@ -1,0 +1,75 @@
+*
+  padding: 0
+  margin: 0
+  box-sizing border-box
+
+html, body
+  font-family $body-font-family
+  font-size $base-font-size
+  color $base-font-color
+  line-height $base-line-height
+  height 100vh
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+code, kbd
+  font-size: 75%
+  font-weight: 400
+
+a
+  text-decoration none
+  outline: none
+  color: $primary
+  font-weight: 400
+  transition: color $base-animation-time $base-animation-timing-function
+
+  &:visited
+    color: $primary
+
+  &:link
+    color: $primary
+
+  &:hover
+    color: $font-hover-orange
+
+p
+  margin-top: $leading
+  margin-bottom: 0
+  &:first-child
+    margin-top: 0
+
+ul, ol
+  padding-left: 30px
+  margin-top: (43/$base-font-size)em
+  margin-bottom: 0
+  @media $display-breakpoints.sm-and-down
+    margin-top: (36/$base-font-size)em
+
+  &:first-child
+    margin-top: 0
+
+  li
+    & + li
+      margin-top: (27/$base-font-size)em
+
+ul
+  list-style none
+
+#__nuxt,
+#__layout,
+#__wrapper
+  min-height: 100vh
+
+#__wrapper
+  display flex
+  flex-direction column
+
+#__content
+  flex 1 1 auto
+  @media $display-breakpoints.sm-and-down
+    padding-top calc(4em + 48px)
+  @media $display-breakpoints.xs-only
+    padding-top calc(3.65em + 48px)
+  @media screen and (max-width: 399px)
+    padding-top calc(2.8em + 48px)

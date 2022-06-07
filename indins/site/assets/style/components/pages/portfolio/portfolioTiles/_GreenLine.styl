@@ -1,0 +1,84 @@
+
+// GreenLine
+// ============================================================
+.portfolio-tile-greenline
+
+  .is-back
+    z-index: 1
+    background: #D6E6B0;
+
+  .is-house
+    z-index: 2
+    width: 90%
+    height: 64%
+    right: 0
+    top: 50%
+    transform: translateY(-50%)
+    left: auto
+    transition: transform .5s $prj-ease-easeInOutCirc
+    background-size: contain
+    @media $display-breakpoints.xs-only
+      width: 64%
+      height: 100%
+
+  .is-logo
+    z-index: 2
+    width: 31%;
+    height: 19%;
+    left: 40px
+    top: 40px
+    background-size: contain
+    transform-origin: top center
+    transform: translate3d(-11%, 0, 0)
+    transition: transform .5s $prj-ease-easeInOutCirc
+    @media screen and (max-width 1203px)
+      left: 25px
+      top 25px
+    @media $display-breakpoints.xs-only
+      width: 24%
+      height: 26%
+      transform: translate3d(-7%, 0, 0)
+
+  &:hover
+    .is-back
+      transform: scale(1.05)
+    .is-logo
+      transform: scale(1.1) translate3d(0%, 10%, 0)
+    .is-house
+      transform: scale(0.9) translate(6%,-50%)
+
+
+.portfolio-item--long
+  .portfolio-tile-greenline
+    .is-house
+      right: -25%;
+      @media $display-breakpoints.xs-only
+        right: 0;
+        width: 64%
+        height: 100%
+    .is-logo
+      left: 10px
+      height: 22%
+    &:hover
+      .is-house
+        transform: scale(1.2) translate(-6%,-40%)
+      .is-logo
+        transform: scale(1.1) translate3d(0%, 10%, 0)
+
+.portfolio-item--tall
+  .portfolio-tile-greenline
+    .is-logo
+      width: 40%;
+      top: 1%;
+      left: 15%;
+    &:hover
+      .is-house
+        transform: scale(1.2) translate(3%, -40%)
+      .is-logo
+        transform: scale(1.1) translate3d(0%, 10%, 0)
+
+
+
+
+
+

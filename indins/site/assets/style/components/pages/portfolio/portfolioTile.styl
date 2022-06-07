@@ -1,0 +1,138 @@
+.portfolio-item
+  position: relative
+  width: 100%
+  overflow: hidden
+
+  @media $display-breakpoints.xs-only
+    grid-column 1 / 3!important
+    grid-row unset!important
+
+  @media only screen and (max-width: 399px)
+    grid-column 1 / 2!important
+    margin-left: auto
+    margin-right: auto
+
+    &.portfolio-item-more
+      width: calc(100% + 48px)
+      max-width: none
+      margin-left: -24px
+      margin-right: -24px
+
+  .portfolio-link
+    position: absolute
+    display: block
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    text-decoration: none
+
+  .portfolio-img
+    position: absolute
+    display: block
+    text-decoration: none
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    overflow: hidden
+
+    &::before
+      content: ''
+      position: absolute
+      z-index: 1
+      width: 100.5%
+      height: 100.5%
+      top: 0
+      left: 0
+      background-repeat: no-repeat
+      background-position center center
+      background-size: cover
+      background-image: inherit
+
+      transform-origin: center center
+      transform: scale(1)
+
+      transition: transform $img-animation-time $img-animation-ease
+      will-change: transform
+
+    &>img
+      position: relative
+      z-index: 2
+      display: block
+      vertical-align: top
+      width: 100%
+      height: 100%
+      opacity: 0
+
+  &:hover
+    .portfolio-img
+      text-decoration: none
+      &::before
+        transform: scale($img-animation-scale)
+
+.portfolio-list-more
+  position: absolute
+  width: 100%
+  height: 100%
+  top: 0
+  left: 0
+  display: flex
+  justify-content: center
+  align-items: center
+  background-repeat: no-repeat
+  background-position center
+  background-size: cover
+  background-image: url('/img/portfolio/back_blue.png')
+
+  .portfolio-list-more-block
+    position: relative
+
+    &::before
+      content: ''
+      position: absolute
+      z-index: 0
+      width: 100%
+      height: 100%
+      top: $portfolio-grid-gap
+      left: ($portfolio-grid-gap * -1)
+      background-color: $white
+
+    .btn-project
+      position: relative
+      z-index: 1
+      margin: 0
+
+.portfolio-bottom
+  position: absolute;
+  z-index: 9
+  bottom: 35px
+  left: 0
+  width: 100%
+  color: #FFFFFF
+  text-shadow: 0 0 30px #001343
+  transition .5s;
+  padding: 0 40px;
+  @media screen and (max-width 1203px)
+    padding: 0 25px;
+    bottom 25px
+  &.color-black
+    color: #494949
+    text-shadow none
+.portfolio-description
+  font-size: 25px
+  line-height: 32px
+  font-weight: bold
+  @media $display-breakpoints.sm-and-md
+    font-size: 18px
+    line-height: 21px
+  @media $display-breakpoints.xs-only
+    font-size: 16px
+    line-height: 19px
+.portfolio-type
+  font-size: 18px
+  line-height: 42px
+  @media $display-breakpoints.sm-and-md
+    font-size: 15px
+  @media $display-breakpoints.xs-only
+    font-size: 15px

@@ -1,0 +1,31 @@
+.page-fade
+  &-enter-active,
+  &-leave-active
+    transition: all .5s ease
+
+  &-enter
+    transform: translateY(-20px)
+    opacity: 0
+
+  &-leave-to
+    transform: translateY(20px)
+    opacity: 0
+
+.show-more
+  &-enter-active,
+  &-leave-active
+    transition: all .5s ease
+
+  &-enter,
+  &-leave-to
+    transform: translateY(-20px)
+    opacity: 0
+
+.slide-down
+  &-enter-active, &-leave-active
+    opacity 1
+    transition transform .5s ease, opacity .5s ease
+
+  &-enter, &-leave-to
+    transform translateY(20px)
+    opacity 0

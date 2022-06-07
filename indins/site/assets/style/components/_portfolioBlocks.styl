@@ -1,0 +1,394 @@
+
+// Text block
+// ============================================================
+.text-block-area
+
+  &.port-under-title
+
+    .page-title + &
+      margin-top: 16px
+      @media $display-breakpoints.xs-only
+        margin-top: 24px
+      @media $display-breakpoints.sm-and-up
+        font-size: 22px
+
+    .section-title + &
+      margin-top: 20px
+
+  &.port-text
+    max-width: 54rem
+
+    .text-block
+      @media only screen and (min-width: 400px)
+        padding: 0 1.5em
+
+    .port-logo-area + &
+      margin-top: 52px
+
+
+// Portfolio logo area
+// ============================================================
+.port-logo-area
+  position: relative
+  margin-top: 52px
+
+  img
+    display: block
+    margin: 0 auto
+    max-height: 80px
+    max-width: 100%
+    width: auto
+
+    &.port-interi
+      max-height: 57px
+
+    &.port-polir
+      max-height: 95px
+
+    &.port-vhor
+      max-height: 92px
+
+    &.port-xpresent
+      max-height: 64px
+
+
+// Portfolio full image block
+// ============================================================
+.port-full-img-area
+  position: relative
+  margin-top: 50px
+
+  .info-block-area + &
+    margin-top: 80px
+
+  img
+    display: block
+    margin: 0 auto
+    max-width: 100%
+    box-shadow: 0 7px 25px rgba($primary, .1)
+
+
+// Portfolio top preview block
+// ============================================================
+.port-top-preview-area
+  position: relative
+  margin-top: -173px
+
+  & > .container
+    position: relative
+
+  img
+    display: block
+    width: 100%
+
+  .port-tp-desk
+    position: relative
+
+    & > img
+      box-shadow: 0 7px 25px rgba($primary, .1)
+
+  .port-tp-mobile
+    position: absolute
+    width: 16.4%
+    right: 10%
+    bottom: 26px
+    @media $display-breakpoints.sm-and-down
+      width: 15.4%
+      right: 13%
+      bottom: 3%
+    @media only screen and (max-width: 399px)
+      width: 21%
+
+
+    &::before
+      content: ''
+      position: absolute
+      z-index: 0
+      width: 148%
+      height: 146%
+      top: -16.5%
+      left: -22%
+      background-repeat: no-repeat
+      background-size: contain
+      background-position: center
+      background-image: url('/img/phone.png')
+
+    & > img
+      position: relative
+      z-index: 1
+      border: 1px solid #d2d2d2
+      box-sizing: content-box
+
+
+// Section title
+// ============================================================
+.section-title
+  h2
+    .port-top-preview-area + &
+      margin-top: 2.6em
+
+
+// Line three images
+// ============================================================
+.port-line-tree-img-area
+  position: relative
+
+  .angular-area
+    padding: 1.5em 0
+    overflow: hidden
+
+    .section-title + &,
+    .text-block-area + &
+      margin-top: 38px
+
+    .angular-back
+      height: 70%
+      top: 15%
+
+  .port-lti-flex
+    display: flex
+    justify-content: center
+    align-items: center
+    margin: 0 -30px
+    @media only screen and (max-width: 769px)
+      margin: 0 -15vw
+    @media only screen and (max-width: 599px)
+      margin: 0 -42vw
+    @media only screen and (max-width: 399px)
+      margin: 0 -52vw
+
+    & > *
+      width: calc(100% / 3 - 60px)
+      margin: 0 30px
+      @media only screen and (max-width: 769px)
+        width: calc(100% / 3 - 50px)
+        margin: 0 25px
+      @media only screen and (max-width: 399px)
+        width: calc(100% / 3 - 20px)
+        margin: 0 10px
+
+    .port-lti-item
+      img
+        display: block
+        width: 100%
+        height: auto
+        box-shadow: 0 7px 25px rgba($primary, .1)
+
+
+// Statistic area
+// ============================================================
+.port-stat-item-area
+  position: relative
+  text-align: center
+  line-height: 1.4
+  font-size: 22px
+  @media $display-breakpoints.sm-and-down
+    font-size: 20px
+
+  .port-st-title
+    position: relative
+    font-size: 34px
+    color: $font-hover-orange
+
+  .port-st-under
+    color: $primary
+
+  .port-st-text
+    margin-top: 6px
+
+// Statistic area
+// ============================================================
+.port-cascade-area
+  position: relative
+  margin-top: 58px
+
+  .port-full-img-area + &
+    margin-top: 78px
+
+  @media only screen and (min-width: 770px)
+    display: grid
+    grid-template-rows: 1fr
+    align-items: center
+
+  @media $display-breakpoints.lg-and-up
+    grid-template-columns: calc(50% + 111px) calc(50% - 111px)
+  @media $display-breakpoints.md-only
+    grid-template-columns: calc(50% + 50px) calc(50% - 50px)
+  @media only screen and (min-width: 770px) and (max-width: 959px)
+    grid-template-columns: 50% 50%
+
+  .port-cascade-col
+    position: relative
+
+    .port-cascade-text
+      @media $display-breakpoints.xs-only
+        font-size: $font-size-mobile
+
+  .port-cascade-img-block
+    position: relative
+    flex: 0 0 auto
+    margin: 0 -50px 0 0
+    width: calc(50% + 50px)
+    & > img
+      display: block
+      box-shadow: 0 7px 25px rgba($primary, .1)
+      width: 100%
+    .cds-cascade&
+      flex: 1 1 auto
+
+    &:nth-child(1)
+      z-index: 3
+      margin-top: 12%
+    &:nth-child(2)
+      z-index: 2
+
+    .cds-cascade&
+      &:nth-child(1)
+        z-index: 1
+        flex-shrink: .4
+        margin-top: 45%
+        width: auto
+      &:nth-child(2)
+        z-index: 2
+        flex-shrink: .5
+        margin-top: 32%
+        width: auto
+      &:nth-child(3)
+        z-index: 3
+        flex-shrink: .6
+        width: auto
+
+    &.port-cascade-img-phone
+      &:nth-child(1)
+        .port-cascade-with-phone&
+          margin-top: 20%
+          & > img
+            box-shadow: none
+
+  .port-cascade-left
+    position: relative
+    @media only screen and (min-width: 770px)
+      grid-column-start: 1
+      grid-column-end: 2
+      grid-row-start: 1
+      grid-row-end: 1
+
+    .angular-area
+      padding-bottom: 0
+      margin-top: 0
+
+      .cds-cascade&
+        padding-bottom: 20%
+        @media only screen and (max-width: 769px)
+          padding-bottom: 10%
+
+      .angular-back
+        height: 60%
+        top: 20%
+
+        .cds-cascade&
+          height: 80%
+          top: 10%
+          @media only screen and (max-width: 769px)
+            height: 90%
+            top: 10%
+
+        .port-cascade-with-phone&
+          height: 80%
+          top: 10%
+
+    .port-cascade-col
+      display: flex
+
+      @media only screen and (min-width: 770px)
+        padding: 0 100px 0 24px
+        margin: 0 0 0 auto
+      @media $display-breakpoints.lg-and-up
+        width: 705px
+      @media $display-breakpoints.md-only
+        width: 522px
+      @media only screen and (max-width: 769px)
+        padding: 0 100px 0 50px
+        max-width: 27em
+        margin: 0 auto
+      @media only screen and (max-width: 399px)
+        padding: 0 74px 0 24px
+
+  .port-cascade-right
+    position: relative
+    @media only screen and (min-width: 770px)
+      grid-column-start: 2
+      grid-column-end: 2
+      grid-row-start: 1
+      grid-row-end: 1
+    @media only screen and (max-width: 769px)
+      margin-top: 35px
+
+    .port-cascade-col
+      @media only screen and (min-width: 770px)
+        margin: 0 auto 0 0
+      @media only screen and (min-width: 960px)
+        padding: 0 24px 0 68px
+      @media only screen and (min-width: 770px) and (max-width: 959px)
+        padding: 0 45px
+      @media $display-breakpoints.lg-and-up
+        width: 483px
+      @media $display-breakpoints.md-only
+        width: 422px
+      @media only screen and (max-width: 769px)
+        padding: 0 50px
+      @media only screen and (max-width: 399px)
+        padding: 0 24px
+
+  &.port-cascade-revers
+    @media $display-breakpoints.lg-and-up
+      grid-template-columns: calc(50% - 111px) calc(50% + 111px)
+    @media $display-breakpoints.md-only
+      grid-template-columns: calc(50% - 50px) calc(50% + 50px)
+    @media only screen and (min-width: 770px) and (max-width: 959px)
+      grid-template-columns: 50% 50%
+
+    .port-cascade-img-block
+      margin: 0 0 0 -50px
+      &:nth-child(1)
+        z-index: 1
+        margin-top: 12%
+      &:nth-child(2)
+        z-index: 2
+
+    .port-cascade-left
+      grid-column-start: 2
+      grid-column-end: 2
+
+      .port-cascade-col
+        @media only screen and (min-width: 770px)
+          padding: 0 24px 0 100px
+          margin: 0 auto 0 0
+        @media only screen and (max-width: 769px)
+          padding: 0 50px 0 100px
+        @media only screen and (max-width: 399px)
+          padding: 0 24px 0 74px
+
+    .port-cascade-right
+      grid-column-start: 1
+      grid-column-end: 2
+
+      .port-cascade-col
+        @media only screen and (min-width: 770px)
+          margin: 0 0 0 auto
+        @media only screen and (min-width: 960px)
+          padding: 0 68px 0 24px
+        @media only screen and (min-width: 770px) and (max-width: 959px)
+          padding: 0 45px
+
+.portfolio-container
+  position relative
+  padding 0 24px
+  flex-grow 1
+  margin auto
+  width 100%
+  height 100%
+  @media $display-breakpoints.lg-and-up
+    max-width 1188px
+  @media $display-breakpoints.md-only
+    max-width 944px

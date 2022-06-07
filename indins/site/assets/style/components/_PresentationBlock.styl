@@ -1,0 +1,77 @@
+.presentation-block
+  margin: 0 0 60px;
+  background: #F9F9F9;
+  min-height: 196px;
+  display: flex;
+  align-items: center;
+  @media $display-breakpoints.md-and-down
+    padding: 23px 0 44px;
+  &__text
+    padding: 20px 20px 20px 0;
+    @media $display-breakpoints.md-and-down
+      padding-right: 0
+      text-align: center;
+    //@media $display-breakpoints.xs-only
+    //  margin-bottom: 20px
+  .container
+    max-width 1188px;
+    margin auto;
+    padding: 0 24px;
+    @media $display-breakpoints.md-and-down
+      max-width 944px
+  .flex-row
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    @media $display-breakpoints.lg-and-up
+      max-width: 1288px;
+    @media $display-breakpoints.md-and-down
+      flex-flow: column;
+
+.presentation-block__btn
+  padding: 20px 0;
+  min-width: 390px;
+  @media $display-breakpoints.md-and-down
+    min-width: 250px;
+    max-width: 390px;
+    width: 100%;
+  button
+    background-color: $btn-bg-color
+    border none;
+    outline none;
+    min-height: 64px;
+    cursor: pointer;
+    width: 100%;
+    transition all $base-animation-time $base-animation-timing-function
+    &:hover
+      background-color $btn-bg-color-hover!important
+    .btn
+      flex 1
+      display flex
+      align-items center
+      justify-content space-between
+      padding 0 28px 0 41px
+      @media $display-breakpoints.xs-only
+        padding 0 20px 0 20px
+      &__icon
+        position relative
+        width 48px
+        height 34px
+        opacity .6
+        transition opacity 0.3s cubic-bezier(0.25, 0.8, 0.5, 1)
+        background-repeat no-repeat
+        background-size contain
+        background-position center
+        background-image url('/img/download.svg')
+        @media $display-breakpoints.xs-only
+          width 44px
+      &__text
+        font-size: 21px
+        font-weight: 400;
+        color: $white;
+        font-family: Lato, Sans-Serif;
+
+
+
+

@@ -1,0 +1,239 @@
+
+// Medtechrais
+// ============================================================
+.portfolio-tile-medtechrais
+  &:hover .is-car
+    transform: translateX(-140px);
+  & .is-back
+    z-index: 1
+    background-color: #CEE7FB
+
+  & .is-car
+    z-index: 3;
+    height: 177px;
+    width: 362px;
+    left: auto;
+    top: auto;
+    bottom: 35px;
+    right: -115px;
+    background-position: right center;
+    transition: transform .6s ease
+
+  & .is-logo
+    z-index: 2
+    background-size: contain
+    background-position: top
+    width: 240px
+    height: 55px
+    top: 35px
+    left: 42px
+
+  & .portfolio-bottom
+    z-index: 2
+    text-shadow: none
+    padding: 0 42px
+    color: #494949
+  @media only screen and (max-width 599px)
+    .is-car
+      width: 215px;
+      height: 105px;
+      bottom: 32%;
+    .portfolio-bottom
+      bottom: 5px;
+      padding: 0 15px;
+    .is-logo
+      width: 150px;
+      left: 15px;
+      top: 5px;
+  @media only screen and (min-width 460px) and (max-width 599px)
+    .is-car
+      width: 260px;
+      height: 127px;
+    .is-logo
+      top: 15px;
+    .portfolio-bottom
+      bottom: 15px;
+.portfolio-item--long //горизонтальная плашка
+  & .portfolio-tile-medtechrais
+    @media only screen and (min-width 600px) and (max-width 800px)
+      .portfolio-bottom
+        padding: 0 20px;
+        bottom: 10px;
+        .portfolio-type
+          font-size: 13px;
+        .portfolio-description
+          font-size: 16px;
+      .is-logo
+        left: 20px;
+        width: 120px;
+        top: 10px;
+      .is-car
+        width: 240px;
+        height: 117px;
+        bottom: 65px;
+    @media only screen and (min-width 801px) and (max-width 959px)
+      .is-car
+        width: 305px;
+        height: 150px;
+      .is-logo
+        width: 180px
+        top: 25px
+        left: 25px
+      .portfolio-bottom
+        padding: 0 25px
+      &:hover .is-car
+        transform: translateX(-140px);
+    @media only screen and (min-width 801px) and (max-width: 920px)
+      .is-car
+        bottom: 75px;
+    @media only screen and (min-width 960px) and (max-width 1263px)
+      .is-car
+        width: 305px;
+        height: 150px;
+      .is-logo
+        width: 200px
+      &:hover .is-car
+        transform: translateX(-140px);
+    @media only screen and (min-width 1264px)
+      .portfolio-bottom
+        bottom: 32px;
+
+.portfolio-item--tall //вертикальная
+  & .portfolio-tile-medtechrais
+    @media only screen and (min-width 600px) and (max-width 959px)
+      .is-car
+        right: -190px;
+        bottom: 133px;
+      .portfolio-bottom
+        font-size: 18px;
+        padding: 0 25px;
+      .is-logo
+        left: 25px;
+        width: 200px;
+      &:hover .is-car
+        transform: translateX(-265px);
+    @media only screen and (min-width 600px) and (max-width 768px)
+      .is-car
+        width: 300px;
+        height: 147px;
+        bottom: 150px;
+      .is-logo
+        width: 120px;
+      &:hover .is-car
+        transform: translateX(-200px);
+    @media only screen and (min-width 600px) and (max-width 878px)
+      .is-logo
+        left: 20px;
+      .portfolio-bottom
+        padding: 0 20px;
+        .portfolio-type
+          font-size: 13px;
+        .portfolio-description
+          font-size: 16px;
+    @media only screen and (min-width 960px)
+      .is-car
+        right: -190px;
+        bottom: 95px;
+      .portfolio-bottom
+        font-size: 18px;
+        padding: 0 38px;
+      .is-logo
+        width: 200px;
+        left: 38px;
+        top: 20px;
+      &:hover .is-car
+        transform: translateX(-202px);
+    @media only screen and (min-width 1264px)
+      .is-car
+        height: 287px;
+        width: 584px;
+        right: -308px;
+        bottom: 133px;
+      .portfolio-bottom
+        font-size: 18px;
+        padding: 0 42px;
+        bottom: 32px;
+      .is-logo
+        width: 240px;
+        left: 42px;
+        top: 35px;
+      &:hover .is-car
+        transform: translateX(-332px);
+
+.portfolio-item--square //квадратная плашка
+  & .portfolio-tile-medtechrais
+    @media only screen and (min-width 600px) and (max-width 753px)
+      .is-car
+        width: 160px;
+        height: 78px;
+        bottom: auto;
+        right: -100px;
+        top: 50%;
+        transform: translateY(-50%)
+      &:hover .is-car
+        transform: translate(-105px, -50%) !important;
+      .portfolio-bottom
+        font-size: 18px;
+        padding: 0 5px;
+        bottom: 5px;
+        .portfolio-type
+          font-size: 11px;
+        .portfolio-description
+          font-size: 14px;
+      .is-logo
+        width: 120px;
+        left: 5px;
+        top: 5px;
+    @media only screen and (min-width 754px) and (max-width 959px)
+      .portfolio-bottom
+        padding: 0 18px;
+        bottom: 15px;
+        .portfolio-type
+          font-size: 13px;
+        .portfolio-description
+          font-size: 16px;
+      .is-logo
+        width: 180px;
+        top: 15px;
+        left: 18px;
+      .is-car
+        width: 160px;
+        height: 78px;
+        bottom: auto;
+        right: -100px;
+        top: 50%;
+        transform: translateY(-50%)
+      &:hover .is-car
+        transform: translate(-140px, -50%) !important;
+
+    @media only screen and (min-width 960px)
+      .is-car
+        height: 130px;
+        width: 265px;
+        right: -140px;
+        bottom: 95px;
+      .portfolio-bottom
+        font-size: 18px;
+        padding: 0 38px;
+      .is-logo
+        width: 200px;
+        left: 38px;
+        top: 20px;
+      &:hover .is-car
+        transform: translateX(-152px);
+    @media only screen and (min-width 1264px)
+      .is-car
+        height: 150px;
+        width: 305px;
+        bottom: 118px;
+        right: -127px;
+      .portfolio-bottom
+        font-size: 18px;
+        padding: 0 42px;
+        bottom: 33px;
+      .is-logo
+       left: 42px;
+       top: 34px;
+       width: 240px;
+      &:hover .is-car
+        transform: translateX(-163px);

@@ -1,0 +1,39 @@
+.logo
+  display block
+  transition: all $animation-time05 $base-animation-timing-function
+  width 4em
+  height 4em
+  color: $primary
+
+  &:hover
+    color: $primary
+
+  &_reverse-color
+    color $white !important
+
+  @media $display-breakpoints.xs-only
+    width: 3.65em
+    height: 3.65em
+  @media screen and (max-width: 399px)
+    width: 2.8em
+    height: 2.8em
+
+  .header_shadow &
+    @media $display-breakpoints.sm-and-down
+      width: 3em
+      height: 3em
+    @media $display-breakpoints.xs-only
+      width: 2.5em
+      height: 2.5em
+    @media screen and (max-width: 399px)
+      width: 2em
+      height: 2em
+
+  svg
+    display: block
+    width 100%
+    height 100%
+    path,
+    rect,
+    polygon
+      fill: currentColor

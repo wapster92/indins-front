@@ -1,0 +1,53 @@
+{
+  "name": "core-site",
+  "version": "1.0.2",
+  "license": "MIT",
+  "author": "INDINS",
+  "private": true,
+  "scripts": {
+    "dev": "NUXT_HOST=0.0.0.0 NUXT_PORT=3000 nuxt",
+    "build": "NODE_ENV=production nuxt build",
+    "start": "pm2 start ecosystem.config.js --env production",
+    "stop": "pm2 stop ecosystem.config.js",
+    "lint": "eslint --fix --ext .js,.vue .",
+    "analyze": "nuxt build --analyze"
+  },
+  "browserslist": [
+    "defaults",
+    "not IE 11"
+  ],
+  "dependencies": {
+    "@nuxtjs/svg-sprite": "^0.5.2",
+    "axios": "^0.21.1",
+    "calltracking": "git+https://dependencies:cgnnUmTavtwzC1mVd_VD@dev.indins.ru/core/nuxt-calltracking.git#v1.0.3",
+    "cookie-universal-nuxt": "^2.1.5",
+    "core-xhr": "git+https://dependencies:FjhTYzfemgnfssNKPpEv@dev.indins.ru/core/core-xhr.git#v1.4.14",
+    "detect-browser": "^5.2.0",
+    "nuxt": "^2.15.6",
+    "swiper": "^6.4.11",
+    "vue": "^2.6.12",
+    "vue-awesome-swiper": "^4.1.1",
+    "vue-lazy-hydration": "^2.0.0-beta.4",
+    "vue-scrollto": "^2.20.0",
+    "vue-server-renderer": "^2.6.12",
+    "vue-social-sharing": "^2.4.7",
+    "vue-template-compiler": "^2.6.12",
+    "vue-the-mask": "^0.11.1",
+    "vue-yandex-maps": "^0.10.9",
+    "vuex": "^3.1.1"
+  },
+  "devDependencies": {
+    "@nuxtjs/style-resources": "^1.2.0",
+    "babel-eslint": "^10.0.1",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-loader": "^2.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-vue": "^4.7.1",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2",
+    "webpack": "^4.39.1"
+  }
+}

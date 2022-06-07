@@ -1,0 +1,29 @@
+.contact-page
+  &__text-block
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    align-items: stretch
+    height: 100%
+
+    & > *
+      &:nth-last-child(2)
+        &:not(.is-bottom)
+          margin-bottom: 1.35rem
+          @media only screen and (max-width: 959px)
+            margin-bottom: .35rem
+
+      &.is-bottom
+        margin-top: auto
+
+    .font-contact-is
+      font-size: 1.3em
+      font-weight: 400
+      @media only screen and (max-width: 1203px)
+        font-size: 1.1em
+    .text-primary
+      color: $primary
+
+    &_text-15
+      @media only screen and (min-width: 960px)
+        max-width: 15em

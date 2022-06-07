@@ -1,0 +1,174 @@
+// Swiper Area
+// ============================================================
+.swiper-area
+  position: relative
+  margin-top: 58px
+  @media $display-breakpoints.sm-and-down
+    margin-top: 51px
+  @media $display-breakpoints.xs-only
+    margin-top: 45px
+
+  &__container
+    position relative
+    padding 0 54px
+    flex-grow 1
+    margin auto
+    width 100%
+    height 100%
+    @media $display-breakpoints.lg-and-up
+      max-width 1188px
+    @media $display-breakpoints.md-only
+      max-width 944px
+    @media $display-breakpoints.sm-and-down
+      padding 0 24px
+
+  &.swiper-for-partners
+    margin-top: 38px
+    @media $display-breakpoints.sm-and-down
+      margin-top: 31px
+    @media $display-breakpoints.xs-only
+      margin-top: 25px
+
+  &.swiper-for-portfolio
+    margin-top: 58px
+    @media $display-breakpoints.sm-and-down
+      margin-top: 51px
+    @media $display-breakpoints.xs-only
+      margin-top: 45px
+
+  &.swiper-for-icons
+    margin-top: 56px
+    @media $display-breakpoints.sm-and-down
+      margin-top: 30px
+    @media $display-breakpoints.xs-only
+      margin-top: 18px
+
+  &>.container
+    position: relative
+    @media $display-breakpoints.md-and-up
+      padding-left: 54px
+      padding-right: 54px
+
+// Swiper Item of Partners
+// ============================================================
+.swiper-item-partners
+  display: block
+  position: relative
+
+  .swiper-partners-logo
+    position: relative
+    display: block
+    width: 100%
+    max-width: 200px
+    margin: 0 auto
+    &>span
+      position: relative
+      display: block
+      opacity: 0
+      transition: opacity $base-animation-time $base-animation-timing-function
+
+    .at-rest
+      opacity: 1
+
+    .on-hover
+      position: absolute
+      width: 100%
+      height: 100%
+      top: 0
+      left: 0
+      opacity: 0
+
+    img
+      display: block
+      width: 100%
+
+  a&
+    display: block
+
+    .swiper-partners-logo
+      transition: filter $base-animation-time $base-animation-timing-function
+
+    &:hover
+      .at-rest
+        opacity: 0
+      .on-hover
+        opacity: 1
+
+// Swiper Arrows
+// ============================================================
+.swiper-arrow-btn
+  position: absolute
+  z-index: 1
+  height: 100%
+  top: 0
+  display: flex
+  justify-content: center
+  align-items: center
+  outline: none
+  opacity: 1
+  transition: opacity $base-animation-time $base-animation-timing-function
+  user-select: none
+  @media $display-breakpoints.sm-and-down
+    display: none
+
+  &>svg
+    display: block
+    width: 45px
+    height: 31px
+    path, rect,
+    polygon
+      fill: $primary
+      transition: fill $base-animation-time $base-animation-timing-function
+
+  &:not(.swiper-button-disabled)
+    &:hover
+      cursor: pointer
+      &>svg
+        path, rect,
+        polygon
+          fill: $font-hover-orange
+
+  &.swiper-button-disabled
+    z-index: 0
+    opacity: .5
+
+  &.swiper-arrow-prev
+    left: 0
+    @media only screen and (min-width: 1280px)
+      left: -20px
+    @media $display-breakpoints.sm-and-down
+      left: 10px
+  &.swiper-arrow-next
+    right: 0
+    @media only screen and (min-width: 1280px)
+      right: -20px
+    @media $display-breakpoints.sm-and-down
+      right: 10px
+
+// Swiper Pagination points
+// ============================================================
+.swiper-points
+  position: relative
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-wrap: wrap
+  margin-top: 15px
+  @media $display-breakpoints.md-and-up
+    display: none
+
+  &>*
+    margin: 5px
+    background-color: $font-dark-grey
+    opacity: .2
+    transition: background-color $base-animation-time $base-animation-timing-function, opacity $base-animation-time $base-animation-timing-function
+
+    &.swiper-pagination-bullet-active
+      background-color: $primary
+      opacity: .6
+
+.swiper-pagination
+  left: 0
+  right: 0
+  margin-left: auto;
+  margin-right: auto;

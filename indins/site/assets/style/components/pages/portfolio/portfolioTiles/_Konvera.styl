@@ -1,0 +1,258 @@
+.portfolio-tile-konvera
+  background: #BCF5F9;
+  .is-back
+    width: 107%;
+    height: 190%;
+    left: -6%;
+    top: unset;
+    bottom: -111%;
+    z-index: 8;
+  .is-logo
+    width: 27%;
+    height: 10%;
+    background-size: contain;
+    top: 11%;
+    left: 5%;
+    transition transform .3s
+  .is-signs
+    width: 48%;
+    height: 117%;
+    background-size: contain;
+    top: 15%;
+    left: unset;
+    right: 12%;
+    z-index: 2;
+    transition transform .3s
+    transition-delay 1s
+  .gaz
+    width: 7%;
+    background-size: contain;
+    z-index: 3;
+    left: 46%;
+    top: 11%;
+    transform: translate3d(0, 50%, 0);
+    transition transform .3s
+    transition-delay .3s
+  .right
+    width: 9.8%;
+    z-index: 3;
+    background-size: contain;
+    left: unset;
+    right: 12%;
+    top: 3%;
+    transform: translateY(63%);
+    transition transform .6s
+    transition-delay .3s
+  .right-block
+    width: 24%;
+    z-index: 4;
+    background-size: contain;
+    top: 23%;
+    left: unset;
+    right: 8%;
+    transform: translateY(23%);
+    transition transform .3s
+    transition-delay .3s
+  .stop
+    width: 8%;
+    z-index: 5;
+    background-size: contain;
+    top: 5%;
+    left: unset;
+    right: 52%;
+    transform: translateY(60%);
+    transition transform .6s
+    transition-delay .6s
+  &:hover
+    .is-logo
+      transform: scale(1.1) translate3d(5%, 0, 0);
+    .is-signs
+      transform: scale(0.7) translate3d(3%, -9%, 0);
+      transition-delay 0s
+    .gaz
+      transform: translate3d(0, 0, 0);
+    .stop
+      transform: translateY(0);
+    .right
+      transform: translateY(0);
+    .right-block
+      transform: translateY(0);
+
+.portfolio-item--square
+  .portfolio-tile-konvera
+    .is-back
+      width: 103%;
+      height: 98%;
+      left: -3%;
+      bottom: -43%;
+      @media $display-breakpoints.xs-only
+        width: 107%;
+        height: 190%;
+        left: -6%;
+        bottom: -111%;
+    .is-logo
+      right: 0
+      left: 0
+      margin: 0 auto;
+      width: 44%;
+      height: 12%;
+      @media $display-breakpoints.xs-only
+        width: 27%;
+        height: 10%;
+        top: 11%;
+        left: 5%;
+        right: unset;
+        margin: 0;
+    .is-signs
+      width: 54%;
+      height: 116%;
+      top: 11%;
+      right: 24%;
+      @media $display-breakpoints.xs-only
+        width: 48%;
+        height: 117%;
+        top: 15%;
+        right: 12%;
+    .gaz
+      width: 13%;
+      left: 14%;
+      top: 21%;
+      @media $display-breakpoints.xs-only
+        width: 7%;
+        left: 46%;
+        top: 11%;
+    .right-block
+      width: 47%;
+      top: 34%;
+      right: -6%;
+      @media $display-breakpoints.xs-only
+        width: 24%;
+        top: 23%;
+        right: 8%;
+    .right
+      width: 19%;
+      right: 2%;
+      top: 14%;
+      @media $display-breakpoints.xs-only
+        width: 9.8%;
+        right: 12%;
+        top: 3%;
+    .stop
+      width: 16%;
+      right: unset;
+      left: 2%;
+      top: 17%;
+      @media $display-breakpoints.xs-only
+        width: 8%;
+        top: 5%;
+        left: unset;
+        right: 52%;
+
+    &:hover
+      .is-logo
+        transform: scale(1.25) translate3d(0, 5%, 0);
+        @media $display-breakpoints.xs-only
+          transform: scale(1.1) translate3d(5%, 0, 0);
+      .is-signs
+        transform: scale(1.06) translate3d(5%, 7%, 0);
+        @media $display-breakpoints.xs-only
+          transform: scale(0.7) translate3d(3%, -9%, 0);
+
+.portfolio-item--tall
+  .portfolio-tile-konvera
+    &:before
+      content: '';
+      position: absolute;
+      bottom 0
+      left: 0
+      width: 100%
+      height: 14%
+      background-color: #2F734A;
+      z-index: 6;
+      @media $display-breakpoints.xs-only
+        display: none;
+    .is-back
+      width: 107%;
+      height: 49%;
+      left: -4%;
+      bottom: -1%;
+      transition transform .3s
+      transition-delay .8s
+      @media $display-breakpoints.xs-only
+        height: 190%;
+        left: -6%;
+        bottom: -111%;
+    .is-signs
+      width: 82%;
+      height: 117%;
+      top: 10%;
+      right: 10%;
+      @media $display-breakpoints.xs-only
+        width: 48%;
+        height: 117%;
+        top: 15%;
+        right: 12%;
+    .is-logo
+      right: 0
+      left: 0
+      top: 8%
+      margin: 0 auto;
+      width: 55%;
+      height: 12%;
+      @media $display-breakpoints.xs-only
+        width: 27%;
+        height: 10%;
+        top: 11%;
+        left: 5%;
+        right: unset;
+        margin: 0;
+    .gaz
+      width: 13.5%;
+      left: 13.5%;
+      top: 3%;
+      @media $display-breakpoints.xs-only
+        width: 7%;
+        left: 46%;
+        top: 11%;
+    .right-block
+      width: 49%;
+      top: 9%;
+      right: -6%;
+      @media $display-breakpoints.xs-only
+        width: 24%;
+        top: 23%;
+        right: 8%;
+    .right
+      width: 19.5%;
+      z-index: 3;
+      right: 3%;
+      top: -0.5%;
+      @media $display-breakpoints.xs-only
+        width: 9.8%;
+        right: 12%;
+        top: 3%;
+
+    .stop
+      width: 16%
+      right: unset;
+      left: 1%;
+      top: 1%
+      @media $display-breakpoints.xs-only
+        width: 8%;
+        top: 5%;
+        left: unset;
+        right: 52%;
+    &:hover
+      .is-back
+        transform translateY(-14%)
+        transition-delay 0s
+        @media $display-breakpoints.xs-only
+          transform translateY(0)
+      .is-logo
+        transform: scale(1.1) translate3d(0, 0%, 0);
+        @media $display-breakpoints.xs-only
+          transform: scale(1.1) translate3d(5%, 0, 0);
+      .is-signs
+        transform: scale(0.7) translate3d(3%, -15%, 0);
+        @media $display-breakpoints.xs-only
+          transform: scale(0.7) translate3d(3%, -9%, 0);

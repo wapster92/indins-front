@@ -1,0 +1,244 @@
+
+// Detailing
+// ============================================================
+.portfolio-tile-zavod-kontakt
+
+  .is-back
+    z-index: 1
+
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+
+    background: #6480c9
+    background: -moz-radial-gradient(center, ellipse cover, #6480c9 0%, #f9a88f 100%)
+    background: -webkit-radial-gradient(center, ellipse cover, #6480c9 0%,#f9a88f 100%)
+    background: radial-gradient(ellipse at center, #6480c9 0%,#f9a88f 100%)
+
+    &::after
+      content: ''
+      position: absolute
+      width: 100%
+      height: 100%
+      top: 0
+      left: 0
+      background: #f9a88f
+      background: -moz-radial-gradient(center, ellipse cover, #f9a88f 0%, #6480c9 100%)
+      background: -webkit-radial-gradient(center, ellipse cover, #f9a88f 0%,#6480c9 100%)
+      background: radial-gradient(ellipse at center, #f9a88f 0%,#6480c9 100%)
+
+      opacity: 0
+      transition: opacity 0.3s $prj-ease-easeInOutCubic
+
+  .is-detail
+    z-index: 2
+
+  .is-detail-0
+    z-index: 3
+    background-position: center
+    background-size: contain
+
+    width: 28%
+    height: 28%
+    top: -6%
+    left: 26%
+
+    transform-origin: center
+    transform: translate3d(0, 0, 0)
+    transition: transform 0.8s $prj-ease-easeInOutQuint
+    transition-delay: 0s
+
+  .is-detail-1
+    z-index: 4
+    background-position: center
+    background-size: contain
+
+    width: 23%
+    height: 23%
+    top: 30%
+    left: -9%
+
+    transform-origin: center
+    transform: translate3d(0, 0, 0)
+    transition: transform 0.8s $prj-ease-easeInOutQuint
+    transition-delay: 0s
+
+  .is-detail-2
+    z-index: 5
+    background-position: center
+    background-size: contain
+
+    width: 28%
+    height: 25%
+    top: 67%
+    left: -4%
+
+    transform-origin: center
+    transform: translate3d(0, 0, 0)
+    transition: transform 0.8s $prj-ease-easeInOutQuint
+    transition-delay: 0s
+
+  .is-detail-3
+    z-index: 6
+    background-position: center
+    background-size: contain
+
+    width: 8%
+    height: 8%
+    top: 59%
+    left: 52%
+
+    transform-origin: center
+    transform: translate3d(0, 0, 0)
+    transition: transform 0.8s $prj-ease-easeInOutQuint
+    transition-delay: 0s
+
+  .is-detail-4
+    z-index: 7
+    background-position: center
+    background-size: contain
+
+    width: 13%
+    height: 12%
+    top: 32%
+    left: 61%
+
+    transform-origin: center
+    transform: translate3d(0, 0, 0)
+    transition: transform 0.8s $prj-ease-easeInOutQuint
+    transition-delay: 0s
+
+  .is-detail-5
+    z-index: 8
+    background-position: center
+    background-size: contain
+
+    width: 20%
+    height: 20%
+    top: 66%
+    left: 31%
+
+    transform-origin: center
+    transform: translate3d(0, 0, 0)
+    transition: transform 0.8s $prj-ease-easeInOutQuint
+    transition-delay: 0s
+
+  .is-detail-6
+    z-index: 9
+    background-position: center
+    background-size: contain
+
+    width: 27%
+    height: 30%
+    top: 78%
+    left: 56%
+
+    transform-origin: center
+    transform: translate3d(0, 0, 0)
+    transition: transform 0.8s $prj-ease-easeInOutQuint
+    transition-delay: 0s
+
+  .is-detail-7
+    z-index: 10
+    background-position: center
+    background-size: contain
+
+    width: 15%
+    height: 15%
+    top: 33%
+    left: 18%
+
+    transform-origin: center
+    transform: translate3d(0, 0, 0)
+    transition: transform 0.8s $prj-ease-easeInOutQuint
+    transition-delay: 0s
+
+  .is-detail-8
+    z-index: 11
+    background-position: center
+    background-size: contain
+
+    width: 36%
+    height: 36%
+    top: 4%
+    left: 67%
+
+    transform-origin: center
+    transform: translate3d(0, 0, 0)
+    transition: transform 0.8s $prj-ease-easeInOutQuint
+    transition-delay: 0s
+
+  .is-detail-9
+    z-index: 11
+    background-position: center
+    background-size: contain
+
+    width: 25%
+    height: 25%
+    top: 49%
+    left: 72%
+
+    transform-origin: center
+    transform: translate3d(0, 0, 0)
+    transition: transform 0.8s $prj-ease-easeInOutQuint
+    transition-delay: 0s
+
+  .is-logo-back
+    z-index: 2
+
+    width: 4.5em
+    height: 4.5em
+    top: calc(50% - 2.25em)
+    left: calc(50% - 2.25em)
+
+    background-color: #dedae3
+    border-radius: 50%
+    transform-origin: center
+    transform: scale(1)
+    transition: transform 0.8s $prj-ease-easeInOutQuint
+    transition-delay: 0s
+
+  .is-logo
+    z-index: 3
+    background-position: center
+    background-size: contain
+
+    width: 100%
+    height: 4em
+    top: calc(50% - 2em)
+    left: 0
+
+    transform-origin: center
+    transform: translate3d(0, 0, 0)
+    transition: transform 0.6s $prj-ease-easeInOutCubic
+    transition-delay: 0s
+
+  &:hover
+    .is-back
+      &::after
+        opacity: 1
+    .is-detail-0
+      transform: translate3d(134%, 20%, 0)
+    .is-detail-1
+      transform: translate3d(95%, -100%, 0)
+    .is-detail-2
+      transform: translate3d(-15%, -130%, 0)
+    .is-detail-3
+      transform: translate3d(200%, -80%, 0)
+    .is-detail-4
+      transform: translate3d(-122%, -140%, 0)
+    .is-detail-5
+      transform: translate3d(-120%, 0%, 0)
+    .is-detail-6
+      transform: translate3d(-100%, 10%, 0)
+    .is-detail-7
+      transform: translate3d(20%, 100%, 0)
+    .is-detail-8
+      transform: translate3d(20%, 70%, 0)
+    .is-detail-9
+      transform: translate3d(-20%, 80%, 0)
+    .is-logo-back
+      transform: scale(1.2)
+    .is-logo
+      transform: translate3d(0, 0, 0)

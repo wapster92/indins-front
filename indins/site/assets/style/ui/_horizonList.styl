@@ -1,0 +1,174 @@
+
+// Horizon Area
+// ============================================================
+.horizon-list-area,
+.section-title + .horizon-list-container
+  margin-top: 59px
+
+.horizon-list-container
+  padding 0 24px
+  flex-grow 1
+  margin auto
+  width 100%
+  height 100%
+  @media $display-breakpoints.lg-and-up
+    max-width 1188px
+  @media $display-breakpoints.md-only
+    max-width 944px
+
+.horizon-list-area
+  .quotation-area + &
+    margin-top: 73px
+  .site-type-area + &
+    margin-top: 5em
+    @media $display-breakpoints.sm-and-down
+      margin-top: 4em
+
+.horizon-list-desktop
+  @media $display-breakpoints.sm-and-down
+    display: none
+
+.horizon-list-mobile
+  @media $display-breakpoints.md-and-up
+    display: none
+
+
+// Horizon List
+// ============================================================
+.horizon-list-flex
+  display: flex
+  justify-content: flex-start
+  align-items: stretch
+
+  &>*
+    flex: 0 0 auto
+
+  .horizon-list-side-left
+    width: 56.5%
+
+  .horizon-list-side-right
+    width: 43.5%
+
+  .angular-area
+    width: 100%
+    height: 100%
+    margin: 0
+    padding: 0
+
+    .horizon-item-block
+      position: relative
+      z-index: 1
+      padding: 30px 60px 30px 140px
+      display: flex
+      flex-direction: column
+      min-height 400px
+      @media $display-breakpoints.md-and-down
+        padding: 50px 40px 60px 120px
+
+
+// Horizon Nav
+// ============================================================
+.horizon-nav-flex
+  display: flex
+  flex-direction: column
+  justify-content: flex-start
+  align-items: stretch
+  padding: 1.6em 0
+  height: 100%
+
+  .horizon-nav-item
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    padding: .3em 0
+
+    &+.horizon-nav-item
+      margin-top: .6em
+
+    .icon
+      flex: 0 0 auto
+      margin: 0 3em 0 3em
+      opacity: 0
+      transition: opacity $base-animation-time $base-animation-timing-function
+      @media $display-breakpoints.md-and-down
+        margin: 0 2em 0 2em
+
+      svg
+        display: block
+        width: 45px
+        height: 31px
+        path, rect,
+        polygon
+          fill: $primary
+
+    .name
+      flex: 1 1 auto
+      font-size: 22px
+      line-height: 1.2
+      color: $font-dark-grey
+      transition: color $base-animation-time $base-animation-timing-function
+      user-select: none
+      @media $display-breakpoints.md-and-down
+        font-size: 20px
+
+      &:hover
+        cursor: pointer
+        color: $font-hover-orange
+
+    &.active
+      .icon
+        opacity: 1
+      .name
+        color: $primary
+
+.technologies
+  .horizon-nav-flex
+    .horizon-nav-item
+      &+.horizon-nav-item
+        margin-top: 4px
+// Horizon swipe item
+// ============================================================
+.swiper-for-horizon
+  margin-top: 36px
+
+  &__container
+    padding 0 24px
+    flex-grow 1
+    margin auto
+    width 100%
+    height 100%
+    @media $display-breakpoints.lg-and-up
+      max-width 1188px
+    @media $display-breakpoints.md-only
+      max-width 944px
+
+  .swiper-points
+    left: 0
+    right: 0
+    margin: 35px auto 0;
+
+.horizon-swipe-item
+  position: relative
+  max-width: 24em
+  margin: 0 auto
+
+  .is-icon
+    position: relative
+    height: 85px
+
+    &>span
+      position: absolute
+      display: block
+      width: 100%
+      height: 100%
+      top: 0
+      left: 0
+      background-repeat: no-repeat
+      background-position: center
+      background-size: contain
+
+  .is-title
+    margin-top: (26/$base-font-size)em
+
+  .is-text
+    margin-top: 1em

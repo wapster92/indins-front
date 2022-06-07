@@ -1,0 +1,114 @@
+
+// Detailing
+// ============================================================
+.portfolio-tile-promed
+
+  .is-back
+    z-index: 1
+
+    width: 120%
+    height: 100%
+    top: 0
+    left: 0
+
+    transform-origin: center
+    transform: translate3d(0, 0, 0)
+    transition: transform .8s $prj-ease-easeInOutCubic
+    transition-delay: 0s
+
+  .is-stethoscope
+    z-index: 2
+    background-size: contain
+    background-position: left center
+
+    width: 38%
+    height: 74%
+    top: 14%
+    left: 62%
+
+    transform-origin: center
+    transform: translate3d(0, 0, 0)
+    transition: transform .8s $prj-ease-easeInOutCubic
+    transition-delay: 0s
+    @media only screen and (max-width: 399px)
+      left: 67%
+
+  .is-logo
+    z-index: 3
+    background-position: left center
+    background-size: contain
+
+    width: 32%;
+    height: 17%;
+    top: 11%;
+    left: 8%;
+
+    transform-origin: center
+    transform: translate3d(0, 0, 0)
+    transition: transform 1s $prj-ease-easeInOutCubic
+    transition-delay: 0s
+
+  &:hover
+    .is-back
+      transform: translate3d(-15%, 0, 0)
+    .is-stethoscope
+      transform: scale(1.16) translate3d(19%, 0, 0);
+    .is-logo
+      transform: scale(1.15) translate3d(8%, 0, 0);
+
+.portfolio-item--square
+  .portfolio-tile-promed
+    .is-logo
+      width: 55%;
+      top: 9%;
+      left: 11%;
+      @media $display-breakpoints.xs-only
+        width: 32%;
+        top: 11%;
+        left: 8%;
+    .is-stethoscope
+      width: 46%;
+      top: 13%;
+      left: 65%
+      @media $display-breakpoints.xs-only
+        width: 38%
+        top: 14%
+        left: 62%
+    &:hover
+      .is-stethoscope
+        transform: scale(1.16) translate3d(13%, 0, 0);
+        @media $display-breakpoints.xs-only
+          transform: scale(1.16) translate3d(19%, 0, 0);
+      .is-logo
+        transform: scale(1.07) translate3d(3%, 0, 0);
+        @media $display-breakpoints.xs-only
+          transform: scale(1.15) translate3d(8%, 0, 0);
+
+.portfolio-item--tall
+  .portfolio-tile-promed
+    .is-logo
+      left: 0;
+      right: 0
+      margin 0 auto
+      top: 1%
+      width: 66%;
+      @media $display-breakpoints.xs-only
+        margin 0
+        width: 32%;
+        top: 11%;
+        left: 8%;
+    .is-stethoscope
+      left: 0
+      right: 0
+      margin: 0 auto;
+      width: 80%
+      top: 13%
+      @media $display-breakpoints.xs-only
+        width: 38%
+        top: 14%
+        left: 62%
+    &:hover
+      .is-logo
+        transform: scale(1.18) translate3d(0%, 0, 0);
+        @media $display-breakpoints.xs-only
+          transform: scale(1.15) translate3d(8%, 0, 0);

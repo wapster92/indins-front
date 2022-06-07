@@ -1,0 +1,246 @@
+.portfolio-tile-spbiir
+
+  .is-back
+    z-index: 1
+    background-color: #E2E5EE
+
+  .is-students
+    z-index: 2
+    background-position: bottom left
+    height: 62%
+    width: 40%;
+    top: -1%;
+    right: 0;
+    left auto
+    transform-origin: bottom center
+    transition: transform .4s ease
+  .is-wave-back
+    height: 47%
+    z-index: 3;
+    top: unset;
+    bottom: 0;
+    background-position: center top;
+    transition: transform .3s ease
+  .is-wave
+    z-index: 4
+    background-size: cover
+    background-position: top center
+    width: 100%
+    height: 45%
+    top: unset
+    left: 0
+    bottom: 0
+    transform-origin: bottom center
+    transition: transform .3s ease
+
+  .is-wave-fornt
+    height: 38%
+    bottom: 0;
+    top: unset;
+    z-index: 5;
+    background-position: top center
+    transition: transform .3s ease
+
+  .is-logo
+    z-index: 4
+    background-size: contain
+    width: 21.4%;
+    height: 21.4%;
+    left: 1%;
+    top: 14%;
+    transform-origin: top center
+    transition: transform .4s $prj-ease-easeInOutCirc
+
+  &:hover
+    .is-students
+      transform: scale(1.4) translate3d(-15%, 7%, 0)
+    //.is-wave
+    //  transform: scale(1.05)
+    .is-logo
+      transform: scale(1.22) translate3d(7%, 3%, 0)
+    .is-wave-back
+      //
+      transform: translateY(1%);
+    .is-wave
+      //
+      transform: translateY(6%);
+    .is-wave-fornt
+      //
+      transform: translateY(2%);
+
+.portfolio-item--tall
+  .portfolio-tile-spbiir
+    .is-students
+      height: 40%
+      top: 23%;
+      right: 0;
+      @media $display-breakpoints.xs-only
+        height: 51%
+        left: auto;
+        top: 9%;
+        right: -43%;
+    .is-wave
+      @media $display-breakpoints.xs-only
+        height: 47%;
+    .is-logo
+      top: -13px;
+      @media $display-breakpoints.xs-only
+        top: 22px;
+
+.portfolio-item--square
+  .portfolio-tile-spbiir
+    .is-students
+      height: 52%;
+      width: 58%;
+      top: 2%;
+      right: 0%;
+      @media $display-breakpoints.xs-only
+        height: 62%
+        width: 40%;
+        top: -1%;
+    .is-wave-back, .is-wave, .is-wave-fornt
+      background-position: top;
+      background-size contain
+      @media $display-breakpoints.xs-only
+        background-position: center top;
+        background-size: cover;
+      &:before
+        content: '';
+        position: absolute;
+        width: 100%
+        height: 100%
+        bottom: -55%
+        left: 0
+        @media $display-breakpoints.xs-only
+          display: none;
+    .is-wave-back
+      height: 55%
+      @media $display-breakpoints.xs-only
+        height: 47%
+      &:before
+        background: #E2E5EE;
+    .is-wave
+      height: 52%;
+      @media $display-breakpoints.xs-only
+        height: 45%
+      &:before
+        background: #9DA9CC;
+    .is-wave-fornt
+      height: 44%;
+      @media $display-breakpoints.xs-only
+        height: 38%
+      &:before
+        background: #6C80BA;
+    .is-logo
+      width: 19.4%;
+      height: 19.4%;
+      left: 11%;
+      top: 11%;
+      @media $display-breakpoints.xs-only
+        width: 21.4%;
+        height: 21.4%;
+        left: 1%;
+        top: 14%;
+
+    &:hover
+      .is-students
+        transform: scale(1.1) translate3d(-3%, 0%, 0);
+        @media $display-breakpoints.xs-only
+          transform: scale(1.4) translate3d(-15%, 7%, 0)
+      .is-logo
+        transform: scale(1.22) translate3d(4%, -1%, 0);
+        @media $display-breakpoints.xs-only
+          transform: scale(1.22) translate3d(7%, 3%, 0)
+      .is-wave-back
+        transform: translateY(0%);
+        @media $display-breakpoints.xs-only
+          transform: translateY(1%);
+      .is-wave-fornt
+        transform: translateY(-1%);
+        @media $display-breakpoints.xs-only
+          transform: translateY(2%);
+      .is-wave
+        transform: translateY(0%);
+        @media $display-breakpoints.xs-only
+          transform: translateY(6%);
+
+.portfolio-item--tall
+  .portfolio-tile-spbiir
+    .is-students
+      height: 39%;
+      width: 91%;
+      top: 26%;
+      right: -4%;
+      @media $display-breakpoints.xs-only
+        height: 62%
+        width: 40%;
+        top: -1%;
+    .is-wave-back, .is-wave, .is-wave-fornt
+      background-position: top;
+      background-size contain
+      @media $display-breakpoints.xs-only
+        background-position: center top;
+        background-size: cover;
+      &:before
+        content: '';
+        position: absolute;
+        width: 100%
+        height: 100%
+        bottom: -33%
+        left: 0
+        @media $display-breakpoints.xs-only
+          display: none;
+    .is-wave-back
+      height: 38.5%;
+      @media $display-breakpoints.xs-only
+        height: 47%
+      &:before
+        background: #E2E5EE;
+    .is-wave
+      height: 52%;
+      bottom: -16%;
+      @media $display-breakpoints.xs-only
+        height: 45%
+        bottom: 0
+      &:before
+        background: #9DA9CC;
+    .is-wave-fornt
+      height: 44%;
+      bottom: -14%;
+      @media $display-breakpoints.xs-only
+        height: 38%
+        bottom: 0;
+      &:before
+        background: #6C80BA;
+    .is-logo
+      width: 27.4%;
+      height: 21.4%;
+      left: 10%;
+      top: 1%;
+      @media $display-breakpoints.xs-only
+        width: 21.4%;
+        height: 21.4%;
+        left: 1%;
+        top: 14%;
+
+    &:hover
+      .is-students
+        transform: scale(1.1) translate3d(-8%, 0%, 0);
+        @media $display-breakpoints.xs-only
+          transform: scale(1.4) translate3d(-15%, 7%, 0)
+      .is-logo
+        transform: scale(1.22) translate3d(12%, -1%, 0);
+        @media $display-breakpoints.xs-only
+          transform: scale(1.22) translate3d(7%, 3%, 0)
+      .is-wave-back
+        transform: translateY(-2%);
+        @media $display-breakpoints.xs-only
+          transform: translateY(1%);
+      .is-wave-fornt
+        transform: translateY(-4%);
+        @media $display-breakpoints.xs-only
+          transform: translateY(2%);
+      .is-wave
+        transform: translateY(-1%);
+        @media $display-breakpoints.xs-only
+          transform: translateY(6%);

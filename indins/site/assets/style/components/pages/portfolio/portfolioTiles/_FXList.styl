@@ -1,0 +1,202 @@
+
+// FX List
+// ============================================================
+.portfolio-tile-fxlist
+
+  .is-back
+    z-index: 1
+    background-color: #4698da
+
+  .is-square
+    z-index: 2
+    background-color: $white
+    opacity: .6
+    border-radius: 10px
+    box-shadow: 0 0 5px rgba(0,0,0,0.3)
+    transform: translate3d(0, 0, 0)
+    transition: transform .5s $prj-ease-easeInOutCirc
+
+  .is-square-one
+    z-index: 2
+    width: 61%
+    height: 45%
+    top: -7%
+    left: -3%
+    transition-delay: .3s
+    @media only screen and (max-width: 399px)
+      width: 90%
+      height: 70%
+      top: -18%
+      left: -13%
+
+  .is-square-two
+    z-index: 3
+    width: 21%
+    height: 40%
+    top: 85%
+    left: 87%
+    transition-delay: .1s
+    @media only screen and (max-width: 599px)
+      left: 57%
+    @media only screen and (max-width: 399px)
+      width: 21%
+      height: 40%
+      top: 77%
+      left: -12%
+
+  .is-square-three
+    z-index: 4
+    width: 40%
+    height: 27%
+    top: 44%
+    left: 74%
+    transition-delay: .2s
+    @media only screen and (max-width: 599px)
+      width: 20%
+      top: -6%
+      left: 84%
+    @media only screen and (max-width: 399px)
+      width: 36%
+      height: 60%
+      top: 17%
+      left: 94%
+
+  .is-pad
+    z-index: 5
+    background-size: contain
+    transition: transform .6s $prj-ease-easeInOutCirc
+
+  .is-pad-one
+    z-index: 5
+    width: 50%
+    height: 63%
+    top: 27%
+    left: 70%
+    transition-delay: .2s
+    @media only screen and (max-width: 599px)
+      width: 30%
+      left: 75%
+    @media only screen and (max-width: 399px)
+      width: 43%
+      height: 68%
+      top: 68%
+      left: 78%
+
+  .is-pad-two
+    z-index: 6
+    width: 59%
+    height: 67%
+    top: 16%
+    left: -22%
+    transition-delay: 0s
+    @media only screen and (max-width: 599px)
+      width: 39%
+      height: 47%
+      left: -12%
+    @media only screen and (max-width: 399px)
+      width: 44%
+      height: 67%
+      top: 59%
+      left: 49%
+
+  .is-pad-three
+    z-index: 7
+    width: 65%
+    height: 74%
+    top: 12%
+    left: 12%
+    transition-delay: .1s
+    @media only screen and (max-width: 599px)
+      width: 25%
+      height: 44%
+      top: 22%
+    @media only screen and (max-width: 399px)
+      width: 41%
+      height: 74%
+      top: 44%
+      left: 54%
+
+  .is-pad-fore
+    z-index: 8
+    width: 60%
+    height: 67%
+    top: -14%
+    left: 45%
+    transition-delay: .3s
+    @media only screen and (max-width: 599px)
+      width: 30%
+      top: 6%
+      left: 35%
+    @media only screen and (max-width: 399px)
+      width: 46%
+      height: 72%
+      top: 7%
+      left: 63%
+
+  .is-logo
+    z-index: 9
+    background-size: contain
+    width: 37%
+    height: 9%
+    left: 40px
+    top: 40px
+    transform: translate3d(0, 0, 0)
+    transition: transform .7s $prj-ease-easeInOutCirc
+    @media screen and (max-width 1203px)
+      left: 25px
+      top 25px
+    @media only screen and (max-width: 599px)
+      width: 40%
+      height: 13%
+    @media only screen and (max-width: 399px)
+      width: 48%
+      height: 19%
+
+  &:hover
+    .is-square-one
+      transform: translate3d(29%, -20%, 0)
+      transition-delay: .1s
+      @media only screen and (max-width: 399px)
+        transform: translate3d(37%, 0, 0)
+    .is-square-two
+      transform: translate3d(-483%, -27%, 0)
+      transition-delay: .3s
+      @media only screen and (max-width: 599px)
+        transform: translate3d(-33%, 3%, 0)
+      @media only screen and (max-width: 399px)
+        transform: translate3d(-6%, -135%, 0)
+    .is-square-three
+      transform: translate3d(-87%, 130%, 0)
+      transition-delay: .2s
+      @media only screen and (max-width: 399px)
+        transform: translate3d(-139%, 125%, 0)
+
+    .is-pad-one
+      transform: translate3d(-47%, -4%, 0) rotate(10deg)
+      transition-delay: .1s
+      @media only screen and (max-width: 399px)
+        transform: translate3d(-74%, -14%, 0) rotate(10deg)
+    .is-pad-two
+      transform: translate3d(-20%, -34%, 0) rotate(70deg)
+      transition-delay: .3s
+      @media only screen and (max-width: 399px)
+        transform: translate3d(-133%, -94%, 0) rotate(70deg)
+    .is-pad-three
+      transform: translate3d(-50%, 0%, 0) rotate(40deg)
+      transition-delay: .2s
+      @media only screen and (max-width: 399px)
+        transform: translate3d(-208%, 30%, 0) rotate(40deg)
+    .is-pad-fore
+      transform: translate3d(17%, 18%, 0)
+      transition-delay: 0s
+      @media only screen and (max-width: 599px)
+        transform: translate3d(-23%, 13%, 0) rotate(50deg)
+      @media only screen and (max-width: 399px)
+        transform: translate3d(7%, 24%, 0)
+
+    .is-logo
+      transform: translate3d(44%, -10%, 0)
+      @media only screen and (max-width: 599px)
+        transform: translate3d(40%, -10%, 0)
+      @media only screen and (max-width: 399px)
+        transform: translate3d(35%, 0%, 0)

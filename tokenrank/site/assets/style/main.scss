@@ -1,0 +1,38 @@
+@import "vars";
+@import "fonts";
+
+
+* {
+  box-sizing: border-box;
+  &::before, &::after {
+    box-sizing: border-box;
+  }
+}
+body, html {
+  height: 100%;
+  width: 100%;
+  font: 16px Roboto sans-serif;
+  line-height: 1.2;
+}
+a {
+  text-decoration: underline;
+  color: $primary-blue;
+  &:hover, &:focus {
+    text-decoration: none;
+  }
+}
+.container {
+  max-width: 1232px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+.info-text {
+  font-size: 12px;
+  font-weight: 400;
+  color: #404967;
+  @include min-media($lg) {
+    font-size: 14px;
+  }
+}
+

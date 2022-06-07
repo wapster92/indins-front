@@ -1,0 +1,92 @@
+.portfolio-tile-1box
+  .is-logo
+    width: 167.05px;
+    height: 50px;
+    left: 26px;
+    top: 39px;
+    z-index: 2;
+    background-size: 100% auto;
+    transition transform ease .3s
+    @media (max-width 750px)
+      top: 15px;
+      left: 20px;
+  .is-man, .is-man-hover
+    height: 100%
+    width: 45%
+    right: 0;
+    left: auto;
+    bottom: 0;
+    z-index: 1;
+    background-size: cover;
+    transition opacity .5s ease
+  .is-man-tall
+    z-index: 2;
+    height: 75%;
+    width: 100%;
+    bottom: 0;
+    top: auto;
+    background-position: center top;
+    transition opacity .5s ease
+    display: none;
+  .is-man-tall-hover
+    z-index: 2;
+    height: 75%;
+    width: 100%;
+    bottom: 0;
+    top: auto;
+    background-position: center top;
+    transition opacity .5s ease
+    opacity 0
+    display: none;
+  .is-man-hover
+    opacity 0
+  &:hover
+    .is-man
+      opacity 0
+    .is-man-hover
+      opacity 1
+    .is-man-tall
+      opacity 0
+    .is-man-tall-hover
+      opacity 1
+    .is-logo
+      transform scale(1.1)
+
+.portfolio-item--tall
+  .portfolio-tile-1box
+    .is-man, .is-man-hover
+      display: none;
+      @media $display-breakpoints.xs-only
+        display: block;
+    .is-man-tall, .is-man-tall-hover
+      display: block;
+      @media $display-breakpoints.xs-only
+        display: none;
+    .is-logo
+      @media $display-breakpoints.sm-and-down
+        width: 130px;
+
+.portfolio-item--square
+  .portfolio-tile-1box
+    .is-man
+      width: 85%;
+      @media $display-breakpoints.xs-only
+        width: 45%
+    .is-man-hover
+      width: 85%;
+      @media $display-breakpoints.xs-only
+        width: 45%
+    .is-logo
+      width: 125px;
+      @media $display-breakpoints.sm-and-down
+        width: 110px;
+      @media $display-breakpoints.xs-only
+        width: 130px;
+    /*&:hover
+      .is-logo
+        transform scale(1.05)*/
+.portfolio-item--long
+  .portfolio-tile-1box
+    .is-logo
+      @media $display-breakpoints.xs-only
+        width: 130px;

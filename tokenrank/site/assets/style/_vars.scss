@@ -1,0 +1,65 @@
+//colors
+//primary
+$primary-blue: #3F629F;
+$primary-yellow: #FCD535;
+$primary-light-blue: #E5EBF5;
+$primary-logo: #F0B90B;
+//secondary
+$secondary-medium-black: #404967;
+$secondary-text-button: #212833;
+$secondary-gray: #BDC4D3;
+$secondary-light-color: #F4F7FF;
+$secondary-green: #A2D76A;
+$secondary-red: #EF5C49;
+$secondary-white: #fff;
+
+$gradient-main--button: linear-gradient(rgba(252, 213, 53, 0.7) 26.56%, #F0B90B 83.33%);
+
+//sizes
+$default-logo: 14px;
+$default-mobile: 12px;
+
+//flex mixins
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@mixin flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@mixin flex-start {
+  display: flex;
+  align-items: center;
+}
+
+//media query breakpoints
+$sm: 540px;
+$md: 720px;
+$lg: 960px;
+$xl: 1140px;
+
+//transition default
+$transition-linear: all 0.3s linear;
+$transition-ease: all 0.3s ease;
+
+//media mixins
+@mixin min-media($min) {
+  @media only screen and (min-width: $min) {
+    @content;
+  }
+}
+
+@mixin min-max-media($min, $max) {
+  @media only screen and (min-width: $min) and (max-width: $max) {
+    @content;
+  }
+}
+
+@mixin max-media($max) {
+  @media only screen and (max-width: $max) {
+    @content;
+  }
+}

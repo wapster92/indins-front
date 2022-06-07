@@ -1,0 +1,120 @@
+.modal
+  position relative
+  display flex
+  flex-direction column
+  flex-wrap nowrap
+  justify-content center
+  align-items stretch
+  padding 3em
+  margin 54px
+  background-color: $white
+  transform scale(0.5)
+  opacity 0
+  transition: all 0.2s $base-animation-timing-function
+
+  &::before
+    content ''
+    position absolute
+    top 0
+    bottom 0
+    left 0
+    right 0
+    opacity 0.4
+    background-repeat: no-repeat
+    background-position: 50%
+    background-size: cover
+    background-attachment fixed
+    background-image url(/img/angular_hd_is.webp);
+  @media $display-breakpoints.xs-only
+    padding: 2em
+  @media only screen and (max-width: 489px)
+    margin 0
+    width 100%!important
+    min-width 100%!important
+    max-width 100%!important
+    height 100%!important
+  @media only screen and (max-width: 349px)
+    padding: 2em 24px
+
+  &__overlay
+    position fixed
+    opacity 0
+    z-index -1
+    background-color: rgba(63, 73, 106, 0.46)
+    top 0
+    bottom 0
+    left 0
+    right 0
+    display flex
+    justify-content center
+    align-items center
+    transition: all $base-animation-time $base-animation-timing-function
+
+    &_show
+      opacity 1
+      z-index $modal-layer
+
+      & > .modal
+        opacity 1
+        transform scale(1)
+
+  &__close-button
+    position absolute
+    display: block
+    top -54px
+    right -52px
+    width 38px
+    height 38px
+    color $white
+    transition color $base-animation-time $base-animation-timing-function
+
+    @media $display-breakpoints.xs-only
+      top -44px
+      right -42px
+    @media only screen and (max-width: 489px)
+      color #d4d5da
+      top 40px
+      right 24px
+
+    &::before,
+    &::after
+      content ''
+      position absolute
+      top 50%
+      left 0
+      width 100%
+      height 2px
+      background-color currentColor
+      transform-origin center center
+    &::before
+      transform rotate(-45deg)
+    &::after
+      transform rotate(45deg)
+    &:hover
+      cursor pointer
+      color $font-hover-orange
+
+  &__body, &__footer, &__title
+    position relative
+  
+  &__title
+    font-size 25px
+    font-weight 700
+    line-height 1.1
+    letter-spacing normal
+    color $primary
+
+  &_animate
+    animation-duration: .15s
+    animation-name: animate-modal
+    animation-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1)
+
+@keyframes animate-modal
+  0%
+    transform: scale(1)
+
+  50%
+    transform: scale(1.03)
+
+  100%
+    transform: scale(1)

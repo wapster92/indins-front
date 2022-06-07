@@ -1,0 +1,110 @@
+
+// Prospect Taxi
+// ============================================================
+.portfolio-tile-prospekttaxi
+  /*&:after
+    content ""
+    position: absolute;
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    z-index: 1
+    background: linear-gradient(0deg, #001343 0%, rgba(0, 19, 67, 0) 30.88%)
+    opacity: 0.15*/
+  .is-grad
+     background: linear-gradient(0deg, #001343 0%, rgba(0, 19, 67, 0) 30.88%);
+     z-index: 2;
+
+  .is-back
+    z-index: 1
+    transform-origin: center
+    width: 119%;
+    height: 113%;
+    left: -10%;
+    top: -13%;
+    //transform: scale(1.2) translate3d(0, -5%, 0)
+    transition: transform 1s $prj-ease-easeInOutCubic
+
+  .is-logo
+    z-index: 2
+    width: 39%
+    height: 10%
+    top: 11%;
+    left: auto;
+    right: 1%;
+    background-size: contain
+    transform-origin: top center
+    transition: transform .5s $prj-ease-easeInOutCirc
+    @media (max-width 399px)
+      right: 6%;
+
+  &:hover
+    .is-back
+      transform: translate3d(8%, 0%, 0)
+    .is-logo
+      transform: scale(1.23) translate3d(-8%, 5%, 0)
+
+.portfolio-item--square
+  .portfolio-tile-prospekttaxi
+    .is-back
+      width: 177%;
+      height: 104%;
+      left: -61%;
+      top: -4%;
+      @media $display-breakpoints.xs-only
+        width: 119%;
+        height: 113%;
+        left: -10%;
+        top: -13%;
+    .is-logo
+      width: 61%;
+      height: 20%;
+      top: 7%;
+      right: 12%;
+      @media $display-breakpoints.xs-only
+        width: 39%
+        height: 10%
+        top: 11%;
+        right: 1%;
+      @media (max-width 399px)
+        right: 6%;
+    &:hover
+      .is-logo
+        transform: scale(1.09) translate3d(-2%, -3%, 0);
+
+.portfolio-item--tall
+  .portfolio-tile-prospekttaxi
+    .is-back
+      width: 224%;
+      height: 103%;
+      left: -100%;
+      top: -2%;
+      @media $display-breakpoints.xs-only
+        width: 119%;
+        height: 113%;
+        left: -10%;
+        top: -13%;
+    .is-logo
+      left: 11%;
+      right: auto;
+      top: 4%;
+      width: 62%;
+      height: 8%;
+      @media $display-breakpoints.xs-only
+        width: 39%
+        height: 10%
+        top: 11%;
+        left: auto;
+        right: 1%;
+      @media (max-width 399px)
+        right: 6%;
+    &:hover
+      .is-back
+        transform: translate3d(7%, 0%, 0);
+        @media $display-breakpoints.xs-only
+          transform: translate3d(8%, 0%, 0)
+      .is-logo
+        transform: scale(1.23) translate3d(11%, -2%, 0);
+        @media $display-breakpoints.xs-only
+          transform: scale(1.23) translate3d(-8%, 5%, 0)

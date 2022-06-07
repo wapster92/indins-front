@@ -1,0 +1,103 @@
+.portfolio-tile-moscow-plasterer
+  background: radial-gradient(76.18% 186.08% at 94.89% 41.76%, rgba(255,205,46,0.72) 0%, rgba(211,46,22,0.45) 100%), #f37014
+  position relative
+
+  .is-logo
+    position: absolute
+    width: 88px
+    height: 95px
+    top: 10%
+    left: 7%
+    transition: transform .5s $prj-ease-easeInOutCirc
+    z-index 1
+    @media $display-breakpoints.md-and-down
+      width: 80px
+      height: 85px
+    @media $display-breakpoints.sm-and-down
+      width: 60px
+      height: 65px
+
+  .is-back
+    transition: transform .6s $prj-ease-easeInOutCirc
+    background-position top
+    width: 134%;
+    height: 84%;
+    bottom: 0;
+    top: auto;
+    left: -4%;
+
+  &:hover
+    .is-logo
+      transform: scale(1.2);
+    .is-back
+      transform translate3d(-58px, 0, 0)
+
+.portfolio-item--tall
+  .portfolio-tile-moscow-plasterer
+    .is-back
+      @media $display-breakpoints.xs-only
+        width: 83%;
+        height: 111%;
+        left: auto;
+        right: -13%;
+        bottom: -5px;
+    .is-logo
+      top: 6%
+      left: 12%
+      @media $display-breakpoints.xs-only
+        top: 11%;
+        left: 6%;
+        width: 60px;
+        height: 65px;
+    &:hover
+      .is-back
+        @media $display-breakpoints.xs-only
+          transform scale(1.1) translate3d(-34px, 0, 0)
+
+.portfolio-item--square
+  .portfolio-tile-moscow-plasterer
+    .is-back
+      right: -52%;
+      height: 100%;
+      left: auto;
+      @media $display-breakpoints.xs-only
+        width: 83%;
+        height: 111%;
+        left: auto;
+        right: -13%;
+        bottom: -5px;
+    .is-logo
+      top: 11%;
+      left: 13%;
+      width: 70px;
+      height: 88px;
+      @media $display-breakpoints.sm-and-down
+        width: 54px;
+        height: 54px;
+      @media $display-breakpoints.xs-only
+        top: 11%;
+        left: 6%;
+        width: 60px;
+        height: 65px;
+    &:hover
+      .is-back
+        transform scale(1.1) translate3d(0, 0, 0)
+        @media $display-breakpoints.xs-only
+          transform scale(1.1) translate3d(-34px, 0, 0)
+
+.portfolio-item--long
+  .portfolio-tile-moscow-plasterer
+    .is-back
+      width: 83%;
+      height: 111%;
+      left: auto;
+      right: -13%;
+      bottom: -5px
+
+
+    .is-logo
+      top: 11%;
+      left: 6%;
+    &:hover
+      .is-back
+        transform scale(1.1) translate3d(-34px, 0, 0)

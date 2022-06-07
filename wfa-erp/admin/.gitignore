@@ -1,0 +1,5 @@
+/node_modules/
+/.nuxt
+/generator
+.env.local
+webpack.config.js

@@ -1,0 +1,149 @@
+
+// TDServer
+// ============================================================
+.portfolio-tile-tdserver
+  &:hover
+    & .is-operator-h,.is-operator-s,.is-operator-v
+      opacity: 0;
+    & .is-operator-h-h,.is-operator-s-h,.is-operator-v-h
+      opacity: 1;
+    & .is-logo
+      transform: scale(1.25) translate3d(18px, 10px, 10px);
+  .is-back
+    background-color: #C2C2C2;
+    z-index: 0;
+  .is-operator-v, .is-operator-s, .is-operator-h
+    z-index: 2;
+    transition: opacity .6s ease
+
+  .is-operator-h-h, .is-operator-s-h, .is-operator-v-h
+    z-index: 1;
+    opacity: 0;
+    transition: opacity .6s ease;
+
+  & .is-logo //default for horiz_reg
+    z-index: 3
+    transition: transform .5s ease
+    background-size: contain
+    background-position: top
+    width: 166px
+    height: 40px
+    transform: scale(1.12)
+    top: 35px
+    left: 42px
+
+  & .portfolio-bottom
+      z-index: 4
+      bottom: 32px;
+      text-shadow: none
+      color: #494949
+  @media only screen and (max-width 599px)
+    & .is-operator-v,.is-operator-s,.is-operator-v-h,.is-operator-s-h
+      display: none;
+    .is-logo
+      width: 140px
+      top: 30px
+      left: 32px
+    .portfolio-bottom
+      padding: 0 25px
+    &:hover .is-logo
+      transform: scale(1.25) translate3d(5px, 3px, 10px)
+
+.portfolio-item--long //горизонтальная плашка
+  & .portfolio-tile-tdserver
+    & .is-operator-v,.is-operator-s,.is-operator-v-h,.is-operator-s-h
+      display: none;
+    @media only screen and (max-width 959px)
+      .is-logo
+        width: 140px
+        top: 30px
+        left: 32px
+      .portfolio-bottom
+        padding: 0 25px
+      &:hover .is-logo
+        transform: scale(1.25) translate3d(5px, 3px, 10px)
+    @media only screen and (min-width 960px)
+      .is-logo
+        left: 34px
+      &:hover .is-logo
+        transform: scale(1.25) translate3d(14px, 3px, 10px)
+    @media only screen and (min-width 1264px)
+      .is-logo
+        left: 40px;
+      .portfolio-bottom
+        padding: 0 42px;
+      &:hover .is-logo
+        transform: scale(1.39) translate(15px, 4px)
+
+.portfolio-item--tall //вертикальная
+  & .portfolio-tile-tdserver
+    @media only screen and (min-width 600px)
+      & .is-operator-h,.is-operator-s,.is-operator-h-h,.is-operator-s-h
+        display: none;
+    @media only screen and (min-width 600px) and (max-width 959px)
+      .portfolio-bottom
+        font-size: 18px;
+        padding: 0 25px;
+      .is-logo
+        width: 120px;
+        left: 32px;
+        top: 30px;
+      &:hover .is-logo
+        transform: scale(1.25) translate3d(5px, 2px, 10px)
+    @media only screen and (min-width 768px) and (max-width 959px)
+      .is-logo
+        width: 160px;
+    @media only screen and (min-width 960px)
+      .portfolio-bottom
+        font-size: 18px;
+        padding: 0 38px;
+      .is-logo
+        left: 30px;
+      &:hover .is-logo
+        transform: scale(1.25) translate3d(14px, 3px, 10px)
+    @media only screen and (min-width 1264px)
+      .portfolio-bottom
+        font-size: 18px;
+        padding: 0 42px;
+      .is-logo
+        left: 41px;
+        top: 35px;
+      &:hover .is-logo
+        transform: scale(1.39) translate(15px, 4px)
+
+.portfolio-item--square //квадратная плашка
+  & .portfolio-tile-tdserver
+    @media only screen and (min-width 600px)
+      & .is-operator-h,.is-operator-v,.is-operator-h-h,.is-operator-v-h
+        display: none;
+    @media only screen and (min-width 600px) and (max-width 680px)
+      .is-logo
+        width: 120px;
+        left: 30px !important;
+    @media only screen and (min-width 600px) and (max-width 959px)
+      .portfolio-bottom
+        font-size: 18px;
+        padding: 0 24px;
+      .is-logo
+        left: 23px;
+        top: 20px;
+      &:hover .is-logo
+        transform: scale(1.25) translate3d(8px, 3px, 10px)
+    @media only screen and (min-width 960px)
+      .portfolio-bottom
+        font-size: 18px;
+        padding: 0 38px;
+      .is-logo
+        left: 29px;
+        top: 35px;
+      &:hover .is-logo
+        transform: scale(1.25) translate3d(15px, 3px, 10px)
+    @media only screen and (min-width 1264px)
+      .portfolio-bottom
+        font-size: 18px;
+        padding: 0 42px;
+      .is-logo
+        left: 40px;
+        top: 35px;
+      &:hover .is-logo
+        transform: scale(1.39) translate(15px, 4px)

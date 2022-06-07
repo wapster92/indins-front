@@ -1,0 +1,146 @@
+.menu
+  position: fixed
+  z-index: $menu-layer
+  width: 100%
+  height: 100%
+  top: 0
+  left: 0
+  bottom 0
+  right 0
+  background-color: $primary
+  color: $white
+  transition: opacity $base-animation-time $animation-timing-function-cubic02, visibility $base-animation-time $animation-timing-function-cubic02
+  will-change: opacity, visibility
+  opacity: 0
+  visibility: hidden
+  display flex
+  justify-content center
+  align-items stretch
+
+  @media $display-breakpoints.sm-and-down
+    display: none
+
+  &_open
+    opacity: 1
+    visibility: visible
+
+  &__logo
+    position: fixed
+    z-index: $menu-btn-layer
+    transition: left $animation-time05 $base-animation-timing-function
+    will-change: left
+
+    top: 7vh
+    left: 7vw
+    @media only screen and (max-width: 1600px)
+      left: 1vw
+    @media only screen and (max-width: 1400px)
+      left: 7px
+
+    @media $display-breakpoints.sm-and-down
+      display: none
+
+  &__content
+    padding: 7.3vh 24px 13vh 24px
+    width 100%
+    display flex
+    flex-direction column
+    justify-content space-between
+
+    @media $display-breakpoints.lg-and-up
+      max-width 1188px
+    @media $display-breakpoints.md-only
+      max-width 944px
+    @media $display-breakpoints.sm-and-down
+      padding 1.2em
+
+    &__header
+      display flex
+      align-items center
+      justify-content space-between
+      width 100%
+
+      &__socials
+        color $white
+
+        @media only screen and (min-width: 1204px) and (max-width: 1335px)
+          padding-left: 5em
+        @media only screen and (min-width: 960px) and (max-width: 1105px)
+          padding-left: 5em
+
+      &__request-call
+        margin 6px 8px
+
+        @media only screen and (min-width: 1204px) and (max-width: 1259px)
+          padding-right: 3em
+        @media only screen and (min-width: 960px) and (max-width: 1024px)
+          padding-right: 3em
+
+        &__btn
+          flex 1
+          align-self stretch
+          display flex
+          align-items center
+          justify-content space-between
+          padding 0 28px 0 41px
+
+          &__icon
+            position relative
+            margin-left 1em
+            width 48px
+            height 34px
+            opacity .6
+            transition opacity 0.3s cubic-bezier(0.25, 0.8, 0.5, 1)
+            background-repeat no-repeat
+            background-size contain
+            background-position center
+            background-image url('/img/arrow_btn.svg')
+            @media only screen and (max-width: 399px)
+              width 44px
+
+          &:hover
+            .menu__content__request-call__btn__icon
+              opacity .8
+
+    &__column-block
+      display flex
+      flex-direction row
+      justify-content space-between
+      &__column
+        &:nth-child(1)
+          width (329/$base-font-size)em
+        &:nth-child(2)
+          width (306/$base-font-size)em
+        &:nth-child(3)
+          width (220/$base-font-size)em
+        &__item
+          &:not(:last-child)
+            padding-bottom 6vh;
+          a
+            color $white
+            font-size 1.75em
+            @media $display-breakpoints.md-only
+              font-size: 1.5em
+            &:hover
+              color: $font-hover-orange
+    &__footer
+      display flex
+      flex-direction row
+      align-items center
+      justify-content space-between
+
+      & > div
+        &:nth-child(1)
+          width (329/$base-font-size)em
+        &:nth-child(2)
+          width (306/$base-font-size)em
+        &:nth-child(3)
+          width (220/$base-font-size)em
+
+      &__address, &__operating-mode, &__contacts
+        display flex
+        flex-direction column
+
+        & > span
+          & + span
+            margin-top: 13px

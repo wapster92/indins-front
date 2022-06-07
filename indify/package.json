@@ -1,0 +1,28 @@
+{
+  "name": "indify",
+  "version": "4.5.14",
+  "main": "dist/module.js",
+  "scripts": {
+    "push": "yalc push",
+    "watch": "watch 'npm run push' ./src"
+  },
+  "dependencies": {
+    "@mdi/font": "^3.9.97",
+    "core-nuxt-breadcrumbs": "git+https://dependencies:dTBhU6itAdz5Cu4mQ131@dev.indins.ru/core/core-nuxt-breadcrumbs.git#v1.0.3",
+    "core-nuxt-settings": "git+https://dependencies:ceVUoTbUSNrtTRBWihq5@dev.indins.ru/core/core-nuxt-settings.git#v1.0.5",
+    "css-loader": "^2.1.1",
+    "marked": "^2.0.0",
+    "moment": "^2.24.0",
+    "nuxt": "^2.12.2",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2",
+    "vue": "^2.6.11",
+    "vue-the-mask": "^0.11.1",
+    "vuedraggable": "^2.23.2",
+    "vuetify": "^2.6.3",
+    "vuetify-loader": "^1.4.3"
+  },
+  "devDependencies": {
+    "watch": "^1.0.2"
+  }
+}

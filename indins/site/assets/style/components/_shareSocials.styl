@@ -1,0 +1,26 @@
+.share-social-list
+  &__button-container
+    display: flex
+    justify-content: center
+    align-items: center
+    backface-visibility: hidden
+    margin: (18/$base-font-size * -1)em
+
+    &>*
+      padding: (18/$base-font-size)em
+    .svg-hover
+      &:focus
+        border: none
+        outline: none
+    span
+      cursor: pointer
+      svg
+        width: 22px
+        height: 22px
+    a
+      position: relative
+
+      svg
+        display: block
+        width: 1.1em
+        height: 1.1em

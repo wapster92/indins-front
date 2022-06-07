@@ -1,0 +1,73 @@
+
+// СПбИГО
+// ============================================================
+.grid-desktop-size-3x2
+  .portfolio-tile-igospb
+    .is-students
+      background-size: contain;
+      right: -52px;
+.portfolio-tile-igospb
+  .is-back
+    z-index: 1
+    background-color: #e2e5ee
+    @media only screen and (max-width: 399px)
+      background-color: #f9f9fb
+
+  .is-students
+    z-index: 2
+    background-position: bottom left
+    width: 71%
+    height: 62%
+    top: 4%
+    right: -41px
+    left auto
+    transform-origin: bottom center
+    transition: transform .4s ease
+    @media only screen and (max-width: 599px)
+      width: 81%
+      height: 51%
+      top: 2%
+      right: -40%
+      background-size: contain
+
+  .is-wave
+    z-index: 3
+    background-size: cover
+    background-position: top center
+    width: 101%
+    height: 41%
+    top: unset
+    left: 0
+    bottom: 0
+    transform-origin: bottom center
+    transition: transform .3s ease
+    @media only screen and (max-width: 599px)
+      width: 100%
+      height: 57%
+      top: unset
+      left: 0
+      bottom: 0
+
+  .is-logo
+    z-index: 4
+    background-size: contain
+    width: 25.4%
+    height: 25.4%
+    left: 40px
+    top: 40px
+    transform-origin: top center
+    transition: transform .4s $prj-ease-easeInOutCirc
+    @media screen and (max-width 1203px)
+      left: 25px
+      top 25px
+    @media only screen and (max-width: 599px)
+      width: 16%
+      height: 26%
+
+  &:hover
+    .is-students
+      transform: scale(1.05)
+    .is-wave
+      transform: scale(1.05)
+    .is-logo
+      transform: scale(1.05)

@@ -1,0 +1,172 @@
+
+// RusForProf
+// ============================================================
+.portfolio-tile-rusforprof
+
+  .is-back
+    z-index: 1
+    background-color: #d3d7a8
+
+  .is-girl
+    z-index: 2
+    background-position: 0 90%
+    left: -3%
+    width: 107%
+    transition background-position .6s, transform .6s
+
+  .is-petal
+    transition: transform 1s $prj-ease-easeInOutCirc, opacity 1s $prj-ease-easeInOutCirc
+    will-change: transform
+    z-index: 2;
+    opacity .4
+
+  .is-petal-1
+    left: 29.5%;
+    width: 13%;
+    height: 25%;
+    top: 45%;
+    /* right: 44.4%; */
+    transform: rotate(-58deg) translate3d(0, 0, 0);
+    background-size: contain;
+
+  .is-petal-2
+    left: unset;
+    width: 7%;
+    height: 15%;
+    top: 26%;
+    right: 52%;
+    transform: rotate(-69deg) translate3d(0, 0, 0);
+    background-size: contain;
+
+
+  .is-logo-part-text
+    width: 22%;
+    height: 20.89%;
+    top: 9%;
+    left: 5%;
+    transition-delay: 0s;
+    z-index: 2;
+    background-size: contain;
+
+  &:hover
+    .is-petal
+      opacity: .4
+      transition: transform 1s $prj-ease-easeInOutCirc, opacity .5s $prj-ease-easeInOutCirc
+    .is-petal-1
+      /*transform: rotate(108deg) translate3d(-320%, 0%, 0)
+      transition-delay: 0s*/
+      transform: rotate(-27deg) translate3d(12%, -44%, 0);
+    .is-petal-2
+      /*transform: rotate(130deg) translate3d(-340%, 0, 0)
+      transition-delay: 0.2s*/
+      transform: rotate(-44deg) translate3d(50%, -52%, 0);
+
+    .is-logo-part-text
+      //
+
+    .is-girl
+      transform: scale(1.2) translate3d(-4%, 0, 0);
+      background-position: 0 105%;
+
+.portfolio-item--square
+  .portfolio-tile-rusforprof
+    .is-girl
+      left: -61%;
+      width: 213%;
+      height: 155%;
+      top: -50%;
+      @media $display-breakpoints.xs-only
+        top: 0
+        left: -3%
+        width: 107%
+        height: 100%
+    .is-logo-part-text
+      width: 33%;
+      height: 14.89%;
+      top: 10%;
+      left: 11%;
+      @media $display-breakpoints.xs-only
+        width: 22%;
+        height: 20.89%;
+        top: 9%;
+        left: 5%;
+    .is-petal-1
+      left: 28.5%;
+      width: 15%;
+      height: 20%;
+      top: 40%;
+      @media $display-breakpoints.xs-only
+        left: 29.5%;
+        width: 13%;
+        height: 25%;
+        top: 45%;
+    .is-petal-2
+      width: 9%;
+      height: 9%;
+      top: 32%;
+      right: 50%;
+      @media $display-breakpoints.xs-only
+        width: 7%;
+        height: 15%;
+        top: 26%;
+        right: 52%;
+
+.portfolio-item--tall
+  .portfolio-tile-rusforprof
+    .is-girl
+      background-position: 93% 94%;
+      left: 0;
+      width: 156%;
+      height: 135%;
+      top: -35%;
+      @media $display-breakpoints.xs-only
+        background-position: 0 90%
+        top: 0
+        left: -3%
+        width: 107%
+        height: 100%
+
+    .is-logo-part-text
+      width: 43%;
+      height: 10.89%;
+      top: 4%;
+      left: 11%;
+      @media $display-breakpoints.xs-only
+        width: 22%;
+        height: 20.89%;
+        top: 9%;
+        left: 5%;
+    .is-petal-1
+      left: 9.5%;
+      width: 24%;
+      height: 17%;
+      top: 26%;
+      @media $display-breakpoints.xs-only
+        left: 29.5%;
+        width: 13%;
+        height: 25%;
+        top: 45%;
+    .is-petal-2
+      width: 15%;
+      height: 9%;
+      top: 19%;
+      right: 55%;
+      @media $display-breakpoints.xs-only
+        width: 7%;
+        height: 15%;
+        top: 26%;
+        right: 52%;
+    &:hover
+      .is-girl
+        transform: scale(1.02) translate3d(-12%, -1%, 0);
+        @media $display-breakpoints.xs-only
+          transform: scale(1.2) translate3d(-4%, 0, 0);
+          background-position: 0 105%;
+      .is-petal-1
+        transform: rotate(50deg) translate3d(80%, -184%, 0);
+        @media $display-breakpoints.xs-only
+          transform: rotate(-27deg) translate3d(12%, -44%, 0);
+      .is-petal-2
+        transform: rotate(33deg) translate3d(417%, -101%, 0);
+        @media $display-breakpoints.xs-only
+          transform: rotate(-44deg) translate3d(50%, -52%, 0);

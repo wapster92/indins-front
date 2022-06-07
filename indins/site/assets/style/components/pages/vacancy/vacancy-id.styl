@@ -1,0 +1,72 @@
+.vacancy-content-block
+  & ul
+    list-style none
+    &>li
+      &:before
+        content: "\2022"
+        color #5793CE
+        font-weight: bold
+        display: inline-block
+        width: 1em
+        margin-left: -1em
+  & .is-back
+    width: auto!important
+
+.vacancy-page
+  .back-link__container
+    @media $display-breakpoints.sm-and-up
+      margin-top: 130px
+    .back-link
+      font-weight: 200
+      color: #494949
+      position: relative
+      padding-left: 40px
+      &__icon
+        position: absolute
+        left: 0
+        top: 50%
+        transform: translateY(-50%)
+        font-size: 35px
+
+.vacancy-page-id
+  padding 0 24px 24px
+  flex-grow 1
+  margin auto
+  width 100%
+  height 100%
+
+  @media $display-breakpoints.lg-and-up
+    max-width 1188px
+  @media $display-breakpoints.md-only
+    max-width 944px
+
+  h1
+    margin-bottom: 60px
+  .content-wrapper
+    @media $display-breakpoints.sm-and-up
+      padding: 0 100px
+  .vacancy-disclaimer
+    margin-top: 50px
+  .vacancy-list
+    ul
+      li
+        & + li
+          margin-top: 0
+  .section-container
+    h2
+      margin-bottom: 40px
+  .back-link
+    font-weight: 200
+    display: inline-block
+    margin-top: 50px
+    @media $display-breakpoints.sm-and-up
+      margin-top: 150px
+    color: #494949
+    position: relative
+    padding-left: 40px
+    &__icon
+      position: absolute
+      left: 0
+      top: 50%
+      transform: translateY(-50%)
+      font-size: 35px

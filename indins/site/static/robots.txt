@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /portfolio/viewTiles
+Disallow: /admin
+Sitemap: https://indins.ru/sitemap.xml

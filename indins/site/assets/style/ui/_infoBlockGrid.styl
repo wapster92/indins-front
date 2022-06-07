@@ -1,0 +1,153 @@
+.info-block-grid
+  position: relative
+  display: grid
+  grid-gap: 2em
+  grid-template-columns: repeat(auto-fit, minmax(13em, 1fr))
+  grid-template-rows: auto
+  align-content: stretch
+
+  &__container
+    padding 0 24px
+    margin auto
+    width 100%
+    height 100%
+    @media $display-breakpoints.lg-and-up
+      max-width 1188px
+    @media $display-breakpoints.md-only
+      max-width 944px
+
+  &[data-column-count="3"]
+    grid-template-columns: repeat(3, minmax(13em, 1fr))
+    @media $display-breakpoints.sm-and-down
+      grid-template-columns: repeat(1, minmax(22em, 1fr))
+    @media $display-breakpoints.xs-only
+      grid-template-columns: repeat(1, minmax(13em, 1fr))
+
+  &[data-column-count="2"]
+    grid-template-columns: repeat(2, minmax(13em, 1fr))
+    @media $display-breakpoints.xs-only
+      grid-template-columns: repeat(1, minmax(13em, 1fr))
+
+    &.blog-step
+      grid-template-columns: repeat(3, 1fr)
+      @media $display-breakpoints.sm-and-down
+        grid-template-columns: repeat(2, 1fr)
+      @media $display-breakpoints.xs-only
+        grid-template-columns: repeat(1, 1fr)
+
+  &[data-column-count="4"]
+    grid-template-columns: repeat(4, minmax(9em, 1fr))
+    @media $display-breakpoints.sm-and-down
+      grid-template-columns: repeat(2, minmax(14em, 1fr))
+    @media only screen and (max-width: 769px)
+      grid-template-columns: repeat(1, minmax(12em, 1fr))
+    @media $display-breakpoints.xs-only
+      grid-template-columns: repeat(1, minmax(13em, 1fr))
+
+    &.team-step
+      grid-template-columns: repeat(4, 1fr)
+      @media $display-breakpoints.sm-and-down
+        grid-template-columns: repeat(3, 1fr)
+      @media $display-breakpoints.xs-only
+        grid-template-columns: repeat(2, 1fr)
+      @media only screen and (max-width: 479px)
+        grid-template-columns: repeat(1, 1fr)
+
+    &.site-type-grid
+      grid-template-columns: repeat(4, 1fr)
+      @media $display-breakpoints.sm-and-down
+        grid-template-columns: repeat(2, 1fr)
+      @media $display-breakpoints.xs-only
+        display: block
+
+  &[data-gap-width="20"]
+    grid-gap: (20/$base-font-size)em
+    @media $display-breakpoints.md-only
+      grid-gap: (20/$base-font-size)em
+    @media $display-breakpoints.sm-and-down
+      grid-gap: (20/$base-font-size)em
+
+  &[data-gap-width="27"]
+    grid-gap: (27/$base-font-size)em
+    @media $display-breakpoints.md-only
+      grid-gap: (27/$base-font-size)em
+    @media $display-breakpoints.sm-and-down
+      grid-gap: (27/$base-font-size)em
+
+  &[data-gap-width="35"]
+    grid-gap: (35/$base-font-size)em
+    @media $display-breakpoints.md-only
+      grid-gap: (35/$base-font-size)em
+    @media $display-breakpoints.sm-and-down
+      grid-gap: (35/$base-font-size)em
+
+    &.blog-step
+      grid-gap: (62/$base-font-size)em (35/$base-font-size)em
+
+  &[data-gap-width="50"]
+    grid-gap: (50/$base-font-size)em
+    @media $display-breakpoints.md-only
+      grid-gap: (50/$base-font-size)em
+    @media $display-breakpoints.sm-and-down
+      grid-gap: (30/$base-font-size)em
+
+  &[data-gap-width="73"]
+    grid-gap: (73/$base-font-size)em
+    @media $display-breakpoints.md-only
+      grid-gap: (50/$base-font-size)em
+    @media $display-breakpoints.sm-and-down
+      grid-gap: (38/$base-font-size)em
+    @media $display-breakpoints.xs-only
+      grid-gap: (38/$base-font-size)em
+
+    &.team-step
+      grid-gap: 42px 73px
+      @media $display-breakpoints.md-only
+        grid-gap: 40px 50px
+      @media $display-breakpoints.sm-and-down
+        grid-gap: 50px 24px
+
+  &[data-gap-width="75"]
+    grid-gap: (74/$base-font-size)em
+    @media $display-breakpoints.md-only
+      grid-gap: (50/$base-font-size)em
+    @media $display-breakpoints.sm-and-down
+      grid-gap: (38/$base-font-size)em
+    @media $display-breakpoints.xs-only
+      grid-gap: (38/$base-font-size)em
+
+  &[data-gap-width="76"]
+    grid-gap: (76/$base-font-size)em
+    @media $display-breakpoints.md-only
+      grid-gap: (50/$base-font-size)em
+    @media $display-breakpoints.sm-and-down
+      grid-gap: (38/$base-font-size)em
+    @media $display-breakpoints.xs-only
+      grid-gap: (38/$base-font-size)em
+
+  &[data-gap-width="84"]
+    grid-gap: (84/$base-font-size)em
+    @media $display-breakpoints.md-only
+      grid-gap: (54/$base-font-size)em
+    @media $display-breakpoints.sm-and-down
+      grid-gap: (42/$base-font-size)em
+    @media $display-breakpoints.xs-only
+      grid-gap: (42/$base-font-size)em
+
+  &[data-gap-width="15"]
+    grid-column-gap 15px
+    grid-row-gap: 28px;
+  &.flex-grid
+    display: flex
+    justify-content: center
+    align-items: stretch
+    flex-wrap: wrap
+    margin: -1em
+
+    &[data-column-count="3"]
+      &>*
+        width: calc(100% / 3 - 2em)
+        @media only screen and (max-width: 769px)
+          width: calc(100% / 2 - 2em)
+        @media only screen and (max-width: 599px)
+          width: calc(100% / 1 - 2em)

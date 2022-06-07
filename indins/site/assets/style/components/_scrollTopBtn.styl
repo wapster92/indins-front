@@ -1,0 +1,52 @@
+.scroll-top-btn
+  position: relative
+  font-size: 1em
+  padding: 12px 11px
+  transition: background-color $base-animation-time $base-animation-timing-function
+
+  & > div
+    width: 28px
+    height: 14px
+
+    & + div
+      margin-top: -3px
+
+  svg
+    display: block
+    width: 100%
+    height auto
+    path,
+    rect,
+    polygon
+      fill: #637EA8
+      transition: fill $base-animation-time $base-animation-timing-function
+
+  &:hover
+    cursor: pointer
+    background-color: #ebebeb
+    svg
+      path,
+      rect,
+      polygon
+        fill: $font-hover-orange
+
+  &_position
+    position: fixed
+    z-index: 101
+    bottom: 40px
+    right: -70px
+    transition: right .5s ease, bottom .5s ease
+    will-change: right, bottom
+    @media only screen and (max-width: 959px)
+      bottom: 24px
+
+  &_open
+    right: 9vw
+    @media only screen and (max-width: 1600px)
+      right: 3vw
+    /*@media only screen and (max-width: 1400px)
+      right: 7px*/
+    @media only screen and (max-width: 959px)
+      right: 24px
+
+

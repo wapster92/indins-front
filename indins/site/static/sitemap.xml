@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+        xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+    <url>
+        <loc>https://indins.ru/</loc>
+        <lastmod>2021-03-04T11:22:28+00:00</lastmod>
+        <priority>1.00</priority>
+    </url>
+    <url>
+        <loc>https://indins.ru/portfolio</loc>
+        <lastmod>2021-03-04T11:22:28+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://indins.ru/team</loc>
+        <lastmod>2021-03-04T11:22:28+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://indins.ru/automation</loc>
+        <lastmod>2021-03-04T11:22:28+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://indins.ru/development</loc>
+        <lastmod>2021-03-04T11:22:28+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://indins.ru/blog</loc>
+        <lastmod>2021-03-04T11:22:28+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://indins.ru/contacts</loc>
+        <lastmod>2021-03-04T11:22:28+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://indins.ru/customers</loc>
+        <lastmod>2021-03-04T11:22:28+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://indins.ru/netadv</loc>
+        <lastmod>2021-03-04T11:22:28+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://indins.ru/support</loc>
+        <lastmod>2021-03-04T11:22:28+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://indins.ru/about</loc>
+        <lastmod>2021-03-04T11:22:28+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://indins.ru/vacancy</loc>
+        <lastmod>2021-03-04T11:22:28+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://indins.ru/crm</loc>
+        <lastmod>2021-03-04T11:22:28+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://indins.ru/erp</loc>
+        <lastmod>2021-03-04T11:22:28+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://indins.ru/portfolio/cds</loc>
+        <lastmod>2021-03-04T11:22:28+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://indins.ru/portfolio/seafishport</loc>
+        <lastmod>2021-03-04T11:22:28+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://indins.ru/portfolio/b5</loc>
+        <lastmod>2021-03-04T11:22:28+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://indins.ru/portfolio/greenline</loc>
+        <lastmod>2021-03-04T11:22:28+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://indins.ru/portfolio/arhproekt</loc>
+        <lastmod>2021-03-04T11:22:28+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://indins.ru/portfolio/saki-pirogova</loc>
+        <lastmod>2021-03-04T11:22:28+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://indins.ru/portfolio/messenger</loc>
+        <lastmod>2021-03-04T11:22:28+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://indins.ru/portfolio/xpresent</loc>
+        <lastmod>2021-03-04T11:22:28+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://indins.ru/portfolio/zavod-kontakt</loc>
+        <lastmod>2021-03-04T11:22:28+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://indins.ru/portfolio/detailing</loc>
+        <lastmod>2021-03-04T11:22:28+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://indins.ru/portfolio/spbiir</loc>
+        <lastmod>2021-03-04T11:22:28+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://indins.ru/portfolio/prospekttaxi</loc>
+        <lastmod>2021-03-04T11:22:28+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://indins.ru/portfolio/gala</loc>
+        <lastmod>2021-03-04T11:22:28+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://indins.ru/portfolio/polir</loc>
+        <lastmod>2021-03-04T11:22:28+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://indins.ru/portfolio/fxlist</loc>
+        <lastmod>2021-03-04T11:22:28+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://indins.ru/portfolio/ustugov</loc>
+        <lastmod>2021-03-04T11:22:28+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://indins.ru/portfolio/podborauto</loc>
+        <lastmod>2021-03-04T11:22:28+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://indins.ru/portfolio/konsal</loc>
+        <lastmod>2021-03-04T11:22:28+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://indins.ru/portfolio/mapryal</loc>
+        <lastmod>2021-03-04T11:22:28+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://indins.ru/portfolio/proektmontag</loc>
+        <lastmod>2021-03-04T11:22:28+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://indins.ru/portfolio/konvera</loc>
+        <lastmod>2021-03-04T11:22:28+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://indins.ru/portfolio/oknokomp</loc>
+        <lastmod>2021-03-04T11:22:28+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://indins.ru/portfolio/promed</loc>
+        <lastmod>2021-03-04T11:22:28+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://indins.ru/portfolio/remtech</loc>
+        <lastmod>2021-03-04T11:22:28+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://indins.ru/portfolio/vhor</loc>
+        <lastmod>2021-03-04T11:22:28+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://indins.ru/portfolio/fish</loc>
+        <lastmod>2021-03-04T11:22:28+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://indins.ru/portfolio/interi</loc>
+        <lastmod>2021-03-04T11:22:28+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://indins.ru/portfolio/roerich</loc>
+        <lastmod>2021-03-04T11:22:28+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://indins.ru/portfolio/smeds</loc>
+        <lastmod>2021-03-04T11:22:28+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://indins.ru/portfolio/kotochist</loc>
+        <lastmod>2021-03-04T11:22:28+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://indins.ru/portfolio/sanatoriy_auto</loc>
+        <lastmod>2021-03-04T11:22:28+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://indins.ru/portfolio/duoasia</loc>
+        <lastmod>2021-03-04T11:22:28+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://indins.ru/portfolio/stoneline</loc>
+        <lastmod>2021-03-04T11:22:28+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+    <loc>https://indins.ru/blog/zakazchik-opredelyaet-stoimost</loc>
+    <lastmod>2020-10-27T13:16:44+03:00</lastmod>
+    <priority>0.80</priority>
+</url>
+<url>
+    <loc>https://indins.ru/blog/zachem-nuzhno-prototipirovanie</loc>
+    <lastmod>2020-10-27T13:22:46+03:00</lastmod>
+    <priority>0.80</priority>
+</url>
+<url>
+    <loc>https://indins.ru/blog/zachem-nuzhen-kolltreking-i-chto-ehto-takoe</loc>
+    <lastmod>2020-10-27T13:30:11+03:00</lastmod>
+    <priority>0.80</priority>
+</url>
+<url>
+    <loc>https://indins.ru/blog/zachem-biznesu-avtomatizaciya</loc>
+    <lastmod>2020-10-27T13:21:04+03:00</lastmod>
+    <priority>0.80</priority>
+</url>
+<url>
+    <loc>https://indins.ru/blog/voronka-prodazh-v-crm-sisteme</loc>
+    <lastmod>2020-09-02T12:06:52+03:00</lastmod>
+    <priority>0.80</priority>
+</url>
+<url>
+    <loc>https://indins.ru/blog/vnesenie-obrashchenij-v-crm</loc>
+    <lastmod>2020-10-27T13:09:39+03:00</lastmod>
+    <priority>0.80</priority>
+</url>
+<url>
+    <loc>https://indins.ru/blog/vnedrenie-crm</loc>
+    <lastmod>2020-10-27T13:07:44+03:00</lastmod>
+    <priority>0.80</priority>
+</url>
+<url>
+    <loc>https://indins.ru/blog/vidy-interfejsov-v-sistemah</loc>
+    <lastmod>2020-10-06T12:33:07+03:00</lastmod>
+    <priority>0.80</priority>
+</url>
+<url>
+    <loc>https://indins.ru/blog/vidy-crm-sistem</loc>
+    <lastmod>2020-10-27T13:26:09+03:00</lastmod>
+    <priority>0.80</priority>
+</url>
+<url>
+    <loc>https://indins.ru/blog/udobstvo-crm-sistemy</loc>
+    <lastmod>2020-10-27T13:17:56+03:00</lastmod>
+    <priority>0.80</priority>
+</url>
+<url>
+    <loc>https://indins.ru/blog/trendy-crm-sistem</loc>
+    <lastmod>2020-09-15T12:04:07+03:00</lastmod>
+    <priority>0.80</priority>
+</url>
+<url>
+    <loc>https://indins.ru/blog/tekhnicheskij-dolg</loc>
+    <lastmod>2020-10-27T13:20:43+03:00</lastmod>
+    <priority>0.80</priority>
+</url>
+<url>
+    <loc>https://indins.ru/blog/svoj-otdel-avtomatizacii</loc>
+    <lastmod>2020-10-27T13:23:03+03:00</lastmod>
+    <priority>0.80</priority>
+</url>
+<url>
+    <loc>https://indins.ru/blog/stoimost-podderzhki-erp-sistem</loc>
+    <lastmod>2020-10-27T13:30:31+03:00</lastmod>
+    <priority>0.80</priority>
+</url>
+<url>
+    <loc>https://indins.ru/blog/skolko-stoit-crm-sistema</loc>
+    <lastmod>2020-10-27T13:25:47+03:00</lastmod>
+    <priority>0.80</priority>
+</url>
+<url>
+    <loc>https://indins.ru/blog/razrabotka-erp-i-1s-buhgalteriya</loc>
+    <lastmod>2020-10-27T13:31:30+03:00</lastmod>
+    <priority>0.80</priority>
+</url>
+<url>
+    <loc>https://indins.ru/blog/razrabotka-crm-sistemy</loc>
+    <lastmod>2020-10-27T13:07:57+03:00</lastmod>
+    <priority>0.80</priority>
+</url>
+<url>
+    <loc>https://indins.ru/blog/razdelenie-dostupa-polzovatelej</loc>
+    <lastmod>2020-10-27T13:08:35+03:00</lastmod>
+    <priority>0.80</priority>
+</url>
+<url>
+    <loc>https://indins.ru/blog/raschet-zakaza-v-crm-sisteme</loc>
+    <lastmod>2020-09-04T12:00:07+03:00</lastmod>
+    <priority>0.80</priority>
+</url>
+<url>
+    <loc>https://indins.ru/blog/programmy-dlya-avtomatizacii</loc>
+    <lastmod>2020-10-27T13:06:38+03:00</lastmod>
+    <priority>0.80</priority>
+</url>
+<url>
+    <loc>https://indins.ru/blog/programma-dlya-avtomatizacii-biznesa</loc>
+    <lastmod>2020-11-10T11:27:10+03:00</lastmod>
+    <priority>0.80</priority>
+</url>
+<url>
+    <loc>https://indins.ru/blog/problemy-vnedreniya-erp-chast-2</loc>
+    <lastmod>2020-10-27T13:25:16+03:00</lastmod>
+    <priority>0.80</priority>
+</url>
+<url>
+    <loc>https://indins.ru/blog/problemy-vnedreniya-erp-chast-1</loc>
+    <lastmod>2020-10-27T13:25:26+03:00</lastmod>
+    <priority>0.80</priority>
+</url>
+<url>
+    <loc>https://indins.ru/blog/ocenka-trudozatrat-s-pomoshchyu-erp-sistemy</loc>
+    <lastmod>2020-10-27T13:17:24+03:00</lastmod>
+    <priority>0.80</priority>
+</url>
+<url>
+    <loc>https://indins.ru/blog/minimum-dejstvij-maksimum-polzy</loc>
+    <lastmod>2020-10-27T13:24:51+03:00</lastmod>
+    <priority>0.80</priority>
+</url>
+<url>
+    <loc>https://indins.ru/blog/mind-map-v-proektirovanii</loc>
+    <lastmod>2020-10-27T13:14:59+03:00</lastmod>
+    <priority>0.80</priority>
+</url>
+<url>
+    <loc>https://indins.ru/blog/metodologiya-razrabotki-sistem-avtomatizacii</loc>
+    <lastmod>2020-10-27T13:25:06+03:00</lastmod>
+    <priority>0.80</priority>
+</url>
+<url>
+    <loc>https://indins.ru/blog/malenkaya-sistema</loc>
+    <lastmod>2020-10-27T13:22:19+03:00</lastmod>
+    <priority>0.80</priority>
+</url>
+<url>
+    <loc>https://indins.ru/blog/klikdzheking-za-i-protiv</loc>
+    <lastmod>2020-10-27T13:29:23+03:00</lastmod>
+    <priority>0.80</priority>
+</url>
+<url>
+    <loc>https://indins.ru/blog/klientskaya-baza</loc>
+    <lastmod>2020-10-27T13:07:34+03:00</lastmod>
+    <priority>0.80</priority>
+</url>
+<url>
+    <loc>https://indins.ru/blog/erp-sistema-kak-instrument-analitiki</loc>
+    <lastmod>2020-10-27T13:18:25+03:00</lastmod>
+    <priority>0.80</priority>
+</url>
+<url>
+    <loc>https://indins.ru/blog/domeny-dns-i-hosting</loc>
+    <lastmod>2020-10-06T12:09:17+03:00</lastmod>
+    <priority>0.80</priority>
+</url>
+<url>
+    <loc>https://indins.ru/blog/crm-sistema-protiv-excel</loc>
+    <lastmod>2020-10-27T13:10:24+03:00</lastmod>
+    <priority>0.80</priority>
+</url>
+<url>
+    <loc>https://indins.ru/blog/crm-sistema-chto-ehto</loc>
+    <lastmod>2020-10-27T13:26:18+03:00</lastmod>
+    <priority>0.80</priority>
+</url>
+<url>
+    <loc>https://indins.ru/blog/chto-takoe-xrm-sistema</loc>
+    <lastmod>2020-09-23T16:17:29+03:00</lastmod>
+    <priority>0.80</priority>
+</url>
+<url>
+    <loc>https://indins.ru/blog/chem-otlichaetsya-crm-ot-erp</loc>
+    <lastmod>2020-10-27T13:25:36+03:00</lastmod>
+    <priority>0.80</priority>
+</url>
+<url>
+    <loc>https://indins.ru/blog/byudzhetirovanie-predpriyatiya-s-pomoshchyu-erp-sistemy</loc>
+    <lastmod>2020-10-27T13:31:07+03:00</lastmod>
+    <priority>0.80</priority>
+</url>
+<url>
+    <loc>https://indins.ru/blog/borba-so-spamom-v-crm-sisteme</loc>
+    <lastmod>2020-09-08T12:10:27+03:00</lastmod>
+    <priority>0.80</priority>
+</url>
+<url>
+    <loc>https://indins.ru/blog/biznes-processy-v-voronke-prodazh</loc>
+    <lastmod>2020-10-27T13:09:13+03:00</lastmod>
+    <priority>0.80</priority>
+</url>
+<url>
+    <loc>https://indins.ru/blog/avtomatizaciya-yuridicheskogo-otdela</loc>
+    <lastmod>2020-11-04T15:21:16+03:00</lastmod>
+    <priority>0.80</priority>
+</url>
+<url>
+    <loc>https://indins.ru/blog/avtomatizaciya-upravleniya-proektami</loc>
+    <lastmod>2020-10-27T13:18:46+03:00</lastmod>
+    <priority>0.80</priority>
+</url>
+<url>
+    <loc>https://indins.ru/blog/avtomatizaciya-ot-byudzheta</loc>
+    <lastmod>2020-10-27T13:16:29+03:00</lastmod>
+    <priority>0.80</priority>
+</url>
+<url>
+    <loc>https://indins.ru/blog/avtomatizaciya-biznesa-s-chego-nachat</loc>
+    <lastmod>2020-10-27T13:25:58+03:00</lastmod>
+    <priority>0.80</priority>
+</url>
+<url>
+    <loc>https://indins.ru/blog/algoritmy-v-biznese</loc>
+    <lastmod>2020-10-27T13:24:04+03:00</lastmod>
+    <priority>0.80</priority>
+</url>
+<url>
+    <loc>https://indins.ru/vacancy/frontend-razrabotchik</loc>
+    <lastmod></lastmod>
+    <priority>0.80</priority>
+</url>
+<url>
+    <loc>https://indins.ru/vacancy/back-end-razrabotchik</loc>
+    <lastmod></lastmod>
+    <priority>0.80</priority>
+</url>
+
+</urlset>

@@ -1,0 +1,29 @@
+.preloader
+  position relative
+  width 100%
+  padding 40px 0
+  display flex
+  justify-content center
+  align-items center
+
+  &__circle
+    width 60px
+    height 60px
+    border-radius 50%
+    background-image: url(/img/preloader.png)
+    background-repeat no-repeat
+    background-size contain
+    background-position center
+    animation-name: rotation;
+    animation-duration: .9s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+@keyframes rotation {
+  0% {
+    transform:rotate(0deg);
+  }
+  100% {
+    transform:rotate(360deg);
+  }
+}

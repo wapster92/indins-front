@@ -1,0 +1,116 @@
+.info-block-area
+  position: relative
+  margin-top: 50px
+  @media $display-breakpoints.sm-only
+    margin-top: 50px
+  @media $display-breakpoints.xs-only
+    margin-top: 43px
+
+  .page-title + &
+    margin-top: 54px
+
+  .quotation-area + &
+    margin-top: (72/$base-font-size)em
+    @media $display-breakpoints.sm-only
+      margin-top: (62/$base-font-size)em
+    @media $display-breakpoints.xs-only
+      margin-top: (52/$base-font-size)em
+
+  .team-title + &
+    margin-top: -173px
+
+  .port-cascade-area + &
+    margin-top: 70px
+
+.info-block-flex
+  position: relative
+  display: flex
+  justify-content: center
+  flex-wrap: wrap
+  margin: -20px
+
+  &__container
+    padding 0 24px
+    margin auto
+    width 100%
+    height 100%
+    @media $display-breakpoints.lg-and-up
+      max-width 1188px
+    @media $display-breakpoints.md-only
+      max-width 944px
+
+  & > *
+    position: relative
+    margin: 20px
+
+  &[data-column-count="1"]
+    & > *
+      width: calc(100% / 1 - 40px)
+
+  &[data-column-count="2"]
+    & > *
+      width: calc(100% / 2 - 40px)
+
+  &[data-column-count="3"]
+    & > *
+      width: calc(100% / 3 - 40px)
+
+  &[data-column-count="4"]
+    & > *
+      width: calc(100% / 4 - 40px)
+      @media $display-breakpoints.sm-and-down
+        width: calc(100% / 3 - 40px)
+      @media only screen and (max-width: 769px)
+        width: calc(100% / 2 - 40px)
+      @media $display-breakpoints.xs-only
+        width: calc(100% / 1 - 40px)
+
+
+  &[data-gap-width="15"]
+    margin: -15px
+
+    & > *
+      margin: 15px
+    &[data-column-count="4"]
+      & > *
+        width: calc(100% / 4 - 30px)
+        @media $display-breakpoints.sm-and-down
+          width: calc(100% / 3 - 30px)
+        @media only screen and (max-width: 769px)
+          width: calc(100% / 2 - 30px)
+        @media $display-breakpoints.xs-only
+          width: calc(100% / 1 - 30px)
+
+
+  &.fill-two-center-port
+    & > .info-block-item
+      margin: 1em
+      width: 39%
+      @media $display-breakpoints.md-and-down
+        width: calc(100% / 2 - 2em)
+      @media only screen and (max-width: 769px)
+        width: calc(100% / 1 - 2em)
+        max-width: 23em
+
+      &.narrow-left
+        @media only screen and (min-width: 400px)
+          padding-left: 56px
+        .icon-left
+          @media only screen and (min-width: 400px)
+            width: 37px
+        .info-text
+          margin-top: 26px
+
+  &.contact-three-flex
+    @media only screen and (max-width: 959px)
+      flex-direction: column
+      max-width: 28em
+      margin: 0 auto
+
+    & > *
+      width: calc(100% / 3 - 40px)
+      @media only screen and (max-width: 959px)
+        width: 100%
+        margin: 0
+        & + *
+          margin-top: 20px

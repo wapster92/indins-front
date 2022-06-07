@@ -1,0 +1,115 @@
+
+// RusForProf
+// ============================================================
+.portfolio-tile-roerich
+
+  .is-back
+    z-index: 1
+    background-position: bottom center;
+    background-size: cover
+
+    width: 100%
+    height: 82%
+    top: 0
+
+    transform-origin: center
+    transform: translate3d(0, 0, 0)
+    transition: transform 6s $prj-ease-easeInOutSine
+    transition-delay: 0s
+
+  .is-footer
+    position: absolute;
+    width: 100%
+    height: 29%;
+    bottom: 0;
+    left: 0
+    z-index: 0;
+    top: unset;
+    background: #182E4F;
+    transition: height 6s $prj-ease-easeInOutSine
+
+
+  .is-logo
+    z-index: 3
+    background-position: center
+    background-size: contain
+
+    width: 17%;
+    height: 26%;
+    top: 12%;
+    left: 4%;
+
+    transform-origin: center
+    transform: translate3d(0, 0, 0)
+    transition: transform .8s $prj-ease-easeInOutCubic
+    transition-delay: 0s
+
+  &:hover
+    .is-back
+      transform: translateY(-13%);
+    .is-footer
+      height: 29%;
+    .is-logo
+      transform: scale(1.1) translate3d(1%, 5%, 0);
+
+.portfolio-item--tall
+  .portfolio-tile-roerich
+    .is-back
+      height: 80%;
+      background-position: 0% center;
+      transition background-position  6s $prj-ease-easeInOutSine
+      @media $display-breakpoints.xs-only
+        background-position: bottom center;
+        height: 82%
+        transition: transform 6s $prj-ease-easeInOutSine
+    .is-logo
+      width: 28%;
+      height: 15%;
+      top: 5%;
+      left: 12%;
+      @media $display-breakpoints.xs-only
+        width: 17%;
+        height: 26%;
+        top: 12%;
+        left: 4%;
+
+    &:hover
+      .is-back
+        background-position: 100% center;
+        transform: translateY(0);
+        @media $display-breakpoints.xs-only
+          transform: translateY(-13%);
+          background-position: bottom center;
+      .is-logo
+        transform: scale(1.2) translate3d(5%, 5%, 0);
+        @media $display-breakpoints.xs-only
+          transform: scale(1.1) translate3d(1%, 5%, 0);
+
+
+.portfolio-item--square
+  .portfolio-tile-roerich
+    .is-back
+      width: 132%;
+      height: 73%;
+      transform: translate3d(0, 0, 0);
+      @media $display-breakpoints.xs-only
+        width: 100%
+        height: 82%
+    .is-footer
+      height: 50%
+    .is-logo
+      width: 25%;
+      height: 26%;
+      top: 11%;
+      left: 11%;
+      @media $display-breakpoints.xs-only
+        width: 17%;
+        height: 26%;
+        top: 12%;
+        left: 4%;
+    &:hover
+      .is-back
+        transform: translateY(-13%);
+      .is-logo
+        transform: scale(1.1) translate3d(1%, 5%, 0);
+

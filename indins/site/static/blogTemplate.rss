@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss
+xmlns:yandex="http://news.yandex.ru"
+xmlns:media="http://search.yahoo.com/mrss/"
+xmlns:turbo="http://turbo.yandex.ru"
+version="2.0">
+<channel>
+<title>Блог</title>
+<link>https://indins.ru/</link>
+<description>Компания ИНДИНС разрабатывает программные решения для бизнеса в областях автоматизации бизнес-процессов и привлечения клиентов</description>
+<language>ru</language>
+<!--        <turbo:analytics></turbo:analytics>-->
+turboPages
+</channel>
+</rss>

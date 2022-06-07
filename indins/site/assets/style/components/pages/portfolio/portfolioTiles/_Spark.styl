@@ -1,0 +1,187 @@
+
+// Spark
+// ============================================================
+.portfolio-tile-spark
+  &:hover
+    & .is-car
+      opacity: 0;
+    & .is-spare-parts
+      opacity: 1;
+    & .is-logo
+      transform: translateX(calc(50% - 40px));
+  & .is-back
+    z-index: 1
+    background-color: #E6EEFD
+
+  & .is-car,.is-spare-parts
+    z-index: 3;
+    width: 336px;
+    height: 336px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity .6s ease
+  & .is-spare-parts
+    left: 49.5%;
+  & .is-logo
+    z-index: 2
+    background-size: contain
+    background-position: top
+    width: 163px
+    height: 45px
+    top: 35px
+    left: 42px
+    transition: transform .6s ease
+  & .is-spare-parts
+    opacity: 0;
+
+  & .portfolio-bottom
+    z-index: 4
+    text-shadow: none
+    padding: 0 42px
+    color: #494949
+  @media only screen and (max-width 599px)
+    .is-car, .is-spare-parts
+      width: 40%;
+      height: 80%;
+      left: 55%;
+      transform: translate(0, -50%)
+    .is-logo
+      left: 25px;
+      top: 30px;
+      width: 130px;
+    .portfolio-bottom
+      padding: 0 25px;
+  @media only screen and (max-width 500px)
+    .is-car, .is-spare-parts
+      width: 172px;
+      height: 139px;
+.portfolio-item--long //горизонтальная плашка
+  & .portfolio-tile-spark
+    @media only screen and (min-width 600px) and (max-width 959px)
+      .is-car, .is-spare-parts
+        width: 40%;
+        height: 80%;
+        left: 55%;
+        transform: translate(0, -50%)
+      .is-logo
+        left: 25px;
+        top: 30px;
+        width: 130px;
+      .portfolio-bottom
+        padding: 0 25px
+      &:hover
+        & .is-logo
+          transform: translateX(calc(40% - 25px))
+    @media only screen and (min-width 960px) and (max-width 1263px)
+      .is-car, .is-spare-parts
+        width: 280px;
+        height: 280px;
+        transform: translate(0, -50%)
+      .is-logo
+        top: 30px;
+      &:hover
+        & .is-logo
+         transform: translateX(calc(40% - 42px))
+    @media only screen and (min-width 1264px)
+      .is-car, .is-spare-parts
+        left: auto;
+        right: 15px;
+        transform: translate(-9%, -50%)
+      .portfolio-bottom
+        bottom: 32px;
+      &:hover
+        & .is-logo
+          transform: translateX(calc(50% - 40px))
+
+.portfolio-item--tall //вертикальная
+  & .portfolio-tile-spark
+    @media only screen and (min-width 600px) and (max-width 959px)
+      .is-car, .is-spare-parts
+        width: 100%;
+        height: 45%;
+        top: 45%;
+      .portfolio-bottom
+        font-size: 18px;
+        padding: 0 25px;
+      .is-logo
+        width: 140px;
+        left: 25px;
+        top: 30px;
+      &:hover
+        & .is-logo
+          transform: translateX(calc(20% - 25px));
+    @media only screen and (min-width 960px) and (max-width 1263px)
+      .is-car, .is-spare-parts
+        width: 250px;
+        height: 250px;
+      .is-logo
+        left: 38px;
+        top: 30px;
+      .portfolio-bottom
+        font-size: 18px;
+        padding: 0 38px;
+      &:hover
+        & .is-logo
+          transform: translateX(calc(30% - 38px));
+    @media only screen and (min-width 1264px)
+      .portfolio-bottom
+        bottom: 32px;
+
+.portfolio-item--square //квадратная плашка
+  & .portfolio-tile-spark
+    @media only screen and (min-width 600px)
+      .is-car, .is-spare-parts
+        background-position: top center;
+        width: 181px;
+        height: 181px;
+        top: 81.5px;
+        transform: translate(-50%, 0);
+      .portfolio-bottom
+        bottom: 32px;
+    @media only screen and (min-width 600px) and (max-width 760px)
+      .is-logo
+        width: 120px !important;
+      .portfolio-bottom
+        bottom: 10px;
+      &:hover
+        .is-logo
+          transform: translateX(10px) !important
+    @media only screen and (min-width 600px) and (max-width 959px)
+      .is-car, .is-spare-parts
+        top: 45px;
+        width: 141px;
+        height: 141px;
+      .portfolio-bottom
+        font-size: 18px;
+        padding: 0 24px;
+      .is-logo
+        width: 150px;
+        left: 24px;
+        top: 15px;
+      &:hover
+        & .is-logo
+          transform: translateX(calc(30% - 24px));
+    @media only screen and (min-width 960px) and (max-width 1263px)
+      .is-car, .is-spare-parts
+        top: 40px;
+      .portfolio-bottom
+        font-size: 18px;
+        padding: 0 38px;
+        bottom: 15px;
+      .is-logo
+        left: 38px;
+        top: 10px;
+      &:hover
+        & .is-logo
+          transform: translateX(calc(30% - 38px));
+    @media only screen and (min-width 1264px)
+      &:hover
+        & .is-logo
+          transform: translateX(calc(50% - 41px));
+          top: 34px;
+        & .is-spare-parts
+          transform: translateX(-49%);
+          top: 80.5px;
+        & .portfolio-bottom
+          bottom: 33px;

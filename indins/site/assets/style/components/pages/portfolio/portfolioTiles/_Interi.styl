@@ -1,0 +1,98 @@
+// Detailing
+// ============================================================
+.portfolio-tile-interi
+
+  .is-back
+    z-index: 1
+
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+
+    background-color: #664f42
+
+  .is-chair
+    z-index: 2
+    background-size: contain
+    background-position: left bottom
+
+    width: 90%
+    height: 110%
+    top: 13%
+    left: 40%
+
+    transform-origin: center
+    transition: transform .8s $prj-ease-easeInOutCubic
+    transition-delay: 0s
+    @media only screen and (max-width: 959px)
+      left: 30%
+    @media only screen and (max-width: 599px)
+      width: 60%
+    @media only screen and (min-width: 400px)
+      transition-delay: 0.2s
+
+  .is-logo
+    z-index: 3
+    background-size: contain
+    background-position: left center
+
+    width: 100%
+    height: 15%
+    top: 40px
+    left: 40px
+
+    transform-origin: bottom right
+    transform: translate3d(0, 0, 0)
+    transition: transform .8s $prj-ease-easeInOutCubic
+    transition-delay: 0.2s
+    @media screen and (max-width 1203px)
+      left: 25px
+      bottom 25px
+    @media only screen and (min-width: 400px)
+      transition-delay: 0s
+    @media only screen and (max-width: 399px)
+      width: 100%
+      height: 17%
+
+
+  &:hover
+    .is-chair
+      transition-delay: 0.2s
+      transform: translate3d(-15%, 0, 0) scale(1.1)
+      @media only screen and (max-width: 399px)
+        transform: translate3d(-36%, 0, 0)
+
+    .is-logo
+      transform: translate3d(15%, 0, 0) scale(1.1)
+      transition-delay: 0s
+      @media only screen and (max-width: 399px)
+        transform: translate3d(20%, 0, 0)
+
+.portfolio-item--long
+  .portfolio-tile-interi
+    .is-chair
+      left: 65%
+      width: 30%
+    &:hover
+      .is-logo
+        transform: translate3d(20%, 0, 0) scale(1.2)
+
+.portfolio-item--tall
+  .portfolio-tile-interi
+    .is-logo
+      top: 10px
+      width: 70%
+    .is-chair
+      top: 8%
+    &:hover
+      .is-logo
+        transform: translate3d(12%, 20%, 0) scale(1.1)
+
+.portfolio-item--square
+  .portfolio-tile-interi:hover
+    .is-logo
+      transform: translate3d(10%, 10%, 0) scale(1.1)
+    .is-chair
+      transform: translate3d(10%, 5%, 0) scale(1.1)
+

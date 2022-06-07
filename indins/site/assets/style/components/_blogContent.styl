@@ -1,0 +1,249 @@
+// Blog Content
+// ============================================================
+.blog-content-area
+  position: relative
+  margin-top: 54px
+  @media $display-breakpoints.sm-and-down
+    margin-top: 39px
+.blog-content-img
+  position: relative
+  max-width: 900px
+  margin: 0 auto
+
+  img
+    display: block
+    max-width: 100%
+    margin: 0 auto
+
+.blog-page
+  h1, .h1
+    font-size 44px
+
+.blog-content-block
+  position: relative
+  max-width: 900px
+  margin-left: auto
+  margin-right: auto
+
+  @media $display-breakpoints.xs-only
+    font-size: $font-size-mobile
+
+  & ul
+    list-style none
+    &>li
+      &:before
+        content: "\2022"
+        color #5793CE
+        font-weight: bold
+        display: inline-block
+        width: 1em
+        margin-left: -1em
+
+  .blog-content-img + &
+    margin-top: 57px
+    @media $display-breakpoints.sm-and-down
+      margin-top: 51px
+
+  h2, .h2
+    margin-top: 56px
+    @media $display-breakpoints.sm-and-down
+      margin-top: 46px
+    &:first-child
+      margin-top: 0
+    & + *
+      margin-top: 40px
+      @media $display-breakpoints.sm-and-down
+        margin-top: 27px
+
+  h3, .h3
+    margin-top: 37px
+    @media $display-breakpoints.sm-and-down
+      margin-top: 27px
+    &:first-child
+      margin-top: 0
+    & + *
+      margin-top: 27px
+      @media $display-breakpoints.sm-and-down
+        margin-top: 30px
+
+  h4, .h4
+    margin-top: 35px
+    @media $display-breakpoints.sm-and-down
+      margin-top: 28px
+    &:first-child
+      margin-top: 0
+    & + *
+      margin-top: 27px
+
+  img
+    max-width 600px
+    display: block
+    margin: 60px auto
+    height: auto !important
+    @media screen and (max-width 720px)
+      max-width 100%
+      margin: 30px auto
+
+  ul, ol
+    padding-left: (104/$base-font-size)em
+    @media $display-breakpoints.sm-and-down
+      padding-left: (42/$base-font-size)em
+
+    &.plus-list
+      list-style: none
+      li
+        position: relative
+        &::before
+          content: ''
+          position: absolute
+          left: (43/$base-font-size * -1)em
+          top: 0
+          width: (26/$base-font-size)em
+          height: (26/$base-font-size)em
+          background-repeat: no-repeat
+          background-size: contain
+          background-position: center
+          background-image: url('/img/InfoIcons/icon_plus.svg')
+
+  blockquote
+    position: relative
+    font-style: italic
+    padding-left: (157/$base-font-size)em
+    margin-top: (27/$base-font-size)em
+    @media $display-breakpoints.sm-and-down
+      margin-top: (24/$base-font-size)em
+      padding-left: (49/$base-font-size)em
+
+    &::before
+      content: ''
+      position: absolute
+      left: (60/$base-font-size)em
+      top: (3/$base-font-size * -1)em
+      width: (71/$base-font-size)em
+      height: (50/$base-font-size)em
+      background-repeat: no-repeat
+      background-size: contain
+      background-position: center
+      background-image: url('/img/InfoIcons/icon_quotations.png')
+      @media $display-breakpoints.sm-and-down
+        left: 0
+        top: (6/$base-font-size)em
+        width: (29/$base-font-size)em
+        height: (21/$base-font-size)em
+
+  p
+    a
+      text-decoration: underline
+      color: #5793CE
+      &:hover, &:focus {
+        color: #e8a15a
+      }
+
+// Blog and project footer
+// ============================================================
+.blog-content-footer-area
+  margin-top: 66px
+  @media $display-breakpoints.sm-and-down
+    margin-top: 49px
+
+  &.port-footer-area
+    margin-top: 76px
+
+    .angular-area + &
+      margin-top: 86px
+
+.blog-content-footer-flex
+  position: relative
+  display: flex
+  justify-content: space-between
+  align-items: center
+  @media $display-breakpoints.sm-and-down
+    flex-wrap: wrap
+
+  a
+    font-weight: 400
+
+  &>*
+    &.is-back,
+    &.is-next
+      width: 14em
+      @media only screen and (max-width: 399px)
+        .port-footer-area &
+          text-align: center
+
+    &.is-next
+      text-align: right
+
+    &.is-social
+      @media $display-breakpoints.sm-and-down
+        order: 1
+        width: 100%
+        margin-bottom: 52px
+
+    &.is-back
+      @media $display-breakpoints.sm-and-down
+        order: 2
+        width: 50%
+      @media only screen and (max-width: 599px)
+        width: 9em
+      @media only screen and (max-width: 399px)
+        width: 100%
+
+    &.is-next
+      @media $display-breakpoints.sm-and-down
+        order: 3
+        width: 50%
+      @media only screen and (max-width: 599px)
+        width: 7em
+      @media only screen and (max-width: 399px)
+        display: none
+
+        .port-footer-area &
+          display: block
+          width: 100%
+          margin-top: 1em
+
+  .port-footer-btn
+    display: flex
+    justify-content: center
+    align-items: center
+
+    .v-btn
+      margin: 0
+      min-width: 330px
+      @media $display-breakpoints.lg-and-up
+        max-width: 600px
+      @media $display-breakpoints.md-only
+        max-width: 370px
+      @media $display-breakpoints.sm-and-down
+        max-width: 100%
+      @media only screen and (max-width: 399px)
+        min-width: auto
+
+.back-flex
+  position: relative
+  display: inline-flex
+  justify-content: flex-start
+  align-items: center
+  margin: -.5rem
+  color: inherit
+  transition: color $base-animation-time $base-animation-timing-function
+
+  &>*
+    margin: .5rem
+
+  .text
+    font-size: 22px
+    @media $display-breakpoints.sm-and-down
+      line-height: (25/21)
+
+  .icon
+    svg
+      position: relative
+      top: 1px
+      width: 10px
+      height: 19px
+
+  &:hover
+    cursor: pointer
+    color: $font-hover-orange

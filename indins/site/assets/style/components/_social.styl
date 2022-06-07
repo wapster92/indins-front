@@ -1,0 +1,25 @@
+.social-list
+  display: flex
+  justify-content: flex-start
+  align-items: center
+  margin-left -18px
+
+  a
+    width 58px
+    height 58px
+    display flex
+    justify-content center
+    align-items center
+    fill: #3f496a;
+    transition fill .3s ease
+    svg
+      display: block
+      width: 22px
+      height: 22px
+    &:hover
+      fill: #e8a15a;
+
+  &_white
+    a
+      svg
+        fill: $white

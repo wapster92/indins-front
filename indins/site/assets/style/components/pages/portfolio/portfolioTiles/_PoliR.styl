@@ -1,0 +1,69 @@
+// Poli-R
+// ============================================================
+.portfolio-tile-polir
+
+  .is-back
+    z-index: 1
+    background: linear-gradient(143.13deg, #CEE7B0 0%, rgba(255, 255, 255, 0) 51.85%), #93C878
+    transition: background-color .4s $prj-ease-easeInOutCirc
+
+  .is-pot
+    z-index: 2
+    background-size: contain
+    transform-origin: center
+    width: 52%
+    height: 70%
+    top: 7.8%
+    left: auto
+    right: 0
+    transform: scale(1)
+    transition: transform .8s $prj-ease-easeInOutCirc
+    transition-delay: 0.1s
+    @media screen and (max-width 599px)
+      width: 25%
+
+  .is-logo
+    z-index: 4
+    background-size: contain
+    transform-origin: left top
+    width: 27%
+    height: 33%
+    left: 40px
+    top: 40px
+    transform: translate3d(0, 0, 0)
+    transition: transform .6s $prj-ease-easeInOutCirc
+    transition-delay: 0s
+    @media screen and (max-width 1203px)
+      left: 25px
+      top 25px
+    @media screen and (max-width 599px)
+      width: 60px
+      height: 60px
+
+  &:hover
+    .is-back
+      background-color: #e0d0f0
+    .is-pot
+      transform: scale(1.1)
+    .is-logo
+      transform: translate3d(0%, 0%, 0) scale(1.2)
+
+.portfolio-item--tall
+  .portfolio-tile-polir
+    .is-logo
+      top: -25px;
+      @media $display-breakpoints.xs-only
+        left: 25px;
+        top: 25px;
+
+.portfolio-item--long
+  .portfolio-tile-polir
+    .is-logo
+      left: -10px;
+      @media $display-breakpoints.xs-only
+        left: 25px;
+        top: 25px;
+    .is-pot
+      right: -100px;
+      @media $display-breakpoints.xs-only
+        right: 0;

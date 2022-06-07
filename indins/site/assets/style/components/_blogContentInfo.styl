@@ -1,0 +1,71 @@
+.blog-content-info
+  &-area
+   &__container
+     padding 0 24px
+     margin auto
+     width 100%
+     height 100%
+     @media $display-breakpoints.lg-and-up
+       max-width 1188px
+     @media $display-breakpoints.md-only
+       max-width 944px
+
+  &-angular
+    padding: 51px 0
+    @media $display-breakpoints.sm-and-down
+      margin-top: 63px
+    @media only screen and (max-width: 399px)
+      padding: 31px 0
+
+  &-flex
+    position: relative
+    display: flex
+    justify-content: space-between
+    align-items: center
+    @media only screen and (max-width: 399px)
+      flex-wrap: wrap
+
+    &>*
+      position: relative
+      display: flex
+      justify-content: flex-start
+      align-items: center
+      margin: -.5em
+      @media only screen and (max-width: 399px)
+        margin: 0
+        width: 100%
+
+        &:nth-child(1)
+          order: 2
+        &:nth-child(2)
+          order: 1
+
+      &:nth-last-child(2)
+        @media only screen and (min-width: 400px)
+          margin-right: 1em
+      &:last-child
+        @media only screen and (min-width: 400px)
+          margin-left: auto
+
+      &>*
+        margin: .5em
+
+      &.author-block
+        align-items: baseline
+        .text
+          color: $primary
+
+      &.view-block
+        align-items: center
+
+        .icon
+          &>span
+            display: block
+            position: relative
+            width: (26/$base-font-size)em
+            height: (14/$base-font-size)em
+            top: (2/$base-font-size * -1)em
+            background-repeat: no-repeat
+            background-size: contain
+            background-position: center
+            background-image: url('/img/eye_down.svg')

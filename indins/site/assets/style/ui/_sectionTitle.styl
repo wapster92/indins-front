@@ -1,0 +1,50 @@
+.section-title
+  &.realized
+    margin-top: $block-distance.section-title.realized;
+  &__container
+    margin 0 auto
+    padding 0 24px
+    flex-grow 1
+    width 100%
+    text-align center
+    @media $display-breakpoints.lg-and-up
+      max-width 1188px
+    @media $display-breakpoints.md-only
+      max-width 944px
+
+    &__text
+      margin-top: $block-distance.section-title.em
+      margin-left: auto
+      margin-right: auto
+      text-align center
+
+      .angular-area &
+        margin-top: $block-distance.section-title.angular
+
+      .auto-to-scroll &
+        margin-top: 115px
+        @media only screen and (max-width: 769px)
+          margin-top: 85px
+        @media only screen and (max-width: 599px)
+          margin-top: 65px
+
+      .page-title+&
+        margin-top: $block-distance.section-title.h1-after
+
+      .info-block-area + .section-title &, .port-cascade-area + .section-title &
+        margin-top: 68px
+
+      .horizon-list-area + .section-title &
+        margin-top: 73px
+
+  &.max-width-18
+    h2
+      max-width: 18em
+
+  &.max-width-19
+    h2
+      max-width: 19em
+
+  &.max-width-20
+    h2
+      max-width: 20em

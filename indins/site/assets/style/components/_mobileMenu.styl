@@ -1,0 +1,229 @@
+// Mobile menu
+// ============================================================
+.mobile-menu
+  position: fixed
+  z-index: 101
+  width: 100%
+  height: 100%
+  top: 0
+  left: 0
+  background-color: $primary
+  color: $white
+  transition: opacity $base-animation-time $animation-timing-function-cubic02, visibility $base-animation-time $animation-timing-function-cubic02
+
+  opacity: 0
+  visibility: hidden
+
+  @media $display-breakpoints.md-and-up
+    display: none
+
+  a
+    color: $white
+    &:hover
+      color: $font-hover-orange
+
+  &::after
+    content: ''
+    position: absolute
+    width: 100%
+    height: 25%
+    top: calc(100% - 1px)
+    left: 0
+    background-color: inherit
+
+  &__wrapper
+    position: relative
+    width: 100%
+    height: 100%
+    overflow-x: hidden
+    overflow-y: auto
+
+    &__layout
+      &__phone-btn
+        left: 24px
+        top: 43px
+        @media $display-breakpoints.xs-only
+          top: 44px
+        @media screen and (max-width: 399px)
+          top: 39px
+
+      &__close-btn
+        right: 24px
+        top: 40px
+        @media $display-breakpoints.xs-only
+          top: 41px
+        @media screen and (max-width: 399px)
+          top: 37px
+
+
+      &__phone-btn, &__close-btn
+        position: fixed
+        z-index: 2
+        transform: scale(1)
+        transition: top $base-animation-time $animation-timing-function-cubic02, left $base-animation-time $animation-timing-function-cubic02, right $base-animation-time $animation-timing-function-cubic02, transform $base-animation-time $animation-timing-function-cubic02
+        will-change: top, left, right, transform
+
+      &__logo
+        &__wrapper
+          & > .logo
+            margin: 24px auto
+
+      &__logo, &__menu, &__contact, &__address, &__social, &__request-call
+        position: relative
+        z-index: 1
+        display: flex
+        flex-direction: column
+        justify-content: flex-start
+        align-items: center
+        & > *
+          position: relative
+          & + *
+            margin-top: 17px
+            @media $display-breakpoints.xs-only
+              margin-top: 21px
+
+      &__logo, &__menu, &__contact, &__address
+        & > div
+          width: 230px
+
+      &__menu
+        font-size: 25px
+        margin-top: 25px
+        @media $display-breakpoints.xs-only
+          font-size: 22px
+          margin-top: 34px
+        @media screen and (max-width: 399px)
+          margin-top: 15px
+
+        a
+          font-weight: 400
+
+      &__contact
+        font-size: 18px
+        background-color: $primary-light
+        padding: 26px 0
+        margin-top: 33px
+
+      &__address
+        font-size: 18px
+        line-height: 2.2
+        margin-top: 16px
+
+        & > *
+          & + *
+            margin-top: 15px
+            padding-top: 15px
+            &::before
+              content: ''
+              position: absolute
+              width: 120%
+              height: 2px
+              top: -1px
+              left: -10%
+              background-color: $secondary-2
+
+      &__social
+        margin-top: 40px
+        margin-bottom: 180px
+        & .social-list
+          margin -0.9em
+
+      &__request-call
+        position: fixed
+        z-index: 2
+        justify-content: center
+        width: 100%
+        padding: 10px 0 55px
+        bottom: 0
+        left: 0
+        background-color: $primary
+        &::before
+          content: ''
+          position: absolute
+          width: 100%
+          height: 1em
+          left: 0
+          bottom: calc(100% - 1px)
+          background: -moz-linear-gradient(top, rgba($primary,0) 0%, rgba($primary,1) 100%)
+          background: -webkit-linear-gradient(top, rgba($primary,0) 0%,rgba($primary,1) 100%)
+          background: linear-gradient(to bottom, rgba($primary,0) 0%,rgba($primary,1) 100%)
+
+        &__wrapper
+          margin 6px 8px
+
+        &__btn
+          flex 1
+          align-self stretch
+          display flex
+          align-items center
+          justify-content space-between
+          padding 0 28px 0 41px
+
+          &__icon
+            position relative
+            margin-left 1em
+            width 48px
+            height 34px
+            opacity .6
+            transition opacity 0.3s cubic-bezier(0.25, 0.8, 0.5, 1)
+            background-repeat no-repeat
+            background-size contain
+            background-position center
+            background-image url('/img/arrow_btn.svg')
+            @media only screen and (max-width: 399px)
+              width 44px
+
+          &:hover
+            .menu__content__request-call__btn__icon
+              opacity .8
+
+  &_open
+    visibility: visible
+    opacity: 1
+
+  &_scrolled
+    & .mobile-menu__wrapper__layout__phone-btn, & .mobile-menu__wrapper__layout__close-btn
+      transform: scale(.8)
+
+    & .mobile-menu__wrapper__layout__phone-btn
+      left: 14px
+      top: 13px!important
+      @media $display-breakpoints.xs-only
+        top: 14px!important
+      @media screen and (max-width: 399px)
+        left: 10px
+        top: 9px!important
+
+    & .mobile-menu__wrapper__layout__close-btn
+      right: 14px
+      top: 10px!important
+      @media $display-breakpoints.xs-only
+        top: 11px!important
+      @media screen and (max-width: 399px)
+        right: 10px
+        top: 7px!important
+
+.header_shadow ~ .mobile-menu
+  & .mobile-menu__wrapper__layout__close-btn
+    top: 22px
+    @media $display-breakpoints.xs-only
+      top: 21px
+    @media screen and (max-width: 399px)
+      top: 21px
+  & .mobile-menu__wrapper__layout__phone-btn
+    top: 25px
+    @media $display-breakpoints.xs-only
+      top: 24px
+    @media screen and (max-width: 399px)
+      top: 23px
+  & .mobile-menu__wrapper__layout__logo__wrapper
+    & > .logo
+      width: 3em
+      height: 3em
+      margin: 16px auto
+      @media $display-breakpoints.xs-only
+        width: 2.5em
+        height: 2.5em
+      @media screen and (max-width: 399px)
+        width: 2em
+        height: 2em

@@ -1,0 +1,9 @@
+<template>
+  <v-layout
+    align-center
+    justify-center
+    fill-height
+  >
+    <app-logo/>
+  </v-layout>
+</template>

@@ -1,0 +1,219 @@
+
+// Gala
+// ============================================================
+.portfolio-tile-gala
+
+  .is-back
+    z-index: 1
+    background-image: linear-gradient(to left, #f4db65 0%, #ebcc3d 50%, #f4db65 100%)
+    background-color: #f4db65
+    background-repeat: no-repeat
+    background-position: center
+    background-size: 100%
+
+  .is-glow
+    z-index: 2
+    background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 70%, rgba(255,255,255,0) 100%)
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 70%,rgba(255,255,255,0) 100%)
+    background: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 70%,rgba(255,255,255,0) 100%)
+    opacity: .9
+    width: 300px
+    height: 300px
+    top: 2%
+    left: 42%
+
+    transition: transform 2s $prj-ease-easeOutCubic, opacity 2s $prj-ease-easeOutCubic
+    will-change: transform, opacity
+
+  .is-block
+    z-index: 3
+    background-color: #e8a43b
+    opacity: .5
+
+    width: 100px
+    height: 30px
+    top: 39%
+    left: 11%
+
+    transform: skewX(-24deg)
+    transition: transform 2s $prj-ease-easeOutBack, background-color 2s $prj-ease-easeOutCubic, opacity 2s $prj-ease-easeOutCubic
+    will-change: transform, opacity, background-color
+
+  .is-block-1
+    z-index: 10
+    background-color: #fff
+    opacity: .3
+    transition-duration: 1.6s
+
+    width: 100px
+    height: 30px
+    top: 39%
+    left: 11%
+
+  .is-block-2
+    z-index: 10
+    background-color: #bfbfbf
+    opacity: 0.2
+    transition-duration: 2.2s
+
+    width: 130px
+    height: 50px
+    top: 44%
+    left: -4%
+
+  .is-block-3
+    z-index: 10
+    background-color: #c5c5c5
+    opacity: 0.3
+    transition-duration: 1.9s
+
+    width: 50px
+    height: 19px
+    top: 29%
+    left: 8%
+
+  .is-block-4
+    z-index: 10
+    background-color: #cccccc
+    opacity: 0.5
+    transition-duration: 1.6s
+
+    width: 30px
+    height: 12px
+    top: 73%
+    left: 7%
+
+  .is-block-5
+    z-index: 10
+    background-color: #ffffff
+    opacity: 0.2
+    transition-duration: 2.2s
+
+    width: 210px
+    height: 82px
+    top: 22%
+    left: 78%
+
+  .is-block-6
+    z-index: 10
+    background-color: #ffffff
+    opacity: 0.3
+    transition-duration: 1.9s
+
+    width: 130px
+    height: 50px
+    top: 40%
+    left: 64%
+
+  .is-block-7
+    z-index: 10
+    background-color: #cccccc
+    opacity: 0.5
+    transition-duration: 2.5s
+
+    width: 80px
+    height: 26px
+    top: 22%
+    left: 58%
+
+  .is-block-8
+    z-index: 10
+    background-color: #bdbdbd
+    opacity: 0.3
+    transition-duration: 1.6s
+
+    width: 50px
+    height: 18px
+    top: 76%
+    left: 53%
+
+  .is-block-9
+    z-index: 10
+    background-color: #ffffff
+    opacity: 0.1
+    transition-duration: 1.9s
+
+    width: 90px
+    height: 32px
+    top: 58%
+    left: 41%
+
+  .is-block-10
+    z-index: 10
+    background-color: #cccccc
+    opacity: 0.4
+    transition-duration: 2.2s
+
+    width: 30px
+    height: 12px
+    top: 13%
+    left: 47%
+
+  .is-dumbbells
+    z-index: 10
+    background-size: contain
+    background-position: left center
+    transform-origin: center
+    width: 46%
+    height: 46%
+    top: 16%
+    left: auto
+    right: 8%
+
+    transform: scale(1)
+    transition: transform 1.5s $prj-ease-easeOutCubic
+
+  .is-logo
+    z-index: 10
+    background-size: contain
+    background-position: left center
+    transform-origin: center
+    width: 27%
+    height: 27%
+    top: 11%
+    left: 11%
+
+    transform: translate3d(0, 0, 0)
+    transition: transform 1s cubic-bezier(0.43, 0.18, 0.15, 0.86)
+
+  &:hover
+    .is-glow
+      transform: translate3d(-38%, -7%, 0)
+    .is-block-1
+      transform: skewX(-24deg) translate3d(220%, 0%, 0)
+    .is-block-2
+      transform: skewX(-24deg) translate3d(257%, 0%, 0)
+    .is-block-3
+      transform: skewX(-24deg) translate3d(280%, 0%, 0)
+    .is-block-4
+      transform: skewX(-24deg) translate3d(140%, 0%, 0)
+    .is-block-5
+      transform: skewX(-24deg) translate3d(-235%, 0%, 0)
+    .is-block-6
+      transform: skewX(-24deg) translate3d(-180%, 0%, 0)
+    .is-block-7
+      transform: skewX(-24deg) translate3d(50%, 0%, 0)
+    .is-block-8
+      transform: skewX(-24deg) translate3d(-200%, 0%, 0)
+    .is-block-9
+      transform: skewX(-24deg) translate3d(-120%, 0%, 0)
+    .is-block-10
+      transform: skewX(-24deg) translate3d(160%, 0%, 0)
+    .is-dumbbells
+      transform: translate3d(38%, 0%, 0)
+    .is-logo
+      transform: translate3d(40%, 0%, 0)
+
+.portfolio-item--tall
+  .portfolio-tile-gala
+    .is-dumbbells
+      width: 70%
+      top: 40%
+      right: 14%
+    .is-logo
+      width: 40%
+    &:hover
+      .is-dumbbells
+        transform: translate3d(0, -5%, 0) scale(1.1)
+      .is-logo
+        transform: translate3d(50%, 20%, 0) scale(1.1)

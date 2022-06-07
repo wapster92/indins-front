@@ -1,0 +1,59 @@
+
+// Sanatoriyauto
+// ============================================================
+
+
+
+.portfolio-tile-sanatoriyauto
+  position: relative
+
+  .is-logo
+    position: absolute
+    width: 150px
+    height: 50px
+    background-size: contain
+    background-position-x: right
+    top: 40px
+    right: 40px
+    left auto
+    z-index: 2;
+    transform: scale(1, 1)
+    transition: transform .5s $prj-ease-easeInOutCubic
+    transition-delay: .5s
+    @media screen and (max-width 1203px)
+      right: 25px
+      top 25px
+    @media screen and (max-width: 800px)
+      width: 40%
+
+  .is-car
+    position: absolute;
+    width: 75%;
+    height: 80%;
+    top: 2%;
+    left: 0;
+    background-size: contain;
+    background-position: left
+
+  .is-blue-rectangle
+    background: linear-gradient(30deg, rgba(52,163,228,1) 33%, rgba(2,104,199,1) 33%, rgba(2,104,199,1) 61%, rgba(222,249,255,1) 61%);
+    top: auto;
+    left: -25%;
+    height: 300%;
+    width: 300%;
+    bottom: -69%;
+    background-size: cover;
+    transition: bottom 1s $prj-ease-easeInOutCubic
+    @media screen and (max-width: 599px)
+      background: linear-gradient(30deg, #34a3e4 25%, #0268c7 25%, #0268c7 53%, #def9ff 53%)
+      bottom: -90%
+      height: 400%
+    @media screen and (max-width: 399px)
+      background: linear-gradient(30deg, #34a3e4 27%, #0268c7 27%, #0268c7 58%, #def9ff 58%)
+  &:hover
+    .is-logo
+      transform: scale(1.1, 1.1)
+    .is-blue-rectangle
+      bottom: -200%;
+      @media screen and (max-width: 599px)
+        bottom: - 300%

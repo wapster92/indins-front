@@ -1,0 +1,39 @@
+/*SVG*/
+.svg-hover
+  svg
+    display block
+    path,
+    rect,
+    polygon
+      fill: $primary
+      transition: fill $base-animation-time $base-animation-timing-function
+      .theme--dark &
+        fill: #ffffff
+
+  &:hover
+    svg
+      path,
+      rect,
+      polygon
+        fill: $font-hover-orange
+
+  &.secondary-hover
+    &:hover
+      svg
+        path,
+        rect,
+        polygon
+          fill: $btn-bg-color-hover
+
+  &.svg-hover-accent
+    svg
+      path,
+      rect,
+      polygon
+        fill: $font-hover-orange
+    &:hover
+      svg
+        path,
+        rect,
+        polygon
+          fill: $btn-bg-color-hover

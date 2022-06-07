@@ -1,0 +1,163 @@
+
+// Detailing
+// ============================================================
+.portfolio-tile-vhor
+
+  .is-back-1
+    z-index: 1
+
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+
+    background: #73788d
+    background: -moz-radial-gradient(center, ellipse cover, #73788d 0%, #454c5a 100%)
+    background: -webkit-radial-gradient(center, ellipse cover, #73788d 0%, #454c5a 100%)
+    background: radial-gradient(ellipse at center, #73788d 0%, #454c5a 100%)
+
+  .is-back-2
+    z-index: 2
+
+    width: 100%
+    height: 150%
+    top: 92%
+    left: 0
+
+    background: #727782
+
+    transform-origin: center
+    transform: translate3d(0, 0, 0)
+    transition: transform .8s $prj-ease-easeInOutCubic
+    transition-delay: 0.15s
+
+  .is-back-3
+    z-index: 3
+
+    width: 100%
+    height: 150%
+    top: 100%
+    left: 0
+
+    background: #23262c
+    background: -moz-linear-gradient(top, #23262c 0%, #0b0d0f 100%)
+    background: -webkit-linear-gradient(top, #23262c 0%, #0b0d0f 100%)
+    background: linear-gradient(to bottom, #23262c 0%, #0b0d0f 100%)
+
+    transform-origin: center
+    transform: translate3d(0, 0, 0)
+    transition: transform .8s $prj-ease-easeInOutBack
+    transition-delay: 0s
+
+  .is-points
+    z-index: 4
+
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+
+    background-repeat: repeat
+    background-size: auto
+    background-position: left bottom
+
+  .is-man
+    z-index: 5
+    background-position: center
+    background-size: contain
+    transition: transform .8s $prj-ease-easeInOutCubic
+    width: 100%;
+    height: 100%;
+    top: 8%;
+    left: 28%;
+    transform: scale(1) translate3d(0%, 0%, 0);
+
+  .is-logo-icon
+    z-index: 5
+    background-position: left center
+    background-size: contain
+
+    width: 11%;
+    height: 19%;
+    top: 11%;
+    left: 6%;
+
+    transform-origin: center
+    transform: translate3d(0, 0, 0)
+    transition: transform .8s $prj-ease-easeInOutCubic
+    transition-delay: 0s
+
+  &:hover
+    .is-man
+      transform: scale(1.05) translate3d(4%, -1%, 0);
+    .is-back-2
+      transform: translate3d(0, -66%, 0)
+      transition-delay: 0.1s
+
+    .is-back-3
+      transform: translate3d(0, -18.8%, 0)
+      transition-delay: 0.25s
+
+    .is-logo-icon
+      transform: scale(1.1) translate3d(0, 7%, 0)
+
+.portfolio-item--tall
+  .portfolio-tile-vhor
+    .is-man
+      width: 98%;
+      height: 98%;
+      top: 5%;
+      left: 34%;
+      @media $display-breakpoints.xs-only
+        width: 100%;
+        height: 100%;
+        top: 8%;
+        left: 28%;
+    .is-logo-icon
+      width: 19%;
+      height: 22%;
+      top: -1%;
+      left: 12%;
+      @media $display-breakpoints.xs-only
+        width: 11%;
+        height: 19%;
+        top: 11%;
+        left: 6%;
+
+    &:hover
+      .is-man
+        transform: scale(1.01) translate3d(-10%, 0%, 0);
+        @media $display-breakpoints.xs-only
+          transform: scale(1.05) translate3d(4%, -1%, 0);
+      .is-logo-icon
+        transform: scale(1.1) translate3d(1%, 4%, 0);
+        @media $display-breakpoints.xs-only
+          transform: scale(1.1) translate3d(0, 7%, 0)
+
+.portfolio-item--square
+  .portfolio-tile-vhor
+    .is-man
+      top: 10%;
+      left: 13%;
+      @media $display-breakpoints.xs-only
+        top: 8%;
+        left: 28%;
+    .is-logo-icon
+      width: 17%;
+      height: 19%;
+      top: 10%;
+      left: 11%;
+      @media $display-breakpoints.xs-only
+        width: 11%;
+        height: 19%;
+        top: 11%;
+        left: 6%;
+    &:hover
+      .is-logo-icon
+        transform: scale(1.1) translate3d(10%, 7%, 0);
+        @media $display-breakpoints.xs-only
+          transform: scale(1.1) translate3d(0, 7%, 0)
+      .is-man
+        transform: scale(1.3) translate3d(4%, 10%, 0);
+        @media $display-breakpoints.xs-only
+          transform: scale(1.05) translate3d(4%, -1%, 0);

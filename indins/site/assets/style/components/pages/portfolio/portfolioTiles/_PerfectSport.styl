@@ -1,0 +1,109 @@
+
+// PerfectSport
+// ============================================================
+.portfolio-tile-perfectsport
+
+  .is-back
+    z-index: 1
+    transition: transform 1.5s $prj-ease-easeInOutCirc
+    transition-delay: 0s
+
+  .is-fruits
+    z-index: 2
+    background-size: contain
+    transform-origin: center
+    background-position: center center
+
+    top: 29%;
+    left: 79%;
+    width: 24%;
+    height: 59%;
+
+    transform: translate(-50%) scale(1)
+    transition: transform .5s $prj-ease-easeInOutCirc
+    transition-delay: 0.2s
+
+  .is-logo
+    z-index: 3
+    background-size: contain
+    transform-origin: center
+    background-position: center center
+
+    width: 32%;
+    height: 20%;
+    top: 10%;
+    left: 5%;
+
+    transition: transform .5s $prj-ease-easeInOutCirc
+    transition-delay: 0s
+
+  &:hover
+    .is-back
+      transform: scale(1.2)
+
+    .is-fruits
+      transform: translate(-58%, -7%) scale(1.1);
+
+    .is-logo
+      transform: translate(11%) scale(1.15);
+
+.portfolio-item--tall
+  .portfolio-tile-perfectsport
+    .is-logo
+      width: 63%;
+      top: -1%;
+      left: 12%;
+      @media $display-breakpoints.xs-only
+        width: 32%;
+        top: 10%;
+        left: 5%;
+
+    .is-fruits
+      top: 37%;
+      left: 36%;
+      width: 49%;
+      @media $display-breakpoints.xs-only
+        top: 29%;
+        left: 79%;
+        width: 24%;
+
+    &:hover
+      .is-logo
+        transform: translate(11%, 7%) scale(1.19);
+        @media $display-breakpoints.xs-only
+          transform: translate(11%) scale(1.15);
+      .is-fruits
+        transform: translate(-43%, -2%) scale(1.1);
+        @media $display-breakpoints.xs-only
+          transform: translate(-58%, -7%) scale(1.1);
+
+.portfolio-item--square
+  .portfolio-tile-perfectsport
+    .is-logo
+      width: 55%;
+      height: 20%;
+      top: 8%;
+      left: 11%;
+      @media $display-breakpoints.xs-only
+        width: 32%;
+        top: 10%;
+        left: 5%;
+
+    .is-fruits
+      top: 27%;
+      left: 72%;
+      width: 31%;
+      @media $display-breakpoints.xs-only
+        top: 29%;
+        left: 79%;
+        width: 24%;
+
+    &:hover
+      .is-logo
+        transform: translate(9%, 4%) scale(1.15);
+        @media $display-breakpoints.xs-only
+          transform: translate(11%) scale(1.15);
+      .is-fruits
+        transform: translate(-60%, -6%) scale(1.15);
+        @media $display-breakpoints.xs-only
+          transform: translate(-58%, -7%) scale(1.1);

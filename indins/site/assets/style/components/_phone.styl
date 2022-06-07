@@ -1,0 +1,39 @@
+.phone-block
+  cursor pointer
+  font-size 18px
+  font-weight 700
+  display: flex
+  justify-content: flex-start
+  align-items: center
+
+  &_hide-on-mobile
+    @media $display-breakpoints.sm-and-down
+      & svg
+        width: 2.1em!important
+        height: 2.1em!important
+      & .phone-block__number
+        display none
+    @media $display-breakpoints.xs-only
+      & svg
+        width: 1.7em!important
+        height: 1.7em!important
+    @media screen and (max-width: 399px)
+      & svg
+        width: 1.35em!important
+        height: 1.35em!important
+
+  &_white
+    color: $white
+    svg
+      path,
+      rect,
+      polygon
+        fill: $white
+
+  svg
+    width: 1.1em
+    height: 1.1em
+
+  &__number
+    padding-left 0.9em
+    min-width 160px

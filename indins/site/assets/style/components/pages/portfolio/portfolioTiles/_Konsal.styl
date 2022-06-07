@@ -1,0 +1,140 @@
+
+// RusForProf
+// ============================================================
+.portfolio-tile-konsal
+
+  .is-back
+    z-index: 1
+
+    background: #fef9ed
+    background: -moz-radial-gradient(center, ellipse cover, #fef9ed 0%, #d6a4c5 100%)
+    background: -webkit-radial-gradient(center, ellipse cover, #fef9ed 0%,#d6a4c5 100%)
+    background: radial-gradient(ellipse at center, #fef9ed 0%,#d6a4c5 100%)
+
+  .is-points
+    z-index: 2
+
+  .is-points-first
+    z-index: 3
+    background-position: left center
+    background-size: contain
+
+    width: 100%
+    height: 150%
+    top: -67%
+    left: -46%
+
+    transform-origin: center
+    transform: rotate(138deg)
+    transition: transform 2s $prj-ease-easeInOutCubic
+    transition-delay: 0s
+
+  .is-points-second
+    z-index: 4
+    background-position: left center
+    background-size: contain
+
+    width: 100%
+    height: 200%
+    top: -19%
+    left: 38%
+
+    transform-origin: center
+    transform: rotate(231deg)
+    transition: transform 1.6s $prj-ease-easeInOutCubic
+    transition-delay: 0s
+
+  .is-box
+    z-index: 5
+
+  .is-box-first
+    z-index: 6
+    background-position: left center
+    background-size: contain
+
+    width: 50%
+    height: 77%
+    top: -5%
+    left: -7%
+
+    transform-origin: center
+    transform: translate3d(0, 0, 0)
+    transition: transform .8s $prj-ease-easeInOutCubic
+    transition-delay: 0s
+    @media only screen and (max-width: 399px)
+      width: 50%
+      height: 77%
+      top: -9%
+      left: -17%
+
+  .is-box-second
+    z-index: 7
+    background-position: left center
+    background-size: contain
+
+    width: 50%
+    height: 107%
+    top: 19%
+    left: 70%
+
+    transform-origin: center
+    transform: translate3d(0, 0, 0)
+    transition: transform .8s $prj-ease-easeInOutCubic
+    transition-delay: 0.2s
+
+  .is-logo
+    z-index: 8
+    background-position: center
+    background-size: contain
+
+    width: 40%
+    height: 17%
+    top: 40px
+    left: calc(100% - 40px - 40%)
+
+    transform-origin: center
+    transform: translate3d(0, 0, 0)
+    transition: transform .8s $prj-ease-easeInOutCubic, width .8s $prj-ease-easeInOutCubic, left .8s $prj-ease-easeInOutCubic
+    transition-delay: 0s
+    @media only screen and (max-width: 399px)
+      width: 100%
+      height: 13%
+      top: 45%
+      left: 0
+
+  &:hover
+    .is-points-first
+      transform: translate3d(11%, 29%, 0) rotate(348deg)
+    .is-points-second
+      transform: translate3d(-10%, -10%, 0) rotate(19deg)
+    .is-box-first
+      transform: translate3d(1%, 46%, 0) rotate(-40deg)
+      @media only screen and (max-width: 399px)
+        transform: translate3d(21%, 56%, 0) rotate(-40deg)
+    .is-box-second
+      transform: translate3d(-10%, 3%, 0) rotate(-20deg)
+      @media only screen and (max-width: 399px)
+        transform: translate3d(-10%, -1%, 0) rotate(-20deg)
+    .is-logo
+      left: 0
+      width: 100%
+      transform: translate3d(0, 150%, 0)
+      @media only screen and (max-width: 399px)
+        transform: translate3d(0, -200%, 0)
+
+.portfolio-item--tall
+  .portfolio-tile-konsal
+    .is-box-first
+      width: 80%
+    .is-box-second
+      width: 90%
+    &:hover
+      .is-box-first
+        transform: translate3d(-20%, 25%, 0) rotate(5deg)
+      .is-box-second
+        transform: translate3d(-30%, -5%, 0) rotate(-5deg)
+      .is-logo
+        left: 0
+        width: 80%
+        transform: translate3d(10%, 50%, 0)
+

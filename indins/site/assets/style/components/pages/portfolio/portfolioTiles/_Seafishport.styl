@@ -1,0 +1,51 @@
+
+// Detailing
+// ============================================================
+.portfolio-tile-seafishport
+
+  .is-back
+    z-index: 1
+
+    width: 110%
+    height: 100%
+    top: 0
+    left: unset
+    right: 0
+
+    transform-origin: center
+    transform: translate3d(0, 0, 0)
+    transition: transform 1s $prj-ease-easeInOutCubic
+    transition-delay: 0s
+    @media only screen and (max-width: 399px)
+      width: 100%
+      height: 150%
+      top: unset
+      bottom: 0
+      right: unset
+      left: 0
+      background-position: center 74%
+
+  .is-logo
+    z-index: 3
+    background-position: left
+    background-size: contain
+    width: 100%
+    height: 40%
+    top: 10%
+    left: 9%
+    transform-origin: center
+    transform: translate3d(0, 0, 0)
+    transition: transform 1.2s $prj-ease-easeInOutCubic
+    transition-delay: 0s
+    @media screen and (max-width 599px)
+      left: 6%
+
+  &:hover
+    .is-back
+      transform: translate3d(8%, 0, 0)
+      @media only screen and (max-width: 399px)
+        transform: translate3d(0, 12%, 0)
+    .is-logo
+      transform: translate3d(0, 30%, 0)
+      @media screen and (max-width: 800px)
+        transform: translate3d(10%, 0, 0)

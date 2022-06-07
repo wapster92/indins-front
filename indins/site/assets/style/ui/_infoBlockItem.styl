@@ -1,0 +1,467 @@
+
+.info-block-item
+  position: relative
+  width: 100%
+  margin-left: auto
+  margin-right: auto
+  @media $display-breakpoints.sm-and-down
+    max-width: 24rem
+    margin-bottom: 40px
+  @media $display-breakpoints.xs-only
+    padding: 0 (28/$base-font-size)em
+
+  &.small-icon
+    .info-block-item__icon
+      height: 70px
+  &.narrow-left
+    padding: 0 (14/$base-font-size)em 0 (44/$base-font-size)em
+
+  &.narrow-xs
+    padding: 0 44px
+
+  &.max-17-xs
+    @media $display-breakpoints.xs-only
+      max-width: 17rem
+  &.flex-start
+    display: flex;
+    align-items: center;
+    & .info-block-item__text
+      margin-top: 0;
+    & .info-block-item__icon
+      width: 60px;
+      height: 60px;
+      margin-right: 25px;
+  .automate-text
+    margin-left: auto
+    margin-right: auto
+    @media only screen and (max-width: 959px)
+      text-align: center
+  &:nth-child(1)
+    .automate-text
+      max-width: 8.1em
+  &:nth-child(2)
+    .automate-text
+      max-width: 4.6em
+  &:nth-child(3)
+    .automate-text
+      max-width: 6.6em
+  &:nth-child(4)
+    .automate-text
+      max-width: 8em
+
+  &__icon
+    height: (85/$base-font-size)em
+    background-repeat: no-repeat
+    background-size: contain
+    background-position: center
+
+    &.ticks
+      height: (20/$base-font-size)em
+      background-position: left center
+      @media $display-breakpoints.xs-only
+        background-position: center center
+
+    &.icon-left
+      position: absolute
+      top: 0
+      left: 0
+      height: 26px
+      width: 26px
+      background-position: left center
+
+  .individual
+    background-image: url('/img/InfoIcons/icon_individual.svg')
+  .complex
+    background-image: url('/img/InfoIcons/icon_complex.svg')
+  .approach
+    background-image: url('/img/InfoIcons/icon_approach.svg')
+  .processes
+    background-image: url('/img/InfoIcons/icon_processy.svg')
+  .systems
+    background-image: url('/img/InfoIcons/icon_systems.svg')
+  .paper
+    background-image: url('/img/InfoIcons/icon_paper.svg')
+  .ticks
+    background-image: url('/img/InfoIcons/icon_ticks.svg')
+  .plus
+    background-image: url('/img/InfoIcons/icon_plus.svg')
+  .generate
+    background-image: url('/img/InfoIcons/icon_generate.svg')
+  .customer
+    background-image: url('/img/InfoIcons/icon_customer.svg')
+  .make
+    background-image: url('/img/InfoIcons/icon_make.svg')
+  .process
+    background-image: url('/img/InfoIcons/icon_process.svg')
+  .clouds
+    background-image: url('/img/InfoIcons/icon_clouds.svg')
+  .copy
+    background-image: url('/img/InfoIcons/icon_copy.svg')
+  .online-store
+    background-image: url('/img/customers/telefoniya_i_virtualnaya_ats.svg')
+  .portal
+    background-image: url('/img/customers/skvoznaya_analitika.svg')
+  .corporate-website
+    background-image: url('/img/customers/informirovanie_klienta.svg')
+  .image-site
+    background-image: url('/img/customers/online_konsultanty.svg')
+  .icon_chikl
+    background-image: url('/img/InfoIcons/icon_chikl.svg')
+  .icon_inside
+    background-image: url('/img/InfoIcons/icon_inside.svg')
+  .icon_chena
+    background-image: url('/img/InfoIcons/icon_chena.svg')
+  .icon_shild
+    background-image: url('/img/InfoIcons/icon_shild.svg')
+  .icon_site
+    background-image: url('/img/customers/site.svg');
+  .icon_crm_sistema
+    background-image: url('/img/customers/crm_sistema.svg');
+  .icon_internet_reklama
+    background-image: url('/img/customers/internet_reklama.svg');
+  .icon_skvoznaya_analitika
+    background-image: url('/img/customers/skvoznaya_analitika.svg');
+  .pramid1
+    background-image: url('/img/customers/pramid1.svg');
+  .pramid2
+    background-image: url('/img/customers/pramid2.svg');
+  .pramid3
+    background-image: url('/img/customers/pramid3.svg');
+  .arh--auditorium
+    background-image: url('/img/portfolioItems/arhproekt/auditorium.svg');
+  .arh--automation
+    background-image: url('/img/portfolioItems/arhproekt/automation.svg');
+  .arh--exh
+    background-image: url('/img/portfolioItems/arhproekt/exh.svg');
+  .arh--mentor
+    background-image: url('/img/portfolioItems/arhproekt/lk-m.svg');
+  .arh--participant
+    background-image: url('/img/portfolioItems/arhproekt/lk-p.svg');
+  .arh--results
+    background-image: url('/img/portfolioItems/arhproekt/results.svg');
+  .cds--realtor
+    background-image: url('/img/portfolioItems/cds/realtor.svg');
+  .cds--offers
+    background-image: url('/img/portfolioItems/cds/offers.svg');
+  .cds--manager
+    background-image: url('/img/portfolioItems/cds/manager.svg');
+  .cds--management
+    background-image: url('/img/portfolioItems/cds/management.svg');
+  .cds--calc
+    background-image: url('/img/portfolioItems/cds/calc.svg');
+  .cds--automation
+    background-image: url('/img/portfolioItems/cds/automation.svg');
+  .cds--apartments
+    background-image: url('/img/portfolioItems/cds/apartments.svg');
+  .cds--analytics
+    background-image: url('/img/portfolioItems/cds/analytics.svg');
+  .cds--agencies
+    background-image: url('/img/portfolioItems/cds/agencies.svg');
+  .mtr-icon--lk
+    background-image: url('/img/portfolioItems/medtechrais/lk.svg');
+  .mtr-icon--calculation
+    background-image: url('/img/portfolioItems/medtechrais/calculation.svg');
+  .mtr-icon--waybill
+    background-image: url('/img/portfolioItems/medtechrais/waybill.svg');
+  .mtr-icon--integration
+    background-image: url('/img/portfolioItems/medtechrais/integration.svg');
+  .mtr-icon--photo
+    background-image: url('/img/portfolioItems/medtechrais/photo-capture.svg');
+  .mtr-icon--mobile
+    background-image: url('/img/portfolioItems/medtechrais/mob-app.svg');
+  .mtr-icon--generation
+    background-image: url('/img/portfolioItems/medtechrais/generation.svg');
+  .mtr-icon--reports
+    background-image: url('/img/portfolioItems/medtechrais/reports.svg');
+  .mtr-icon--share
+    background-image: url('/img/portfolioItems/medtechrais/docs-share.svg');
+  .td-server-icon--calls-section
+    background-image: url('/img/portfolioItems/tdserver/calls-section.svg');
+  .td-server-icon--divided-access
+    background-image: url('/img/portfolioItems/tdserver/divided-access.svg');
+  .td-server-icon--call-notification
+    background-image: url('/img/portfolioItems/tdserver/call-notification.svg');
+  .td-server-icon--analytics
+    background-image: url('/img/portfolioItems/tdserver/analytics.svg');
+  .td-server-icon--orders
+    background-image: url('/img/portfolioItems/tdserver/orders.svg');
+  .td-server-icon--mails
+    background-image: url('/img/portfolioItems/tdserver/mails.svg');
+  .td-server-icon--phone-integration
+    background-image: url('/img/portfolioItems/tdserver/phone-integration.svg');
+  .td-server-icon--calls-listening
+    background-image: url('/img/portfolioItems/tdserver/calls-listening.svg');
+  .spark-icon--orders
+    background-image: url('/img/portfolioItems/spark/orders.svg');
+  .spark-icon--notifications
+    background-image: url('/img/portfolioItems/spark/notifications.svg');
+  .spark-icon--1c
+    background-image: url('/img/portfolioItems/spark/1c.svg');
+  .spark-icon--clients
+    background-image: url('/img/portfolioItems/spark/clients.svg');
+  .spark-icon--reports
+    background-image: url('/img/portfolioItems/spark/reports.svg');
+  .spark-icon--profit
+    background-image: url('/img/portfolioItems/spark/profit.svg');
+  .mp-icon--convert
+    background-image: url('/img/portfolioItems/mp/convert.svg');
+  .mp-icon--search
+    background-image: url('/img/portfolioItems/mp/fast-search.svg');
+  .mp-icon--catalogue
+    background-image: url('/img/portfolioItems/mp/catalogue.svg');
+  .mp-icon--1c
+    background-image: url('/img/portfolioItems/mp/1c.svg');
+  .seafish--control
+    background-image: url('/img/portfolioItems/seafishport/container-control.svg');
+  .seafish--location
+    background-image: url('/img/portfolioItems/seafishport/container-location.svg');
+  .seafish--accuracy
+    background-image: url('/img/portfolioItems/seafishport/geo-accuracy.svg');
+  .seafish--reachstaker
+    background-image: url('/img/portfolioItems/seafishport/reachstaker.svg');
+  .seafish--surveillance
+    background-image: url('/img/portfolioItems/seafishport/surveillance.svg');
+  .seafish--tasks
+    background-image: url('/img/portfolioItems/seafishport/tasks.svg');
+  .sakipirogova-icon--booking
+    background-image: url('/img/portfolioItems/sakipirogova/booking.svg');
+  .sakipirogova-icon--loyalty
+    background-image: url('/img/portfolioItems/sakipirogova/loyalty.svg');
+  .sakipirogova-icon--romi
+    background-image: url('/img/portfolioItems/sakipirogova/romi.svg');
+  .sakipirogova-icon--payment
+    background-image: url('/img/portfolioItems/sakipirogova/payment.svg');
+  .sakipirogova-icon--contract
+    background-image: url('/img/portfolioItems/sakipirogova/contract.svg');
+  .sakipirogova-icon--analytics
+    background-image: url('/img/portfolioItems/sakipirogova/analytics.svg');
+  .duoasia-icon--phone
+    background-image: url('/img/portfolioItems/duoasia/phone.svg');
+  .duoasia-icon--attendance
+    background-image: url('/img/portfolioItems/duoasia/attendance.svg');
+  .duoasia-icon--booking
+    background-image: url('/img/portfolioItems/duoasia/booking.svg');
+  .duoasia-icon--chairs
+    background-image: url('/img/portfolioItems/duoasia/chairs.svg');
+  .duoasia-icon--clients
+    background-image: url('/img/portfolioItems/duoasia/clients.svg');
+  .duoasia-icon--hostess
+    background-image: url('/img/portfolioItems/duoasia/hostess.svg');
+  .duoasia-icon--loyalty
+    background-image: url('/img/portfolioItems/duoasia/loyalty.svg');
+  .duoasia-icon--process
+    background-image: url('/img/portfolioItems/duoasia/process.svg');
+  .duoasia-icon--tables
+    background-image: url('/img/portfolioItems/duoasia/tables.svg');
+  .mining--analytics
+    background-image: url('/img/portfolioItems/mining/analytics.svg');
+  .mining--automation
+    background-image: url('/img/portfolioItems/mining/automation.svg');
+  .mining--card
+    background-image: url('/img/portfolioItems/mining/card.svg');
+  .mining--materials
+    background-image: url('/img/portfolioItems/mining/materials.svg');
+  .mining--operations
+    background-image: url('/img/portfolioItems/mining/operations.svg');
+  .mining--orders
+    background-image: url('/img/portfolioItems/mining/orders.svg');
+  .andy-icon--orders
+    background-image: url('/img/portfolioItems/andy/orders.svg');
+  .andy-icon--done
+    background-image: url('/img/portfolioItems/andy/done.svg');
+  .andy-icon--issues
+    background-image: url('/img/portfolioItems/andy/issues.svg');
+  .andy-icon--clients
+    background-image: url('/img/portfolioItems/andy/clients.svg');
+  .andy-icon--prices
+    background-image: url('/img/portfolioItems/andy/prices.svg');
+  .andy-icon--roles
+    background-image: url('/img/portfolioItems/andy/roles.svg');
+  .sanatorium-icon--analytics
+    background-image: url('/img/portfolioItems/sanatorium/analytics.svg');
+  .sanatorium-icon--departments
+    background-image: url('/img/portfolioItems/sanatorium/departments.svg');
+  .sanatorium-icon--gant
+    background-image: url('/img/portfolioItems/sanatorium/gant.svg');
+  .sanatorium-icon--isolation
+    background-image: url('/img/portfolioItems/sanatorium/isolation.svg');
+  .sanatorium-icon--issues
+    background-image: url('/img/portfolioItems/sanatorium/issues.svg');
+  .sanatorium-icon--plan
+    background-image: url('/img/portfolioItems/sanatorium/plan.svg');
+  .sanatorium-icon--projects
+    background-image: url('/img/portfolioItems/sanatorium/projects.svg');
+  .sanatorium-icon--time
+    background-image: url('/img/portfolioItems/sanatorium/time.svg');
+  .sanatorium-icon--works
+    background-image: url('/img/portfolioItems/sanatorium/works.svg');
+  .icon-content--text
+    background-image: url('/img/content-fill/text.svg');
+  .icon-content--imgsearch
+    background-image: url('/img/content-fill/imgsearch.svg');
+  .icon-content--seo
+    background-image: url('/img/content-fill/seo.svg');
+  .icon-content--cms
+    background-image: url('/img/content-fill/cms.svg');
+  .icon-content--calendar
+    background-image: url('/img/content-fill/calendar.svg');
+  .icon-content--site
+    background-image: url('/img/content-fill/site.svg');
+  .icon-content--analysis
+    background-image: url('/img/content-fill/analysis.svg');
+  .pazl
+    background-image: url('/img/razrabotka/pazl.svg');
+  .crm
+    background-image: url('/img/razrabotka/crm.svg');
+  .hand
+    background-image: url('/img/razrabotka/hand.svg');
+  .kubok
+    background-image: url('/img/razrabotka/kubok.svg');
+  .grafic
+    background-image: url('/img/razrabotka/grafic.svg');
+  .canvas
+    background-image: url('/img/razrabotka/canvas.svg');
+  .speed
+    background-image: url('/img/razrabotka/speed.svg');
+  .json
+    background-image: url('/img/razrabotka/json.svg');
+  .og
+    background-image: url('/img/razrabotka/og.svg');
+  .w3c
+    background-image: url('/img/razrabotka/w3c.svg');
+  .sitemap
+    background-image: url('/img/razrabotka/sitemap.svg');
+  .list
+    background-image: url('/img/razrabotka/list.svg');
+  .register
+    background-image: url('/img/razrabotka/register.svg');
+  .raketa
+    background-image: url('/img/razrabotka/raketa.svg');
+  &__title
+    position: relative
+    line-height: 1.1
+    margin-top: 36px
+    @media $display-breakpoints.sm-and-up
+      margin-right: -2px
+    @media $display-breakpoints.xs-only
+      margin-top: 26px
+
+    &:first-child
+      margin-top: 0
+
+    &.light-title
+      font-size: (22/$base-font-size)em
+      line-height: (27/22)
+      margin-top: 33px
+
+    &.small-title
+      font-size: (20/$base-font-size)em
+      line-height: 1.35
+
+  .icon-left + .info-block-item__title
+    margin-top: 0
+
+  &__text
+    position: relative
+    margin-top: 32px
+    @media $display-breakpoints.xs-only
+      margin-top: 20px
+    &--center
+      text-align: center;
+
+    &:first-child
+      margin-top: 0
+
+    &.text-primary
+      font-size: 22px
+      line-height: 1.2
+
+  .light-title + .info-block-item__text
+    margin-top: 28px
+
+  .small-title + .info-block-item__text
+    margin-top: 28px
+
+  .info-block-item__icon + .info-block-item__ext
+    margin-top: 34px
+
+  .icon-left + .info-block-item__text
+    margin-top: 0
+
+  &.flex-item
+    width: auto
+    margin: 1em
+
+    .info-block-item__title
+      @media $display-breakpoints.sm-and-up
+        margin-right: 0
+
+  .info-text-in-max-11
+    @media $display-breakpoints.md-and-up
+      display: block
+      max-width: 11em
+
+  &_hover
+    position: relative
+    padding: 15px 0 0
+    max-width: 14em
+    margin: 0 auto
+    @media $display-breakpoints.xs-only
+      max-width: 22em
+      & > h3
+        display none
+
+    &:hover
+      .info-block-item__description-window
+        opacity: 1
+
+    .info-block-item__icon
+      position: relative
+      height: 59px
+
+    .info-block-item__title
+      margin-top: 32px
+      line-height: 1.2
+      padding: 0 20px
+      color: $font-dark-grey
+      font-size 1em
+      font-weight 400
+      margin-right 0
+      @media $display-breakpoints.md-and-down
+        padding: 0 10px
+      @media only screen and (max-width: 399px)
+        padding: 0
+      &:first-child
+        margin-top: 0
+
+    .info-block-item__text
+      position: relative
+      padding: 0 20px
+      margin-top: 22px
+      @media $display-breakpoints.md-and-down
+        padding: 0 10px
+      @media only screen and (max-width: 399px)
+        padding: 0
+
+  &__description-window
+    position: absolute
+    z-index: 2
+    left: 0
+    width: 100%
+    height: auto
+    padding: 32px 0 32px
+    background-color: $white
+    transition: opacity $img-animation-time $img-animation-ease
+    box-shadow: 0 7px 25px rgba($primary, .1)
+    @media $display-breakpoints.sm-and-up
+      top: -2em
+      opacity: 0
+    @media $display-breakpoints.xs-only
+      position: relative
+      box-shadow: none
+
+    .info-block-item__title
+      font-weight: 400
+      color: $primary
+      @media $display-breakpoints.sm-and-up
+        font-size: (23/20)em
